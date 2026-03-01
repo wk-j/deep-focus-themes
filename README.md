@@ -38,12 +38,12 @@ Deep Space base with a Galactic Spectrum. Void-black backgrounds with Nebula Cya
 
 ## Supported Editors & Terminals
 
-| Platform | Twilight Overclock | Neon City | Crystal City | Stargazer |
+| Theme | Zed | Helix | Rio | Yazi |
 |---|---|---|---|---|
-| Zed | yes | yes | yes | - |
-| Helix | yes | yes | yes | yes |
-| Rio terminal | - | yes | yes | - |
-| Yazi | - | - | - | yes |
+| Twilight Overclock | yes | yes | - | - |
+| Neon City | yes | yes | yes | - |
+| Crystal City | yes | yes | yes | - |
+| Stargazer | - | yes | - | yes |
 
 Each theme includes a standard and transparent variant for Helix.
 
