@@ -28,13 +28,22 @@ Obsidian base with a Crystalline Spectrum. Blue-black backgrounds with Crystal T
 |---|---|---|---|---|
 | `#0A0E1A` | `#FFFFFF` | `#56D4C8` | `#89DDCA` | `#7EC8E3` |
 
+### [Stargazer](stargazer/docs/README.md)
+
+Deep Space base with a Galactic Spectrum. Void-black backgrounds with Nebula Cyan functions, Galactic Gold keywords, and Aurora Green strings. Contemplative, vast, and luminous.
+
+| Background | Keywords | Functions | Strings | Types |
+|---|---|---|---|---|
+| `#090E1A` | `#F5C842` | `#29D7E8` | `#4DC98A` | `#7EC8E3` |
+
 ## Supported Editors & Terminals
 
-| Platform | Twilight Overclock | Neon City | Crystal City |
-|---|---|---|---|
-| Zed | yes | yes | yes |
-| Helix | yes | yes | yes |
-| Rio terminal | - | yes | yes |
+| Platform | Twilight Overclock | Neon City | Crystal City | Stargazer |
+|---|---|---|---|---|
+| Zed | yes | yes | yes | - |
+| Helix | yes | yes | yes | yes |
+| Rio terminal | - | yes | yes | - |
+| Yazi | - | - | - | yes |
 
 Each theme includes a standard and transparent variant for Helix.
 
@@ -60,6 +69,7 @@ deep-focus-themes/
     palette/        # Canonical color palette (.json)
     terminals/
       rio/          # Rio terminal theme (.toml)
+      yazi/         # Yazi flavor (<theme-name>.yazi/)
 ```
 
 ## License
