@@ -1,7 +1,7 @@
 # Neon City (Transparent) — Helix Editor Theme
 # Inherits the base theme, removes all backgrounds to show terminal wallpaper.
 
-inherits = "neon_city"
+inherits = "neon-city"
 
 # ─── UI Overrides (transparent) ──────────────────────────────────────────────
 
