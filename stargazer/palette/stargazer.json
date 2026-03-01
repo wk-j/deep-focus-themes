@@ -1,0 +1,67 @@
+{
+  "name": "Stargazer",
+  "description": "A dark coding theme drawn from a midnight galaxy sky — deep space blues and teals, a warm galactic core, and silhouette-black grounds; luminous syntax against the infinite.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#090E1A",
+      "secondary":  "#060A12",
+      "highlight":  "#111B2E",
+      "border":     "#1A2840"
+    },
+    "fg": {
+      "primary":    "#D6E8F5",
+      "dimmed":     "#8AAFC8",
+      "muted":      "#4D6D88",
+      "gutter":     "#2A4058"
+    },
+    "accent": {
+      "cyan":       "#29D7E8",
+      "teal":       "#0ABFCC",
+      "blue":       "#4B9FE1",
+      "sky":        "#7EC8E3",
+      "gold":       "#F5C842",
+      "amber":      "#E8922A",
+      "white_star": "#EDF4FF",
+      "violet":     "#7B8FD4",
+      "red":        "#E85555",
+      "green":      "#4DC98A",
+      "rose":       "#C97BA8"
+    },
+    "ansi": {
+      "black":          "#0C1220",
+      "red":            "#E85555",
+      "green":          "#4DC98A",
+      "yellow":         "#F5C842",
+      "blue":           "#4B9FE1",
+      "magenta":        "#C97BA8",
+      "cyan":           "#29D7E8",
+      "white":          "#8AAFC8",
+      "bright_black":   "#2A4058",
+      "bright_red":     "#FF7070",
+      "bright_green":   "#6EDFA4",
+      "bright_yellow":  "#FFD96A",
+      "bright_blue":    "#7EC8E3",
+      "bright_magenta": "#DFA0CC",
+      "bright_cyan":    "#5FEAF5",
+      "bright_white":   "#EDF4FF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.gold",
+    "functions":    "accent.cyan",
+    "strings":      "accent.green",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.sky",
+    "tags":         "accent.blue",
+    "attributes":   "accent.violet",
+    "literals":     "accent.amber",
+    "constants":    "accent.white_star",
+    "constructors": "accent.teal",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.cyan"
+  }
+}

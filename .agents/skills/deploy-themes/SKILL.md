@@ -1,6 +1,6 @@
 ---
 name: deploy-themes
-description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio)
+description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi)
 ---
 
 ## Deployment Targets
@@ -27,6 +27,19 @@ description: Deploy editor and terminal themes from this repository to their loc
 - **Files per theme:** `<theme-name>.toml`
 - **Source:** `<theme-name>/terminals/rio/themes/`
 - **Note:** Not all themes have Rio support. Only deploy if the source file exists.
+
+### Yazi
+
+- **Target:** `~/.config/yazi/flavors/`
+- **Method:** Copy the entire `<theme-name>.yazi/` directory
+- **Source:** `<theme-name>/terminals/yazi/<theme-name>.yazi/`
+- **Required files inside `<theme-name>.yazi/`:**
+  - `flavor.toml` — UI theme config
+  - `tmtheme.xml` — code preview syntax highlighting
+  - `README.md` — description and usage
+  - `LICENSE` — flavor license
+  - `LICENSE-tmtheme` — tmTheme license
+- **Note:** Not all themes have Yazi support. Only deploy if the source directory exists.
 
 ## Deployment Procedure
 
@@ -57,13 +70,22 @@ For each theme that has `terminals/rio/themes/<theme-name>.toml`:
 cp <theme-name>/terminals/rio/themes/<theme-name>.toml ~/.config/rio/themes/
 ```
 
+### 4. Deploy to Yazi
+
+For each theme that has `terminals/yazi/<theme-name>.yazi/`:
+
+```bash
+cp -r <theme-name>/terminals/yazi/<theme-name>.yazi ~/.config/yazi/flavors/
+```
+
 ## Current Theme Inventory
 
-| Theme | Helix | Zed | Rio |
-|---|---|---|---|
-| neon-city | yes | yes | yes |
-| crystal-city | yes | yes | yes |
-| twilight-overclock | yes | yes | no |
+| Theme | Helix | Zed | Rio | Yazi |
+|---|---|---|---|---|
+| neon-city | yes | yes | yes | no |
+| crystal-city | yes | yes | yes | no |
+| twilight-overclock | yes | yes | no | no |
+| stargazer | yes | no | no | yes |
 
 ## Verification
 
@@ -78,6 +100,9 @@ readlink "$HOME/Library/Application Support/Zed/extensions/installed/<theme>-the
 
 # Rio
 diff <theme>/terminals/rio/themes/<theme>.toml ~/.config/rio/themes/<theme>.toml
+
+# Yazi
+ls ~/.config/yazi/flavors/<theme>.yazi/
 ```
 
 ## Rollback
@@ -94,4 +119,7 @@ rm "$HOME/Library/Application Support/Zed/extensions/installed/<theme-name>-them
 
 # Rio
 rm ~/.config/rio/themes/<theme-name>.toml
+
+# Yazi
+rm -rf ~/.config/yazi/flavors/<theme-name>.yazi
 ```

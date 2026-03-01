@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Stargazer</string>
+    <key>semanticClass</key>
+    <string>theme.dark.stargazer</string>
+    <key>uuid</key>
+    <string>a1b2c3d4-e5f6-7890-abcd-ef1234567890</string>
+    <key>author</key>
+    <string>wk</string>
+    <key>colorSpaceName</key>
+    <string>sRGB</string>
+    <key>settings</key>
+    <array>
+      <!-- Global editor settings -->
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#090E1A</string>
+          <key>foreground</key>
+          <string>#D6E8F5</string>
+          <key>caret</key>
+          <string>#29D7E8</string>
+          <key>lineHighlight</key>
+          <string>#111B2E</string>
+          <key>misspelling</key>
+          <string>#E85555</string>
+          <key>accent</key>
+          <string>#29D7E8</string>
+          <key>selection</key>
+          <string>#1C305080</string>
+          <key>activeGuide</key>
+          <string>#1A2840</string>
+          <key>findHighlight</key>
+          <string>#F5C84240</string>
+          <key>gutterForeground</key>
+          <string>#2A4058</string>
+        </dict>
+      </dict>
+
+      <!-- Text & variables -->
+      <dict>
+        <key>name</key>
+        <string>Text and variables</string>
+        <key>scope</key>
+        <string>text, source, variable.other.readwrite, punctuation.definition.variable</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#D6E8F5</string>
+        </dict>
+      </dict>
+
+      <!-- Punctuation -->
+      <dict>
+        <key>name</key>
+        <string>Punctuation</string>
+        <key>scope</key>
+        <string>punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8AAFC8</string>
+        </dict>
+      </dict>
+
+      <!-- Comments -->
+      <dict>
+        <key>name</key>
+        <string>Comments</string>
+        <key>scope</key>
+        <string>comment, punctuation.definition.comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4D6D88</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+
+      <!-- Strings — Aurora Green -->
+      <dict>
+        <key>name</key>
+        <string>Strings</string>
+        <key>scope</key>
+        <string>string, punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4DC98A</string>
+        </dict>
+      </dict>
+
+      <!-- String escape sequences — Nebula Cyan -->
+      <dict>
+        <key>name</key>
+        <string>String escape</string>
+        <key>scope</key>
+        <string>constant.character.escape</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#29D7E8</string>
+        </dict>
+      </dict>
+
+      <!-- Constants, booleans, numbers — Amber Core -->
+      <dict>
+        <key>name</key>
+        <string>Constants, numbers, booleans</string>
+        <key>scope</key>
+        <string>constant.numeric, variable.other.constant, entity.name.constant, constant.language.boolean, constant.language.false, constant.language.true, keyword.other.unit.user-defined, keyword.other.unit.suffix.floating-point</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#E8922A</string>
+        </dict>
+      </dict>
+
+      <!-- White Star constants -->
+      <dict>
+        <key>name</key>
+        <string>Language constants</string>
+        <key>scope</key>
+        <string>constant.language</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EDF4FF</string>
+        </dict>
+      </dict>
+
+      <!-- Keywords — Galactic Gold -->
+      <dict>
+        <key>name</key>
+        <string>Keywords</string>
+        <key>scope</key>
+        <string>keyword, keyword.operator.word, keyword.operator.new, variable.language.super, support.type.primitive, storage.type, storage.modifier, punctuation.definition.keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#F5C842</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+
+      <!-- Operators — Starlight -->
+      <dict>
+        <key>name</key>
+        <string>Operators</string>
+        <key>scope</key>
+        <string>keyword.operator, punctuation.accessor, punctuation.definition.generic, punctuation.separator.key-value</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8AAFC8</string>
+        </dict>
+      </dict>
+
+      <!-- Functions — Nebula Cyan (hero) -->
+      <dict>
+        <key>name</key>
+        <string>Functions</string>
+        <key>scope</key>
+        <string>entity.name.function, meta.function-call.method, support.function, support.function.misc, variable.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#29D7E8</string>
+        </dict>
+      </dict>
+
+      <!-- Types — Star Field Blue -->
+      <dict>
+        <key>name</key>
+        <string>Types, classes</string>
+        <key>scope</key>
+        <string>entity.name.class, entity.other.inherited-class, support.class, meta.function-call.constructor, entity.name.struct, meta.type, meta.type-alias, support.type, entity.name.type, entity.name.enum</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7EC8E3</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+
+      <!-- Tags / HTML — Blue -->
+      <dict>
+        <key>name</key>
+        <string>Tags</string>
+        <key>scope</key>
+        <string>entity.name.tag</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4B9FE1</string>
+        </dict>
+      </dict>
+
+      <!-- Attributes — Twilight Violet -->
+      <dict>
+        <key>name</key>
+        <string>Attributes</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7B8FD4</string>
+        </dict>
+      </dict>
+
+      <!-- Namespaces / modules — Teal -->
+      <dict>
+        <key>name</key>
+        <string>Namespaces</string>
+        <key>scope</key>
+        <string>entity.name.namespace, entity.name.module</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#0ABFCC</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+
+      <!-- Parameters — Moonlight (slightly dimmed) -->
+      <dict>
+        <key>name</key>
+        <string>Parameters</string>
+        <key>scope</key>
+        <string>variable.parameter, meta.function.parameters</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8AAFC8</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+
+      <!-- JSON/YAML keys — Blue -->
+      <dict>
+        <key>name</key>
+        <string>JSON/YAML/TOML keys</string>
+        <key>scope</key>
+        <string>keyword.other.definition.ini, support.type.property-name.json, support.type.property-name.toml, entity.name.tag.yaml, support.type.property-name.yaml</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4B9FE1</string>
+        </dict>
+      </dict>
+
+      <!-- TOML tables — Star Field Blue -->
+      <dict>
+        <key>name</key>
+        <string>TOML tables / section headings</string>
+        <key>scope</key>
+        <string>support.type.property-name.table, entity.name.section.group-title.ini</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7EC8E3</string>
+        </dict>
+      </dict>
+
+      <!-- Diff: inserted -->
+      <dict>
+        <key>name</key>
+        <string>Diff inserted</string>
+        <key>scope</key>
+        <string>markup.inserted.diff</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4DC98A</string>
+        </dict>
+      </dict>
+
+      <!-- Diff: deleted -->
+      <dict>
+        <key>name</key>
+        <string>Diff deleted</string>
+        <key>scope</key>
+        <string>markup.deleted.diff</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#E85555</string>
+        </dict>
+      </dict>
+
+      <!-- Diff: changed -->
+      <dict>
+        <key>name</key>
+        <string>Diff changed</string>
+        <key>scope</key>
+        <string>markup.changed.diff</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#E8922A</string>
+        </dict>
+      </dict>
+
+      <!-- Markdown headings -->
+      <dict>
+        <key>name</key>
+        <string>Markdown H1</string>
+        <key>scope</key>
+        <string>heading.1.markdown, markup.heading.setext.1.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EDF4FF</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown H2</string>
+        <key>scope</key>
+        <string>heading.2.markdown, markup.heading.setext.2.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#29D7E8</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown H3-H6</string>
+        <key>scope</key>
+        <string>heading.3.markdown, heading.4.markdown, heading.5.markdown, heading.6.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7EC8E3</string>
+        </dict>
+      </dict>
+
+      <!-- Markdown links -->
+      <dict>
+        <key>name</key>
+        <string>Markdown links</string>
+        <key>scope</key>
+        <string>markup.underline.link, punctuation.definition.link</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4B9FE1</string>
+        </dict>
+      </dict>
+
+      <!-- Markup bold -->
+      <dict>
+        <key>name</key>
+        <string>Markup bold</string>
+        <key>scope</key>
+        <string>markup.bold</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EDF4FF</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+
+      <!-- Markup italic -->
+      <dict>
+        <key>name</key>
+        <string>Markup italic</string>
+        <key>scope</key>
+        <string>markup.italic</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7EC8E3</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+
+      <!-- Markup inline code -->
+      <dict>
+        <key>name</key>
+        <string>Markdown inline code</string>
+        <key>scope</key>
+        <string>markup.inline.raw.string.markdown, markup.raw.block.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4DC98A</string>
+        </dict>
+      </dict>
+
+    </array>
+  </dict>
+</plist>
