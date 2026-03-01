@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal City — Dark Theme</title>
+  <style>
+    /* ── Reset & Base ─────────────────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary:    #0A0E1A;
+      --bg-secondary:  #060910;
+      --bg-highlight:  #111728;
+      --border:        #1C2333;
+      --frost-white:   #D8DEE9;
+      --steel-grey:    #7B88A1;
+      --slate-indigo:  #4A5270;
+      --gutter:        #2E3550;
+      --crystal-teal:  #56D4C8;
+      --mint-glass:    #89DDCA;
+      --glacier-blue:  #7EC8E3;
+      --dusty-rose:    #E8A0BF;
+      --neon-rose:     #FF6B9D;
+      --crystal-violet:#B48EF0;
+      --sage-teal:     #5A8A7A;
+      --keyword-white: #FFFFFF;
+      --signal-red:    #E06C75;
+      --city-gold:     #F0C674;
+    }
+
+    body {
+      background: var(--bg-secondary);
+      color: var(--frost-white);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Hero Section ─────────────────────────────────────────────── */
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 200px;
+      background: radial-gradient(ellipse, rgba(86, 212, 200, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero h1 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: var(--crystal-teal);
+      text-shadow:
+        0 0 20px rgba(86, 212, 200, 0.5),
+        0 0 60px rgba(86, 212, 200, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--steel-grey);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+
+    /* ── Buttons ──────────────────────────────────────────────────── */
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: transparent;
+      color: var(--crystal-teal);
+      border-color: var(--crystal-teal);
+    }
+
+    .btn-primary:hover {
+      background: rgba(86, 212, 200, 0.1);
+      box-shadow: 0 0 20px rgba(86, 212, 200, 0.2);
+    }
+
+    .btn-primary.copied {
+      border-color: var(--sage-teal);
+      color: var(--sage-teal);
+    }
+
+    .btn-secondary {
+      background: var(--bg-highlight);
+      color: var(--frost-white);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--steel-grey);
+      background: var(--border);
+    }
+
+    /* ── VS Code Preview ──────────────────────────────────────────── */
+    .preview-container {
+      max-width: 860px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .vscode {
+      background: var(--bg-primary);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.5),
+        0 0 1px rgba(86, 212, 200, 0.1);
+      border: 1px solid var(--border);
+    }
+
+    /* Title bar */
+    .vscode-titlebar {
+      background: var(--bg-secondary);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .traffic-lights {
+      display: flex;
+      gap: 6px;
+    }
+
+    .traffic-lights span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .traffic-lights .red    { background: #FF5F57; }
+    .traffic-lights .yellow { background: #FEBC2E; }
+    .traffic-lights .green  { background: #28C840; }
+
+    .vscode-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      color: var(--slate-indigo);
+    }
+
+    /* Tabs */
+    .vscode-tabs {
+      background: var(--bg-secondary);
+      display: flex;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .vscode-tab {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      color: var(--slate-indigo);
+      border-right: 1px solid var(--border);
+      cursor: default;
+      position: relative;
+    }
+
+    .vscode-tab.active {
+      background: var(--bg-primary);
+      color: var(--neon-rose);
+    }
+
+    .vscode-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--neon-rose);
+    }
+
+    .vscode-tab .close {
+      margin-left: 0.5rem;
+      opacity: 0.5;
+      font-size: 0.7rem;
+    }
+
+    /* Body layout */
+    .vscode-body {
+      display: flex;
+      min-height: 440px;
+    }
+
+    /* Sidebar */
+    .vscode-sidebar {
+      width: 200px;
+      background: var(--bg-secondary);
+      border-right: 1px solid var(--border);
+      padding: 0.75rem 0;
+      flex-shrink: 0;
+    }
+
+    .sidebar-header {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--steel-grey);
+      padding: 0 1rem 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .file-tree {
+      list-style: none;
+    }
+
+    .file-tree li {
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+      color: var(--steel-grey);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: default;
+    }
+
+    .file-tree li.active {
+      background: rgba(86, 212, 200, 0.08);
+      color: var(--frost-white);
+    }
+
+    .file-tree .icon {
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .file-tree .icon.folder { color: var(--steel-grey); }
+    .file-tree .icon.js     { color: var(--crystal-teal); }
+    .file-tree .icon.css    { color: var(--steel-grey); }
+
+    .file-tree li.folder-item {
+      padding-left: 1rem;
+    }
+
+    .file-tree li.file-item {
+      padding-left: 1.8rem;
+    }
+
+    /* Editor area */
+    .vscode-editor {
+      flex: 1;
+      padding: 1rem 0;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace;
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    .code-line {
+      display: flex;
+      padding: 0 1rem;
+      white-space: pre;
+    }
+
+    .line-number {
+      color: var(--gutter);
+      width: 2.5em;
+      text-align: right;
+      margin-right: 1.5em;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .code-content {
+      flex: 1;
+    }
+
+    /* Syntax colors */
+    .kw   { color: var(--keyword-white); font-weight: 700; }
+    .fn   { color: var(--crystal-teal); }
+    .str  { color: var(--mint-glass); }
+    .cmt  { color: var(--sage-teal); font-style: italic; }
+    .var  { color: var(--frost-white); }
+    .op   { color: var(--steel-grey); }
+    .punc { color: var(--steel-grey); }
+    .tag  { color: var(--glacier-blue); }
+    .attr { color: var(--crystal-violet); }
+    .num  { color: var(--city-gold); }
+    .bool { color: var(--dusty-rose); }
+    .txt  { color: var(--frost-white); }
+    .type { color: var(--glacier-blue); }
+    .const { color: var(--dusty-rose); }
+
+    /* ── City Lights Effect ───────────────────────────────────────── */
+    .city-lights {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .city-lights.active {
+      opacity: 1;
+    }
+
+    .city-lights .particle {
+      position: absolute;
+      border-radius: 50%;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Responsive ───────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .vscode-sidebar { display: none; }
+      .vscode-editor { font-size: 0.75rem; }
+      .hero { padding: 3rem 1rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- City Lights particle layer -->
+  <div class="city-lights" id="cityLights"></div>
+
+  <div class="main-content">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>CRYSTAL CITY</h1>
+      <p>A crystalline spectrum on obsidian — teal functions, mint strings, glacier types, gold numbers, rose constants. Designed for night-cycle development.</p>
+      <div class="buttons">
+        <button class="btn btn-primary" id="copyBtn" onclick="copyConfig()">Copy VS Code Config</button>
+        <button class="btn btn-secondary" id="lightsBtn" onclick="toggleLights()">Toggle City Lights</button>
+      </div>
+    </section>
+
+    <!-- VS Code Preview -->
+    <section class="preview-container">
+      <div class="vscode">
+        <!-- Title bar -->
+        <div class="vscode-titlebar">
+          <div class="traffic-lights">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <span class="vscode-title">crystal-city-theme &mdash; Visual Studio Code</span>
+        </div>
+
+        <!-- Tabs -->
+        <div class="vscode-tabs">
+          <div class="vscode-tab active">App.js <span class="close">&times;</span></div>
+          <div class="vscode-tab">theme.json</div>
+        </div>
+
+        <!-- Body -->
+        <div class="vscode-body">
+          <!-- Sidebar -->
+          <div class="vscode-sidebar">
+            <div class="sidebar-header">Explorer</div>
+            <ul class="file-tree">
+              <li class="folder-item"><span class="icon folder">&#128193;</span> src</li>
+              <li class="file-item active"><span class="icon js">&#10070;</span> App.js</li>
+              <li class="file-item"><span class="icon css">#</span> styles.css</li>
+            </ul>
+          </div>
+
+          <!-- Editor -->
+          <div class="vscode-editor">
+            <div class="code-line"><span class="line-number">1</span><span class="code-content"><span class="kw">import</span> <span class="var">React</span> <span class="kw">from</span> <span class="str">'react'</span><span class="punc">;</span></span></div>
+            <div class="code-line"><span class="line-number">2</span><span class="code-content"><span class="kw">import</span> <span class="kw">type</span> <span class="punc">{</span> <span class="type">ThemeConfig</span> <span class="punc">}</span> <span class="kw">from</span> <span class="str">'@themes/core'</span><span class="punc">;</span></span></div>
+            <div class="code-line"><span class="line-number">3</span><span class="code-content"></span></div>
+            <div class="code-line"><span class="line-number">4</span><span class="code-content"><span class="cmt">// Initialize the obsidian core engine</span></span></div>
+            <div class="code-line"><span class="line-number">5</span><span class="code-content"><span class="kw">const</span> <span class="const">MAX_DEPTH</span> <span class="op">=</span> <span class="num">256</span><span class="punc">;</span></span></div>
+            <div class="code-line"><span class="line-number">6</span><span class="code-content"></span></div>
+            <div class="code-line"><span class="line-number">7</span><span class="code-content"><span class="kw">const</span> <span class="var">App</span><span class="punc">:</span> <span class="type">React.FC</span><span class="op">&lt;</span><span class="type">ThemeConfig</span><span class="op">&gt;</span> <span class="op">=</span> <span class="punc">()</span> <span class="op">=&gt;</span> <span class="punc">{</span></span></div>
+            <div class="code-line"><span class="line-number">8</span><span class="code-content">    <span class="kw">const</span> <span class="punc">[</span><span class="var">glow</span><span class="punc">,</span> <span class="var">setGlow</span><span class="punc">]</span> <span class="op">=</span> <span class="fn">useState</span><span class="punc">(</span><span class="bool">true</span><span class="punc">);</span></span></div>
+            <div class="code-line"><span class="line-number">9</span><span class="code-content">    <span class="kw">const</span> <span class="var">depth</span> <span class="op">=</span> <span class="fn">useMemo</span><span class="punc">(()</span> <span class="op">=&gt;</span> <span class="fn">calcDepth</span><span class="punc">(</span><span class="num">0.85</span><span class="punc">),</span> <span class="punc">[]);</span></span></div>
+            <div class="code-line"><span class="line-number">10</span><span class="code-content"></span></div>
+            <div class="code-line"><span class="line-number">11</span><span class="code-content">    <span class="kw">return</span> <span class="punc">(</span></span></div>
+            <div class="code-line"><span class="line-number">12</span><span class="code-content">        <span class="punc">&lt;</span><span class="tag">CrystalProvider</span> <span class="attr">intensity</span><span class="op">=</span><span class="punc">{</span><span class="num">100</span><span class="punc">}</span><span class="punc">&gt;</span></span></div>
+            <div class="code-line"><span class="line-number">13</span><span class="code-content">            <span class="punc">&lt;</span><span class="tag">CityLayout</span> <span class="attr">theme</span><span class="op">=</span><span class="str">"obsidian"</span><span class="punc">&gt;</span></span></div>
+            <div class="code-line"><span class="line-number">14</span><span class="code-content">                <span class="punc">&lt;</span><span class="tag">h1</span><span class="punc">&gt;</span><span class="txt">Welcome to the Void</span><span class="punc">&lt;/</span><span class="tag">h1</span><span class="punc">&gt;</span></span></div>
+            <div class="code-line"><span class="line-number">15</span><span class="code-content">            <span class="punc">&lt;/</span><span class="tag">CityLayout</span><span class="punc">&gt;</span></span></div>
+            <div class="code-line"><span class="line-number">16</span><span class="code-content">        <span class="punc">&lt;/</span><span class="tag">CrystalProvider</span><span class="punc">&gt;</span></span></div>
+            <div class="code-line"><span class="line-number">17</span><span class="code-content">    <span class="punc">);</span></span></div>
+            <div class="code-line"><span class="line-number">18</span><span class="code-content"><span class="punc">};</span></span></div>
+            <div class="code-line"><span class="line-number">19</span><span class="code-content"></span></div>
+            <div class="code-line"><span class="line-number">20</span><span class="code-content"><span class="kw">export default</span> <span class="var">App</span><span class="punc">;</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // ── VS Code Config (matching the Crystal City palette) ──
+    const vsCodeConfig = {
+      "workbench.colorTheme": "Crystal City",
+      "editor.tokenColorCustomizations": {
+        "[Crystal City]": {
+          "textMateRules": [
+            {
+              "scope": ["keyword", "storage.type", "storage.modifier", "keyword.control"],
+              "settings": { "foreground": "#FFFFFF", "fontStyle": "bold" }
+            },
+            {
+              "scope": ["entity.name.function", "support.function", "meta.function-call"],
+              "settings": { "foreground": "#56D4C8" }
+            },
+            {
+              "scope": ["string", "string.quoted"],
+              "settings": { "foreground": "#89DDCA" }
+            },
+            {
+              "scope": ["comment", "comment.line", "comment.block"],
+              "settings": { "foreground": "#5A8A7A", "fontStyle": "italic" }
+            },
+            {
+              "scope": ["variable", "variable.other"],
+              "settings": { "foreground": "#D8DEE9" }
+            },
+            {
+              "scope": ["entity.name.type", "support.type"],
+              "settings": { "foreground": "#7EC8E3" }
+            },
+            {
+              "scope": ["entity.name.tag"],
+              "settings": { "foreground": "#7EC8E3" }
+            },
+            {
+              "scope": ["entity.other.attribute-name"],
+              "settings": { "foreground": "#B48EF0", "fontStyle": "italic" }
+            },
+            {
+              "scope": ["constant.numeric"],
+              "settings": { "foreground": "#F0C674" }
+            },
+            {
+              "scope": ["constant.language"],
+              "settings": { "foreground": "#E8A0BF" }
+            },
+            {
+              "scope": ["punctuation", "meta.brace"],
+              "settings": { "foreground": "#7B88A1" }
+            },
+            {
+              "scope": ["keyword.operator"],
+              "settings": { "foreground": "#7B88A1", "fontStyle": "" }
+            },
+            {
+              "scope": ["string.regexp"],
+              "settings": { "foreground": "#FF6B9D" }
+            },
+            {
+              "scope": ["constant.character.escape"],
+              "settings": { "foreground": "#FF6B9D" }
+            }
+          ]
+        }
+      },
+      "workbench.colorCustomizations": {
+        "[Crystal City]": {
+          "editor.background": "#0A0E1A",
+          "sideBar.background": "#060910",
+          "titleBar.activeBackground": "#060910",
+          "tab.activeBackground": "#0A0E1A",
+          "tab.inactiveBackground": "#060910",
+          "tab.activeBorderTop": "#FF6B9D",
+          "editorLineNumber.foreground": "#2E3550",
+          "editorCursor.foreground": "#FF6B9D",
+          "editor.selectionBackground": "#1A2850"
+        }
+      }
+    };
+
+    // ── Copy Config ──
+    function copyConfig() {
+      const btn = document.getElementById('copyBtn');
+      navigator.clipboard.writeText(JSON.stringify(vsCodeConfig, null, 2)).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy VS Code Config';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    // ── City Lights ──
+    let lightsActive = false;
+    const particles = [];
+
+    function createParticles() {
+      const container = document.getElementById('cityLights');
+      const colors = ['#56D4C8', '#89DDCA', '#7EC8E3', '#FF6B9D', '#B48EF0', '#F0C674', '#E8A0BF'];
+      for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.random() * 3 + 1;
+        const left = Math.random() * 100;
+        const duration = Math.random() * 8 + 6;
+        const delay = Math.random() * 10;
+        p.style.cssText = `
+          width: ${size}px;
+          height: ${size}px;
+          background: ${color};
+          box-shadow: 0 0 ${size * 3}px ${color};
+          left: ${left}%;
+          animation-duration: ${duration}s;
+          animation-delay: ${delay}s;
+        `;
+        container.appendChild(p);
+        particles.push(p);
+      }
+    }
+
+    function toggleLights() {
+      const container = document.getElementById('cityLights');
+      lightsActive = !lightsActive;
+      if (lightsActive) {
+        if (particles.length === 0) createParticles();
+        container.classList.add('active');
+      } else {
+        container.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

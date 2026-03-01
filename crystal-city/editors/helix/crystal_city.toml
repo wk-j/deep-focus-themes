@@ -1,0 +1,263 @@
+# Crystal City — Helix Editor Theme
+# Obsidian base · Crystalline spectrum · White keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "crystal_violet", modifiers = ["italic"] }
+
+# Types — Glacier Blue
+type = { fg = "glacier_blue" }
+"type.builtin" = { fg = "glacier_blue" }
+"type.parameter" = { fg = "glacier_blue", modifiers = ["italic"] }
+"type.enum" = { fg = "glacier_blue" }
+"type.enum.variant" = { fg = "glacier_blue" }
+
+# Constructor — Glacier Blue (type-adjacent)
+constructor = { fg = "glacier_blue" }
+
+# Constants — Dusty Rose
+constant = { fg = "dusty_rose" }
+"constant.builtin" = { fg = "dusty_rose" }
+"constant.builtin.boolean" = { fg = "dusty_rose" }
+"constant.character" = { fg = "dusty_rose" }
+"constant.character.escape" = { fg = "neon_rose" }
+"constant.numeric" = { fg = "city_gold" }
+"constant.numeric.integer" = { fg = "city_gold" }
+"constant.numeric.float" = { fg = "city_gold" }
+
+# Strings — Mint Glass
+string = { fg = "mint_glass" }
+"string.regexp" = { fg = "neon_rose" }
+"string.special" = { fg = "mint_glass" }
+"string.special.path" = { fg = "mint_glass" }
+"string.special.url" = { fg = "mint_glass", underline = { style = "line" } }
+"string.special.symbol" = { fg = "crystal_violet" }
+
+# Comments — Sage Teal
+comment = { fg = "sage_teal", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "sage_teal", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "sage_teal", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Frost White
+variable = { fg = "frost_white" }
+"variable.builtin" = { fg = "frost_white", modifiers = ["italic"] }
+"variable.parameter" = { fg = "frost_white", modifiers = ["italic"] }
+"variable.other" = { fg = "frost_white" }
+"variable.other.member" = { fg = "steel_grey" }
+"variable.other.member.private" = { fg = "steel_grey", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "crystal_teal" }
+
+# Punctuation
+punctuation = { fg = "steel_grey" }
+"punctuation.delimiter" = { fg = "steel_grey" }
+"punctuation.bracket" = { fg = "steel_grey" }
+"punctuation.special" = { fg = "crystal_teal" }
+
+# Keywords — Bold White
+keyword = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "keyword_white", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.operator" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.directive" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.function" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "keyword_white", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "steel_grey" }
+
+# Functions — Crystal Teal (the hero)
+function = { fg = "crystal_teal" }
+"function.builtin" = { fg = "crystal_teal" }
+"function.method" = { fg = "crystal_teal" }
+"function.method.private" = { fg = "crystal_teal", modifiers = ["italic"] }
+"function.macro" = { fg = "crystal_teal" }
+"function.special" = { fg = "crystal_teal" }
+
+# Tags — Glacier Blue (like types)
+tag = { fg = "glacier_blue" }
+"tag.builtin" = { fg = "glacier_blue" }
+
+# Namespace
+namespace = { fg = "crystal_teal", modifiers = ["italic"] }
+
+# Special
+special = { fg = "crystal_violet" }
+
+# Markup
+"markup.heading" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "steel_grey" }
+"markup.heading.1" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "glacier_blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "glacier_blue" }
+"markup.heading.5" = { fg = "crystal_teal" }
+"markup.heading.6" = { fg = "crystal_teal" }
+"markup.list" = { fg = "crystal_teal" }
+"markup.list.unnumbered" = { fg = "crystal_teal" }
+"markup.list.numbered" = { fg = "city_gold" }
+"markup.list.checked" = { fg = "mint_glass" }
+"markup.list.unchecked" = { fg = "steel_grey" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "crystal_teal" }
+"markup.link.url" = { fg = "crystal_teal", underline = { style = "line" } }
+"markup.link.label" = { fg = "glacier_blue" }
+"markup.link.text" = { fg = "mint_glass" }
+"markup.quote" = { fg = "sage_teal", modifiers = ["italic"] }
+"markup.raw" = { fg = "mint_glass" }
+"markup.raw.inline" = { fg = "mint_glass" }
+"markup.raw.block" = { fg = "mint_glass" }
+
+# Diff
+"diff.plus" = "mint_glass"
+"diff.plus.gutter" = "mint_glass"
+"diff.minus" = "signal_red"
+"diff.minus.gutter" = "signal_red"
+"diff.delta" = "city_gold"
+"diff.delta.gutter" = "city_gold"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "frost_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "city_gold" }
+"ui.cursor.match" = { fg = "neon_rose", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "neon_rose" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "neon_rose" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "city_gold" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "slate_indigo", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "slate_indigo" }
+
+# Statusline
+"ui.statusline" = { fg = "steel_grey", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "crystal_teal", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "neon_rose", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "city_gold", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "slate_indigo", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "frost_white", bg = "bg_primary", underline = { color = "neon_rose", style = "line" } }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "frost_white", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "frost_white", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu" = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "neon_rose", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "steel_grey", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "steel_grey", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "steel_grey" }
+"ui.picker.header.column.active" = { fg = "neon_rose", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "frost_white" }
+"ui.text.focus" = { fg = "frost_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "slate_indigo" }
+"ui.text.info" = { fg = "steel_grey" }
+"ui.text.directory" = { fg = "glacier_blue" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "city_gold", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "signal_red" }
+"ui.debug.active" = { fg = "city_gold" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "city_gold"
+error = "signal_red"
+info = "glass_blue"
+hint = "crystal_teal"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "city_gold", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "crystal_teal", style = "curl" } }
+"diagnostic.info" = { underline = { color = "glass_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "city_gold", style = "curl" } }
+"diagnostic.error" = { underline = { color = "signal_red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary = "#0A0E1A"
+bg_secondary = "#060910"
+bg_highlight = "#111728"
+border = "#1C2333"
+selection = "#1A2850"
+
+# Foregrounds
+frost_white = "#D8DEE9"
+steel_grey = "#7B88A1"
+slate_indigo = "#4A5270"
+gutter_fg = "#2E3550"
+
+# Accents
+keyword_white = "#FFFFFF"
+crystal_teal = "#56D4C8"
+mint_glass = "#89DDCA"
+glacier_blue = "#7EC8E3"
+dusty_rose = "#E8A0BF"
+neon_rose = "#FF6B9D"
+city_gold = "#F0C674"
+glass_blue = "#61AFEF"
+crystal_violet = "#B48EF0"
+signal_red = "#E06C75"
+sage_teal = "#5A8A7A"
+
+# Secondary cursor (for multi-cursor)
+secondary_cursor = "#A87CB8"

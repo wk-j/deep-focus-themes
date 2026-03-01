@@ -1,0 +1,263 @@
+# Neon City — Helix Editor Theme
+# Midnight base · Electric neon spectrum · White keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "neon_yellow", modifiers = ["italic"] }
+
+# Types — Cyber Blue
+type = { fg = "cyber_blue" }
+"type.builtin" = { fg = "cyber_blue" }
+"type.parameter" = { fg = "cyber_blue", modifiers = ["italic"] }
+"type.enum" = { fg = "cyber_blue" }
+"type.enum.variant" = { fg = "cyber_blue" }
+
+# Constructor — Cyber Blue (type-adjacent)
+constructor = { fg = "cyber_blue" }
+
+# Constants — Hot Pink
+constant = { fg = "hot_pink" }
+"constant.builtin" = { fg = "hot_pink" }
+"constant.builtin.boolean" = { fg = "hot_pink" }
+"constant.character" = { fg = "hot_pink" }
+"constant.character.escape" = { fg = "electric_cyan" }
+"constant.numeric" = { fg = "neon_orange" }
+"constant.numeric.integer" = { fg = "neon_orange" }
+"constant.numeric.float" = { fg = "neon_orange" }
+
+# Strings — Plasma Green
+string = { fg = "plasma_green" }
+"string.regexp" = { fg = "electric_cyan" }
+"string.special" = { fg = "plasma_green" }
+"string.special.path" = { fg = "plasma_green" }
+"string.special.url" = { fg = "plasma_green", underline = { style = "line" } }
+"string.special.symbol" = { fg = "neon_yellow" }
+
+# Comments — Twilight Indigo
+comment = { fg = "twilight_indigo", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "twilight_indigo", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "twilight_indigo", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Neon White
+variable = { fg = "neon_white" }
+"variable.builtin" = { fg = "neon_white", modifiers = ["italic"] }
+"variable.parameter" = { fg = "neon_white", modifiers = ["italic"] }
+"variable.other" = { fg = "neon_white" }
+"variable.other.member" = { fg = "dusk_mauve" }
+"variable.other.member.private" = { fg = "dusk_mauve", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "electric_magenta" }
+
+# Punctuation
+punctuation = { fg = "dusk_mauve" }
+"punctuation.delimiter" = { fg = "dusk_mauve" }
+"punctuation.bracket" = { fg = "dusk_mauve" }
+"punctuation.special" = { fg = "electric_magenta" }
+
+# Keywords — Bold White
+keyword = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "keyword_white", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.operator" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.directive" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.function" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "keyword_white", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "keyword_white", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dusk_mauve" }
+
+# Functions — Electric Magenta (the hero)
+function = { fg = "electric_magenta" }
+"function.builtin" = { fg = "electric_magenta" }
+"function.method" = { fg = "electric_magenta" }
+"function.method.private" = { fg = "electric_magenta", modifiers = ["italic"] }
+"function.macro" = { fg = "electric_magenta" }
+"function.special" = { fg = "electric_magenta" }
+
+# Tags — Cyber Blue (like types)
+tag = { fg = "cyber_blue" }
+"tag.builtin" = { fg = "cyber_blue" }
+
+# Namespace
+namespace = { fg = "electric_magenta", modifiers = ["italic"] }
+
+# Special
+special = { fg = "neon_yellow" }
+
+# Markup
+"markup.heading" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "dusk_mauve" }
+"markup.heading.1" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "keyword_white", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "cyber_blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "cyber_blue" }
+"markup.heading.5" = { fg = "electric_magenta" }
+"markup.heading.6" = { fg = "electric_magenta" }
+"markup.list" = { fg = "electric_magenta" }
+"markup.list.unnumbered" = { fg = "electric_magenta" }
+"markup.list.numbered" = { fg = "neon_orange" }
+"markup.list.checked" = { fg = "plasma_green" }
+"markup.list.unchecked" = { fg = "dusk_mauve" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "electric_magenta" }
+"markup.link.url" = { fg = "electric_magenta", underline = { style = "line" } }
+"markup.link.label" = { fg = "cyber_blue" }
+"markup.link.text" = { fg = "plasma_green" }
+"markup.quote" = { fg = "twilight_indigo", modifiers = ["italic"] }
+"markup.raw" = { fg = "plasma_green" }
+"markup.raw.inline" = { fg = "plasma_green" }
+"markup.raw.block" = { fg = "plasma_green" }
+
+# Diff
+"diff.plus" = "plasma_green"
+"diff.plus.gutter" = "plasma_green"
+"diff.minus" = "alarm_red"
+"diff.minus.gutter" = "alarm_red"
+"diff.delta" = "neon_orange"
+"diff.delta.gutter" = "neon_orange"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "neon_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "neon_white" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "neon_orange" }
+"ui.cursor.match" = { fg = "electric_cyan", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "electric_cyan" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "electric_cyan" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "neon_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "neon_orange" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "shadow_purple", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "shadow_purple" }
+
+# Statusline
+"ui.statusline" = { fg = "dusk_mauve", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "electric_magenta", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "neon_orange", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "shadow_purple", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "neon_white", bg = "bg_primary", underline = { color = "electric_cyan", style = "line" } }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "neon_white", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "neon_white", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "neon_white", bg = "bg_secondary" }
+"ui.menu" = { fg = "neon_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dusk_mauve", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "dusk_mauve", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "dusk_mauve" }
+"ui.picker.header.column.active" = { fg = "electric_cyan", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "neon_white" }
+"ui.text.focus" = { fg = "neon_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "shadow_purple" }
+"ui.text.info" = { fg = "dusk_mauve" }
+"ui.text.directory" = { fg = "cyber_blue" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "neon_orange", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "alarm_red" }
+"ui.debug.active" = { fg = "neon_orange" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "neon_orange"
+error = "alarm_red"
+info = "signal_blue"
+hint = "electric_magenta"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "neon_orange", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "electric_magenta", style = "curl" } }
+"diagnostic.info" = { underline = { color = "signal_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "neon_orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "alarm_red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary = "#0D0221"
+bg_secondary = "#07010F"
+bg_highlight = "#1A0A3E"
+border = "#2A1454"
+selection = "#2D1B69"
+
+# Foregrounds
+neon_white = "#E0D4FF"
+dusk_mauve = "#8B7BAE"
+shadow_purple = "#5C4A82"
+gutter_fg = "#3D2E5C"
+
+# Accents
+keyword_white = "#FFFFFF"
+electric_magenta = "#FF2CF1"
+plasma_green = "#39FF14"
+cyber_blue = "#00D4FF"
+hot_pink = "#FF69B4"
+electric_cyan = "#00FFFF"
+neon_orange = "#FF6B2B"
+signal_blue = "#448AFF"
+neon_yellow = "#FFE744"
+alarm_red = "#FF1744"
+twilight_indigo = "#6B5B95"
+
+# Secondary cursor (for multi-cursor)
+secondary_cursor = "#9B59B6"

@@ -1,0 +1,67 @@
+{
+  "name": "Neon City",
+  "description": "Midnight base with an electric neon spectrum — magenta functions, plasma green strings, cyber blue types, neon orange numbers, hot pink constants, white keyword anchors",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0D0221",
+      "secondary":  "#07010F",
+      "highlight":  "#1A0A3E",
+      "border":     "#2A1454"
+    },
+    "fg": {
+      "primary":    "#E0D4FF",
+      "dimmed":     "#8B7BAE",
+      "muted":      "#5C4A82",
+      "gutter":     "#3D2E5C"
+    },
+    "accent": {
+      "magenta":    "#FF2CF1",
+      "plasma":     "#39FF14",
+      "cyber":      "#00D4FF",
+      "hot_pink":   "#FF69B4",
+      "white":      "#FFFFFF",
+      "cyan":       "#00FFFF",
+      "orange":     "#FF6B2B",
+      "blue":       "#448AFF",
+      "yellow":     "#FFE744",
+      "red":        "#FF1744",
+      "twilight":   "#6B5B95"
+    },
+    "ansi": {
+      "black":          "#0D0221",
+      "red":            "#FF1744",
+      "green":          "#39FF14",
+      "yellow":         "#FFE744",
+      "blue":           "#448AFF",
+      "magenta":        "#FF2CF1",
+      "cyan":           "#00D4FF",
+      "white":          "#E0D4FF",
+      "bright_black":   "#5C4A82",
+      "bright_red":     "#FF5370",
+      "bright_green":   "#69FF54",
+      "bright_yellow":  "#FFF176",
+      "bright_blue":    "#82B1FF",
+      "bright_magenta": "#FF6FF8",
+      "bright_cyan":    "#4DE8FF",
+      "bright_white":   "#FFFFFF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.white",
+    "functions":    "accent.magenta",
+    "strings":      "accent.plasma",
+    "variables":    "fg.primary",
+    "comments":     "accent.twilight",
+    "types":        "accent.cyber",
+    "tags":         "accent.cyber",
+    "attributes":   "accent.yellow",
+    "literals":     "accent.orange",
+    "constants":    "accent.hot_pink",
+    "constructors": "accent.cyber",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.cyan"
+  }
+}

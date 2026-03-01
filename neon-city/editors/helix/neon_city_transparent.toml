@@ -1,0 +1,100 @@
+# Neon City (Transparent) — Helix Editor Theme
+# Inherits the base theme, removes all backgrounds to show terminal wallpaper.
+
+inherits = "neon_city"
+
+# ─── UI Overrides (transparent) ──────────────────────────────────────────────
+
+"ui.background" = { fg = "neon_white" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor.normal" = { modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "bg_dark", bg = "neon_white" }
+"ui.cursor.select" = { fg = "bg_dark", bg = "neon_orange" }
+"ui.cursor.primary" = { fg = "bg_dark", bg = "electric_cyan" }
+"ui.cursor.primary.normal" = { fg = "bg_dark", bg = "electric_cyan" }
+"ui.cursor.primary.insert" = { fg = "bg_dark", bg = "neon_white" }
+"ui.cursor.primary.select" = { fg = "bg_dark", bg = "neon_orange" }
+
+# Selection — slightly more visible on unknown backgrounds
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = {}
+"ui.cursorcolumn.primary" = { bg = "selection" }
+"ui.cursorcolumn.secondary" = {}
+
+# Gutter & Line Numbers
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "shadow_purple", modifiers = ["bold"] }
+
+# Statusline — keep opaque for readability
+"ui.statusline" = { fg = "dusk_mauve", bg = "bg_dark" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_dark" }
+"ui.statusline.normal" = { fg = "bg_dark", bg = "electric_magenta", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_dark", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_dark", bg = "neon_orange", modifiers = ["bold"] }
+
+# Bufferline — keep opaque
+"ui.bufferline" = { fg = "shadow_purple", bg = "bg_dark" }
+"ui.bufferline.active" = { fg = "neon_white", bg = "bg_dark", underline = { color = "electric_cyan", style = "line" } }
+"ui.bufferline.background" = { bg = "bg_dark" }
+
+# Popup & Menus — keep opaque so text is always readable
+"ui.popup" = { fg = "neon_white", bg = "bg_dark" }
+"ui.popup.info" = { fg = "neon_white", bg = "bg_dark" }
+"ui.menu" = { fg = "neon_white", bg = "bg_dark" }
+"ui.menu.selected" = { fg = "bg_dark", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dusk_mauve", bg = "border" }
+"ui.help" = { fg = "neon_white", bg = "bg_dark" }
+"ui.window" = { fg = "border" }
+
+# Virtual elements — no backgrounds
+"ui.virtual.ruler" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Highlight
+"ui.highlight" = { modifiers = ["bold"] }
+"ui.highlight.frameline" = { underline = { color = "neon_orange", style = "line" } }
+
+# Snippet
+tabstop = { modifiers = ["italic", "underlined"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Opaque dark for UI elements that must stay readable
+bg_dark = "#07010F"
+border = "#2A1454"
+selection = "#2D1B69"
+bg_highlight = "#1A0A3E"
+
+# Foregrounds
+neon_white = "#E0D4FF"
+dusk_mauve = "#8B7BAE"
+shadow_purple = "#5C4A82"
+gutter_fg = "#3D2E5C"
+
+# Accents
+keyword_white = "#FFFFFF"
+electric_magenta = "#FF2CF1"
+plasma_green = "#39FF14"
+cyber_blue = "#00D4FF"
+hot_pink = "#FF69B4"
+electric_cyan = "#00FFFF"
+neon_orange = "#FF6B2B"
+signal_blue = "#448AFF"
+neon_yellow = "#FFE744"
+alarm_red = "#FF1744"
+twilight_indigo = "#6B5B95"
+
+# Secondary cursor
+secondary_cursor = "#9B59B6"

@@ -1,0 +1,100 @@
+# Crystal City (Transparent) — Helix Editor Theme
+# Inherits the base theme, removes all backgrounds to show terminal wallpaper.
+
+inherits = "crystal_city"
+
+# ─── UI Overrides (transparent) ──────────────────────────────────────────────
+
+"ui.background" = { fg = "frost_white" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor.normal" = { modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "bg_dark", bg = "frost_white" }
+"ui.cursor.select" = { fg = "bg_dark", bg = "city_gold" }
+"ui.cursor.primary" = { fg = "bg_dark", bg = "neon_rose" }
+"ui.cursor.primary.normal" = { fg = "bg_dark", bg = "neon_rose" }
+"ui.cursor.primary.insert" = { fg = "bg_dark", bg = "frost_white" }
+"ui.cursor.primary.select" = { fg = "bg_dark", bg = "city_gold" }
+
+# Selection — slightly more visible on unknown backgrounds
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = {}
+"ui.cursorcolumn.primary" = { bg = "selection" }
+"ui.cursorcolumn.secondary" = {}
+
+# Gutter & Line Numbers
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "slate_indigo", modifiers = ["bold"] }
+
+# Statusline — keep opaque for readability
+"ui.statusline" = { fg = "steel_grey", bg = "bg_dark" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_dark" }
+"ui.statusline.normal" = { fg = "bg_dark", bg = "crystal_teal", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_dark", bg = "neon_rose", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_dark", bg = "city_gold", modifiers = ["bold"] }
+
+# Bufferline — keep opaque
+"ui.bufferline" = { fg = "slate_indigo", bg = "bg_dark" }
+"ui.bufferline.active" = { fg = "frost_white", bg = "bg_dark", underline = { color = "neon_rose", style = "line" } }
+"ui.bufferline.background" = { bg = "bg_dark" }
+
+# Popup & Menus — keep opaque so text is always readable
+"ui.popup" = { fg = "frost_white", bg = "bg_dark" }
+"ui.popup.info" = { fg = "frost_white", bg = "bg_dark" }
+"ui.menu" = { fg = "frost_white", bg = "bg_dark" }
+"ui.menu.selected" = { fg = "bg_dark", bg = "neon_rose", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "steel_grey", bg = "border" }
+"ui.help" = { fg = "frost_white", bg = "bg_dark" }
+"ui.window" = { fg = "border" }
+
+# Virtual elements — no backgrounds
+"ui.virtual.ruler" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Highlight
+"ui.highlight" = { modifiers = ["bold"] }
+"ui.highlight.frameline" = { underline = { color = "city_gold", style = "line" } }
+
+# Snippet
+tabstop = { modifiers = ["italic", "underlined"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Opaque dark for UI elements that must stay readable
+bg_dark = "#060910"
+border = "#1C2333"
+selection = "#1A2850"
+bg_highlight = "#111728"
+
+# Foregrounds
+frost_white = "#D8DEE9"
+steel_grey = "#7B88A1"
+slate_indigo = "#4A5270"
+gutter_fg = "#2E3550"
+
+# Accents
+keyword_white = "#FFFFFF"
+crystal_teal = "#56D4C8"
+mint_glass = "#89DDCA"
+glacier_blue = "#7EC8E3"
+dusty_rose = "#E8A0BF"
+neon_rose = "#FF6B9D"
+city_gold = "#F0C674"
+glass_blue = "#61AFEF"
+crystal_violet = "#B48EF0"
+signal_red = "#E06C75"
+sage_teal = "#5A8A7A"
+
+# Secondary cursor
+secondary_cursor = "#A87CB8"

@@ -1,0 +1,7 @@
+id = "neon-city-theme"
+name = "Neon City"
+version = "0.0.1"
+schema_version = 1
+authors = ["wk"]
+description = "Midnight base with Electric Neon accents. A high-performance dark theme built for long coding sessions — cyberpunk precision, zero fatigue."
+repository = "https://github.com/anomalyco/neon-city"

@@ -1,0 +1,258 @@
+# Twilight Overclock — Helix Editor Theme
+# Deep Forest base · Bioluminescent accents
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "twilight_lavender", modifiers = ["italic"] }
+
+# Types
+type = { fg = "glacier_blue" }
+"type.builtin" = { fg = "glacier_blue" }
+"type.parameter" = { fg = "glacier_blue", modifiers = ["italic"] }
+"type.enum" = { fg = "glacier_blue" }
+"type.enum.variant" = { fg = "glacier_blue" }
+
+# Constructor
+constructor = { fg = "glacier_blue" }
+
+# Constants
+constant = { fg = "honey_amber" }
+"constant.builtin" = { fg = "honey_amber" }
+"constant.builtin.boolean" = { fg = "honey_amber" }
+"constant.character" = { fg = "honey_amber" }
+"constant.character.escape" = { fg = "electric_cyan" }
+"constant.numeric" = { fg = "honey_amber" }
+"constant.numeric.integer" = { fg = "honey_amber" }
+"constant.numeric.float" = { fg = "honey_amber" }
+
+# Strings
+string = { fg = "honey_amber" }
+"string.regexp" = { fg = "honey_amber" }
+"string.special" = { fg = "honey_amber" }
+"string.special.path" = { fg = "honey_amber" }
+"string.special.url" = { fg = "electric_cyan", underline = { style = "line" } }
+"string.special.symbol" = { fg = "twilight_lavender" }
+
+# Comments
+comment = { fg = "slate_shadow", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "slate_shadow", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "slate_shadow", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables
+variable = { fg = "mist_white" }
+"variable.builtin" = { fg = "mist_white", modifiers = ["italic"] }
+"variable.parameter" = { fg = "mist_white", modifiers = ["italic"] }
+"variable.other" = { fg = "mist_white" }
+"variable.other.member" = { fg = "steel_grey" }
+"variable.other.member.private" = { fg = "steel_grey", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "electric_cyan" }
+
+# Punctuation
+punctuation = { fg = "steel_grey" }
+"punctuation.delimiter" = { fg = "steel_grey" }
+"punctuation.bracket" = { fg = "steel_grey" }
+"punctuation.special" = { fg = "electric_cyan" }
+
+# Keywords
+keyword = { fg = "sage_moss" }
+"keyword.control" = { fg = "sage_moss" }
+"keyword.control.conditional" = { fg = "sage_moss" }
+"keyword.control.repeat" = { fg = "sage_moss" }
+"keyword.control.import" = { fg = "sage_moss" }
+"keyword.control.return" = { fg = "sage_moss", modifiers = ["italic"] }
+"keyword.control.exception" = { fg = "sage_moss" }
+"keyword.operator" = { fg = "sage_moss" }
+"keyword.directive" = { fg = "sage_moss" }
+"keyword.function" = { fg = "sage_moss" }
+"keyword.storage.type" = { fg = "sage_moss" }
+"keyword.storage.modifier" = { fg = "sage_moss" }
+
+# Operators
+operator = { fg = "steel_grey" }
+
+# Functions
+function = { fg = "electric_cyan" }
+"function.builtin" = { fg = "electric_cyan" }
+"function.method" = { fg = "electric_cyan" }
+"function.method.private" = { fg = "electric_cyan", modifiers = ["italic"] }
+"function.macro" = { fg = "electric_cyan" }
+"function.special" = { fg = "electric_cyan" }
+
+# Tags
+tag = { fg = "soft_coral" }
+"tag.builtin" = { fg = "soft_coral" }
+
+# Namespace
+namespace = { fg = "glacier_blue", modifiers = ["italic"] }
+
+# Special
+special = { fg = "twilight_lavender" }
+
+# Markup
+"markup.heading" = { fg = "electric_cyan", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "steel_grey" }
+"markup.heading.1" = { fg = "electric_cyan", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "electric_cyan", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "glacier_blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "glacier_blue" }
+"markup.heading.5" = { fg = "glacier_blue" }
+"markup.heading.6" = { fg = "glacier_blue" }
+"markup.list" = { fg = "sage_moss" }
+"markup.list.unnumbered" = { fg = "sage_moss" }
+"markup.list.numbered" = { fg = "sage_moss" }
+"markup.list.checked" = { fg = "sage_moss" }
+"markup.list.unchecked" = { fg = "steel_grey" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "electric_cyan" }
+"markup.link.url" = { fg = "electric_cyan", underline = { style = "line" } }
+"markup.link.label" = { fg = "glacier_blue" }
+"markup.link.text" = { fg = "honey_amber" }
+"markup.quote" = { fg = "slate_shadow", modifiers = ["italic"] }
+"markup.raw" = { fg = "honey_amber" }
+"markup.raw.inline" = { fg = "honey_amber" }
+"markup.raw.block" = { fg = "honey_amber" }
+
+# Diff
+"diff.plus" = "sage_moss"
+"diff.plus.gutter" = "sage_moss"
+"diff.minus" = "soft_coral"
+"diff.minus.gutter" = "soft_coral"
+"diff.delta" = "honey_amber"
+"diff.delta.gutter" = "honey_amber"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "mist_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "mist_white" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "honey_amber" }
+"ui.cursor.match" = { fg = "electric_cyan", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "electric_cyan" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "electric_cyan" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "mist_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "honey_amber" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "slate_shadow", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "slate_shadow" }
+
+# Statusline
+"ui.statusline" = { fg = "steel_grey", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "sage_moss", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "honey_amber", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "slate_shadow", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "mist_white", bg = "bg_primary", underline = { color = "electric_cyan", style = "line" } }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "mist_white", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "mist_white", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "mist_white", bg = "bg_secondary" }
+"ui.menu" = { fg = "mist_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "electric_cyan", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "steel_grey", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "steel_grey", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "steel_grey" }
+"ui.picker.header.column.active" = { fg = "electric_cyan", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "mist_white" }
+"ui.text.focus" = { fg = "mist_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "slate_shadow" }
+"ui.text.info" = { fg = "steel_grey" }
+"ui.text.directory" = { fg = "glacier_blue" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "honey_amber", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "soft_coral" }
+"ui.debug.active" = { fg = "honey_amber" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "honey_amber"
+error = "soft_coral"
+info = "glacier_blue"
+hint = "sage_moss"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "honey_amber", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "sage_moss", style = "curl" } }
+"diagnostic.info" = { underline = { color = "glacier_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "honey_amber", style = "curl" } }
+"diagnostic.error" = { underline = { color = "soft_coral", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary = "#0B1215"
+bg_secondary = "#070B0D"
+bg_highlight = "#0F1A1E"
+border = "#1A2228"
+selection = "#0A3A40"
+
+# Foregrounds
+mist_white = "#E0E0E0"
+steel_grey = "#8899A6"
+slate_shadow = "#4A5568"
+gutter_fg = "#2D3748"
+
+# Accents
+electric_cyan = "#00F5FF"
+sage_moss = "#7FB069"
+honey_amber = "#FFB347"
+glacier_blue = "#5B9BD5"
+twilight_lavender = "#C195D4"
+soft_coral = "#FF5F5F"
+
+# Secondary cursor (for multi-cursor)
+secondary_cursor = "#5EAAB0"

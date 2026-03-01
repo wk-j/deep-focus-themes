@@ -1,0 +1,58 @@
+{
+  "name": "Twilight Overclock",
+  "description": "Deep Forest base with Bioluminescent accents",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0B1215",
+      "secondary":  "#070B0D",
+      "highlight":  "#0F1A1E",
+      "border":     "#1A2228"
+    },
+    "fg": {
+      "primary":    "#E0E0E0",
+      "dimmed":     "#8899A6",
+      "muted":      "#4A5568",
+      "gutter":     "#2D3748"
+    },
+    "accent": {
+      "cyan":       "#00F5FF",
+      "green":      "#7FB069",
+      "amber":      "#FFB347",
+      "blue":       "#5B9BD5",
+      "lavender":   "#C195D4",
+      "coral":      "#FF5F5F"
+    },
+    "ansi": {
+      "black":          "#0B1215",
+      "red":            "#FF5F5F",
+      "green":          "#7FB069",
+      "yellow":         "#FFB347",
+      "blue":           "#5B9BD5",
+      "magenta":        "#C195D4",
+      "cyan":           "#00F5FF",
+      "white":          "#E0E0E0",
+      "bright_black":   "#4A5568",
+      "bright_red":     "#FF8080",
+      "bright_green":   "#A3D98E",
+      "bright_yellow":  "#FFD080",
+      "bright_blue":    "#80BFFF",
+      "bright_magenta": "#D4B5E8",
+      "bright_cyan":    "#66F9FF",
+      "bright_white":   "#FFFFFF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.green",
+    "functions":    "accent.cyan",
+    "strings":      "accent.amber",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.blue",
+    "attributes":   "accent.lavender",
+    "errors":       "accent.coral",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.cyan"
+  }
+}

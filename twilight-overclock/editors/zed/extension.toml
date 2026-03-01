@@ -1,0 +1,7 @@
+id = "twilight-overclock-theme"
+name = "Twilight Overclock"
+version = "0.0.1"
+schema_version = 1
+authors = ["wk <somnuk.wk@gmail.com>"]
+description = "Deep Forest base with Bioluminescent accents. A high-performance dark theme built for long coding sessions — low fatigue, high clarity."
+repository = "https://github.com/anomalyco/twilight-overclock"

@@ -1,0 +1,67 @@
+{
+  "name": "Crystal City",
+  "description": "Obsidian base with a crystalline spectrum — teal functions, mint strings, glacier types, gold numbers, rose constants, white keyword anchors",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0A0E1A",
+      "secondary":  "#060910",
+      "highlight":  "#111728",
+      "border":     "#1C2333"
+    },
+    "fg": {
+      "primary":    "#D8DEE9",
+      "dimmed":     "#7B88A1",
+      "muted":      "#4A5270",
+      "gutter":     "#2E3550"
+    },
+    "accent": {
+      "teal":       "#56D4C8",
+      "mint":       "#89DDCA",
+      "glacier":    "#7EC8E3",
+      "dusty_rose": "#E8A0BF",
+      "white":      "#FFFFFF",
+      "rose":       "#FF6B9D",
+      "gold":       "#F0C674",
+      "blue":       "#61AFEF",
+      "violet":     "#B48EF0",
+      "red":        "#E06C75",
+      "sage":       "#5A8A7A"
+    },
+    "ansi": {
+      "black":          "#0A0E1A",
+      "red":            "#E06C75",
+      "green":          "#89DDCA",
+      "yellow":         "#F0C674",
+      "blue":           "#61AFEF",
+      "magenta":        "#B48EF0",
+      "cyan":           "#56D4C8",
+      "white":          "#D8DEE9",
+      "bright_black":   "#4A5270",
+      "bright_red":     "#E88D94",
+      "bright_green":   "#A8E8D8",
+      "bright_yellow":  "#F5D898",
+      "bright_blue":    "#8AC6F5",
+      "bright_magenta": "#CBACF5",
+      "bright_cyan":    "#7FE3DA",
+      "bright_white":   "#FFFFFF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.white",
+    "functions":    "accent.teal",
+    "strings":      "accent.mint",
+    "variables":    "fg.primary",
+    "comments":     "accent.sage",
+    "types":        "accent.glacier",
+    "tags":         "accent.glacier",
+    "attributes":   "accent.violet",
+    "literals":     "accent.gold",
+    "constants":    "accent.dusty_rose",
+    "constructors": "accent.glacier",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.rose"
+  }
+}

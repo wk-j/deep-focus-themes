@@ -1,0 +1,60 @@
+[colors]
+# Core
+background       = '#0D0221'
+foreground       = '#E0D4FF'
+cursor           = '#00FFFF'
+vi-cursor        = '#FF2CF1'
+vi-mode-background = '#00FFFF1a'
+
+# ANSI colors
+black   = '#0D0221'
+red     = '#FF1744'
+green   = '#39FF14'
+yellow  = '#FFE744'
+blue    = '#448AFF'
+magenta = '#FF2CF1'
+cyan    = '#00D4FF'
+white   = '#E0D4FF'
+
+# Bright colors
+light-black   = '#5C4A82'
+light-red     = '#FF5370'
+light-green   = '#69FF54'
+light-yellow  = '#FFF176'
+light-blue    = '#82B1FF'
+light-magenta = '#FF6FF8'
+light-cyan    = '#4DE8FF'
+light-white   = '#FFFFFF'
+
+# Dim colors
+dim-black   = '#07010F'
+dim-red     = '#CC1236'
+dim-green   = '#2DCC10'
+dim-yellow  = '#CCB936'
+dim-blue    = '#366ECC'
+dim-magenta = '#CC23C1'
+dim-cyan    = '#00A9CC'
+dim-white   = '#8B7BAE'
+
+# Navigation / UI
+tabs                    = '#07010F'
+tabs-foreground         = '#5C4A82'
+tabs-active             = '#1A0A3E'
+tabs-active-foreground  = '#FF2CF1'
+tabs-active-highlight   = '#FF2CF1'
+bar                     = '#07010F'
+split                   = '#2A1454'
+
+# Selection
+selection-background = '#2A1454'
+selection-foreground = '#FFFFFF'
+
+# Search
+search-match-background         = '#FF2CF1'
+search-match-foreground         = '#0D0221'
+search-focused-match-background = '#FFE744'
+search-focused-match-foreground = '#0D0221'
+
+# Hints
+hint-foreground = '#0D0221'
+hint-background = '#00FFFF'
