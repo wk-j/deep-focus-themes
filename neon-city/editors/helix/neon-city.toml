@@ -236,9 +236,9 @@ diagnostic = { underline = { color = "neon_orange", style = "curl" } }
 # Backgrounds
 bg_primary = "#0D0221"
 bg_secondary = "#07010F"
-bg_highlight = "#1A0A3E"
+bg_highlight = "#241050"
 border = "#2A1454"
-selection = "#2D1B69"
+selection = "#3D2480"
 
 # Foregrounds
 neon_white = "#E0D4FF"

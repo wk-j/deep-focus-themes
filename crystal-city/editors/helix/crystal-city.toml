@@ -236,9 +236,9 @@ diagnostic = { underline = { color = "city_gold", style = "curl" } }
 # Backgrounds
 bg_primary = "#0A0E1A"
 bg_secondary = "#060910"
-bg_highlight = "#111728"
+bg_highlight = "#162035"
 border = "#1C2333"
-selection = "#1A2850"
+selection = "#1A3A5A"
 
 # Foregrounds
 frost_white = "#D8DEE9"

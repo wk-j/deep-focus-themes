@@ -236,9 +236,9 @@ diagnostic = { underline = { color = "honey_amber", style = "curl" } }
 # Backgrounds
 bg_primary = "#0B1215"
 bg_secondary = "#070B0D"
-bg_highlight = "#0F1A1E"
+bg_highlight = "#142428"
 border = "#1A2228"
-selection = "#0A3A40"
+selection = "#0E4F58"
 
 # Foregrounds
 mist_white = "#E0E0E0"

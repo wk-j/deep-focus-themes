@@ -74,8 +74,8 @@ tabstop = { modifiers = ["italic", "underlined"] }
 # Opaque dark for UI elements that must stay readable
 bg_dark = "#060910"
 border = "#1C2333"
-selection = "#1A2850"
-bg_highlight = "#111728"
+selection = "#1A3A5A"
+bg_highlight = "#162035"
 
 # Foregrounds
 frost_white = "#D8DEE9"
