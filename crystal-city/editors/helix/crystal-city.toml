@@ -168,7 +168,7 @@ special = { fg = "crystal_violet" }
 
 # Bufferline
 "ui.bufferline" = { fg = "slate_indigo", bg = "bg_secondary" }
-"ui.bufferline.active" = { fg = "frost_white", bg = "bg_primary", underline = { color = "neon_rose", style = "line" } }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "crystal_teal", modifiers = ["bold"] }
 "ui.bufferline.background" = { bg = "bg_secondary" }
 
 # Popup & Menus

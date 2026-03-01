@@ -42,7 +42,7 @@ inherits = "crystal-city"
 
 # Bufferline — keep opaque
 "ui.bufferline" = { fg = "slate_indigo", bg = "bg_dark" }
-"ui.bufferline.active" = { fg = "frost_white", bg = "bg_dark", underline = { color = "neon_rose", style = "line" } }
+"ui.bufferline.active" = { fg = "bg_dark", bg = "crystal_teal", modifiers = ["bold"] }
 "ui.bufferline.background" = { bg = "bg_dark" }
 
 # Popup & Menus — keep opaque so text is always readable

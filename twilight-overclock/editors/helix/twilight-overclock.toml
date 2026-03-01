@@ -168,7 +168,7 @@ special = { fg = "twilight_lavender" }
 
 # Bufferline
 "ui.bufferline" = { fg = "slate_shadow", bg = "bg_secondary" }
-"ui.bufferline.active" = { fg = "mist_white", bg = "bg_primary", underline = { color = "electric_cyan", style = "line" } }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "electric_cyan", modifiers = ["bold"] }
 "ui.bufferline.background" = { bg = "bg_secondary" }
 
 # Popup & Menus
