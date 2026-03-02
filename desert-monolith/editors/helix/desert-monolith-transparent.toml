@@ -1,0 +1,100 @@
+# Desert Monolith (Transparent) — Helix Editor Theme
+# Inherits the base theme, removes all backgrounds to show terminal wallpaper.
+
+inherits = "desert-monolith"
+
+# ─── UI Overrides (transparent) ──────────────────────────────────────────────
+
+"ui.background" = { fg = "fg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor.normal" = { modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "bg_dark", bg = "fg_primary" }
+"ui.cursor.select" = { fg = "bg_dark", bg = "amber" }
+"ui.cursor.primary" = { fg = "bg_dark", bg = "amber" }
+"ui.cursor.primary.normal" = { fg = "bg_dark", bg = "amber" }
+"ui.cursor.primary.insert" = { fg = "bg_dark", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_dark", bg = "sky_blue" }
+
+# Selection — slightly more visible on unknown backgrounds
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = {}
+"ui.cursorcolumn.primary" = { bg = "selection" }
+"ui.cursorcolumn.secondary" = {}
+
+# Gutter & Line Numbers
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "dimmed", modifiers = ["bold"] }
+
+# Statusline — keep opaque for readability
+"ui.statusline" = { fg = "dimmed", bg = "bg_dark" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_dark" }
+"ui.statusline.normal" = { fg = "bg_dark", bg = "amber", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_dark", bg = "sage", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_dark", bg = "sky_blue", modifiers = ["bold"] }
+
+# Bufferline — keep opaque
+"ui.bufferline" = { fg = "muted", bg = "bg_dark" }
+"ui.bufferline.active" = { fg = "bg_dark", bg = "amber", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_dark" }
+
+# Popup & Menus — keep opaque so text is always readable
+"ui.popup" = { fg = "fg_primary", bg = "bg_dark" }
+"ui.popup.info" = { fg = "fg_primary", bg = "bg_dark" }
+"ui.menu" = { fg = "fg_primary", bg = "bg_dark" }
+"ui.menu.selected" = { fg = "bg_dark", bg = "amber", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dimmed", bg = "border" }
+"ui.help" = { fg = "fg_primary", bg = "bg_dark" }
+"ui.window" = { fg = "border" }
+
+# Virtual elements — no backgrounds
+"ui.virtual.ruler" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Highlight
+"ui.highlight" = { modifiers = ["bold"] }
+"ui.highlight.frameline" = { underline = { color = "amber", style = "line" } }
+
+# Snippet
+tabstop = { modifiers = ["italic", "underlined"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Opaque dark for UI elements that must stay readable
+bg_dark      = "#130F0B"
+border       = "#3D2E1E"
+selection    = "#3A2C18"
+bg_highlight = "#2A2018"
+
+# Foregrounds
+fg_primary = "#D4C9B8"
+dimmed     = "#A89880"
+muted      = "#6E5E4A"
+gutter_fg  = "#4A3C2C"
+
+# Accents
+sand       = "#C4A86A"
+pale_rock  = "#B8C4C8"
+sky_blue   = "#7BB5D0"
+haze       = "#8A9EAD"
+ochre      = "#B87840"
+rust       = "#C45C30"
+sage       = "#7A9E84"
+stone      = "#9090A0"
+amber      = "#D4902A"
+red        = "#CC4A3A"
+ivory      = "#E8E0D0"
+
+# Secondary cursor
+secondary_cursor = "#4A3010"

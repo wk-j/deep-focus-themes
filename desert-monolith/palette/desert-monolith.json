@@ -1,0 +1,67 @@
+{
+  "name": "Desert Monolith",
+  "description": "A dark coding theme drawn from arid desert landscapes — warm sandy neutrals, cool sky blues, and the ancient contrast of dark marbled stone against pale weathered rock.",
+
+  "colors": {
+    "bg": {
+      "primary":   "#1A1510",
+      "secondary": "#130F0B",
+      "highlight": "#2A2018",
+      "border":    "#3D2E1E"
+    },
+    "fg": {
+      "primary":   "#D4C9B8",
+      "dimmed":    "#A89880",
+      "muted":     "#6E5E4A",
+      "gutter":    "#4A3C2C"
+    },
+    "accent": {
+      "sand":      "#C4A86A",
+      "pale_rock": "#B8C4C8",
+      "sky_blue":  "#7BB5D0",
+      "haze":      "#8A9EAD",
+      "ochre":     "#B87840",
+      "rust":      "#C45C30",
+      "sage":      "#7A9E84",
+      "stone":     "#9090A0",
+      "amber":     "#D4902A",
+      "red":       "#CC4A3A",
+      "ivory":     "#E8E0D0"
+    },
+    "ansi": {
+      "black":          "#1A1510",
+      "red":            "#CC4A3A",
+      "green":          "#7A9E84",
+      "yellow":         "#C4A86A",
+      "blue":           "#7BB5D0",
+      "magenta":        "#9090A0",
+      "cyan":           "#8A9EAD",
+      "white":          "#D4C9B8",
+      "bright_black":   "#4A3C2C",
+      "bright_red":     "#D96050",
+      "bright_green":   "#90B898",
+      "bright_yellow":  "#D4B87A",
+      "bright_blue":    "#9AC8DE",
+      "bright_magenta": "#A8A8BC",
+      "bright_cyan":    "#A0B4C0",
+      "bright_white":   "#E8E0D0"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.pale_rock",
+    "functions":    "accent.sky_blue",
+    "strings":      "accent.sand",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.haze",
+    "tags":         "accent.ochre",
+    "attributes":   "accent.amber",
+    "literals":     "accent.sage",
+    "constants":    "accent.ivory",
+    "constructors": "accent.pale_rock",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.amber"
+  }
+}

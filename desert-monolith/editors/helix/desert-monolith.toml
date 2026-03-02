@@ -1,0 +1,263 @@
+# Desert Monolith — Helix Editor Theme
+# Deep desert night base · Warm-to-cool stone spectrum · Pale rock keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes — Amber Light
+attribute = { fg = "amber", modifiers = ["italic"] }
+
+# Types — Mountain Haze
+type = { fg = "haze" }
+"type.builtin" = { fg = "haze" }
+"type.parameter" = { fg = "haze", modifiers = ["italic"] }
+"type.enum" = { fg = "haze" }
+"type.enum.variant" = { fg = "ivory" }
+
+# Constructor — Pale Rock (type-adjacent)
+constructor = { fg = "pale_rock" }
+
+# Constants — Worn Ivory
+constant = { fg = "ivory" }
+"constant.builtin" = { fg = "ivory" }
+"constant.builtin.boolean" = { fg = "ivory" }
+"constant.character" = { fg = "ivory" }
+"constant.character.escape" = { fg = "sky_blue" }
+"constant.numeric" = { fg = "sage" }
+"constant.numeric.integer" = { fg = "sage" }
+"constant.numeric.float" = { fg = "sage" }
+
+# Strings — Desert Sand
+string = { fg = "sand" }
+"string.regexp" = { fg = "ochre" }
+"string.special" = { fg = "sand" }
+"string.special.path" = { fg = "sand" }
+"string.special.url" = { fg = "sky_blue", underline = { style = "line" } }
+"string.special.symbol" = { fg = "amber" }
+
+# Comments — Buried Stone
+comment = { fg = "muted", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Sandstone
+variable = { fg = "fg_primary" }
+"variable.builtin" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.parameter" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.other" = { fg = "fg_primary" }
+"variable.other.member" = { fg = "haze" }
+"variable.other.member.private" = { fg = "haze", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "sky_blue" }
+
+# Punctuation
+punctuation = { fg = "dimmed" }
+"punctuation.delimiter" = { fg = "dimmed" }
+"punctuation.bracket" = { fg = "dimmed" }
+"punctuation.special" = { fg = "sky_blue" }
+
+# Keywords — Pale Rock (bold)
+keyword = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.control" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "pale_rock", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.operator" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.directive" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.function" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "pale_rock", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "pale_rock", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed" }
+
+# Functions — Sky Blue (the hero)
+function = { fg = "sky_blue" }
+"function.builtin" = { fg = "sky_blue" }
+"function.method" = { fg = "sky_blue" }
+"function.method.private" = { fg = "sky_blue", modifiers = ["italic"] }
+"function.macro" = { fg = "sky_blue" }
+"function.special" = { fg = "sky_blue" }
+
+# Tags — Ochre Rock
+tag = { fg = "ochre" }
+"tag.builtin" = { fg = "ochre" }
+
+# Namespace
+namespace = { fg = "stone", modifiers = ["italic"] }
+
+# Special
+special = { fg = "amber" }
+
+# Markup
+"markup.heading" = { fg = "ivory", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "dimmed" }
+"markup.heading.1" = { fg = "ivory", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "ivory", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "pale_rock", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "pale_rock" }
+"markup.heading.5" = { fg = "sky_blue" }
+"markup.heading.6" = { fg = "haze" }
+"markup.list" = { fg = "sky_blue" }
+"markup.list.unnumbered" = { fg = "sky_blue" }
+"markup.list.numbered" = { fg = "amber" }
+"markup.list.checked" = { fg = "sage" }
+"markup.list.unchecked" = { fg = "dimmed" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "sky_blue" }
+"markup.link.url" = { fg = "sky_blue", underline = { style = "line" } }
+"markup.link.label" = { fg = "haze" }
+"markup.link.text" = { fg = "sand" }
+"markup.quote" = { fg = "muted", modifiers = ["italic"] }
+"markup.raw" = { fg = "sand" }
+"markup.raw.inline" = { fg = "sand" }
+"markup.raw.block" = { fg = "sand" }
+
+# Diff
+"diff.plus" = "sage"
+"diff.plus.gutter" = "sage"
+"diff.minus" = "red"
+"diff.minus.gutter" = "red"
+"diff.delta" = "amber"
+"diff.delta.gutter" = "amber"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "fg_primary", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "amber" }
+"ui.cursor.match" = { fg = "sky_blue", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "amber" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "amber" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "sky_blue" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "dimmed", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "dimmed" }
+
+# Statusline
+"ui.statusline" = { fg = "dimmed", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "amber", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "sage", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "sky_blue", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "muted", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "amber", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "amber", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dimmed", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "dimmed", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "dimmed" }
+"ui.picker.header.column.active" = { fg = "sky_blue", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "fg_primary" }
+"ui.text.focus" = { fg = "fg_primary", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted" }
+"ui.text.info" = { fg = "dimmed" }
+"ui.text.directory" = { fg = "sky_blue" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "amber", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.debug.active" = { fg = "amber" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "ochre"
+error = "red"
+info = "sky_blue"
+hint = "haze"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "ochre", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "haze", style = "curl" } }
+"diagnostic.info" = { underline = { color = "sky_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "ochre", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#1A1510"
+bg_secondary = "#130F0B"
+bg_highlight = "#2A2018"
+border       = "#3D2E1E"
+selection    = "#3A2C18"
+
+# Foregrounds
+fg_primary = "#D4C9B8"
+dimmed     = "#A89880"
+muted      = "#6E5E4A"
+gutter_fg  = "#4A3C2C"
+
+# Accents
+sand       = "#C4A86A"
+pale_rock  = "#B8C4C8"
+sky_blue   = "#7BB5D0"
+haze       = "#8A9EAD"
+ochre      = "#B87840"
+rust       = "#C45C30"
+sage       = "#7A9E84"
+stone      = "#9090A0"
+amber      = "#D4902A"
+red        = "#CC4A3A"
+ivory      = "#E8E0D0"
+
+# Secondary cursor (for multi-cursor)
+secondary_cursor = "#4A3010"
