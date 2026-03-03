@@ -36,6 +36,14 @@ Deep Space base with a Galactic Spectrum. Void-black backgrounds with Nebula Cya
 |---|---|---|---|---|
 | `#090E1A` | `#F5C842` | `#29D7E8` | `#4DC98A` | `#7EC8E3` |
 
+### [Brass and Black](brass-and-black/docs/README.md)
+
+Stage-black base with a Cinematic Brass Spectrum. Near-total-darkness backgrounds with Acid Brass functions, Parchment White keywords, and Sage strings. Bold, focused, and unmistakable.
+
+| Background | Keywords | Functions | Strings | Types |
+|---|---|---|---|---|
+| `#181818` | `#F0EAD8` | `#C8B800` | `#8CB87A` | `#4E9ED4` |
+
 ## Supported Editors & Terminals
 
 | Theme | Zed | Helix | Rio | Yazi |
@@ -44,6 +52,7 @@ Deep Space base with a Galactic Spectrum. Void-black backgrounds with Nebula Cya
 | Neon City | yes | yes | yes | - |
 | Crystal City | yes | yes | yes | - |
 | Stargazer | - | yes | - | yes |
+| Brass and Black | - | yes | - | - |
 
 Each theme includes a standard and transparent variant for Helix.
 
