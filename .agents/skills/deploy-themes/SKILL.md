@@ -135,7 +135,7 @@ Replace the `gui.theme` block in the user's existing `config.yml` directly.
 |---|---|---|---|---|---|---|
 | neon-city | yes | yes | yes | no | no | yes |
 | crystal-city | yes | yes | yes | no | no | no |
-| twilight-overclock | yes | yes | no | no | no | no |
+| twilight-overclock | yes | yes | yes | no | no | no |
 | stargazer | yes | no | no | yes | no | no |
 | tallow-light | no | no | no | no | yes | yes |
 

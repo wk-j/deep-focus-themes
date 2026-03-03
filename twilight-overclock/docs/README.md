@@ -22,5 +22,6 @@ A dark coding color scheme using a **Deep Forest** base with **Bioluminescent** 
 - **Cyan cursor.** Always visible, never lost.
 - **Soft errors.** Coral instead of emergency red.
 - **Pair with:** JetBrains Mono or Fira Code (ligature support).
+- **OpenCode support.** Theme file at `editors/opencode/twilight-overclock.json` — copy to `~/.config/opencode/themes/` and set `"theme": "twilight-overclock"` in `tui.json`.
 
 See [twilight-overclock-concept.md](twilight-overclock-concept.md) for the full design rationale.
