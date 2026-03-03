@@ -57,6 +57,15 @@ punctuation = { fg = "steel_grey" }
 "punctuation.bracket" = { fg = "steel_grey" }
 "punctuation.special" = { fg = "electric_cyan" }
 
+# Rainbow brackets (requires editor.rainbow-brackets = true in config.toml)
+"rainbow.bracket"   = { fg = "steel_grey" }
+"rainbow.bracket.1" = { fg = "electric_cyan" }
+"rainbow.bracket.2" = { fg = "twilight_lavender" }
+"rainbow.bracket.3" = { fg = "sage_moss" }
+"rainbow.bracket.4" = { fg = "glacier_blue" }
+"rainbow.bracket.5" = { fg = "honey_amber" }
+"rainbow.bracket.6" = { fg = "soft_coral" }
+
 # Keywords
 keyword = { fg = "sage_moss" }
 "keyword.control" = { fg = "sage_moss" }
