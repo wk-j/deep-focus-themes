@@ -1,0 +1,66 @@
+{
+  "name": "Tallow Light",
+  "description": "A dark coding theme drawn from a plains farmstead at dusk — amber-gold functions, burnt-sienna keywords, slate-blue types, straw strings, and mauve attributes against a warm charcoal-earth background.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0E0D0B",
+      "secondary":  "#090807",
+      "highlight":  "#1A1710",
+      "border":     "#252018"
+    },
+    "fg": {
+      "primary":    "#C8BCA8",
+      "dimmed":     "#7A7060",
+      "muted":      "#4A4438",
+      "gutter":     "#2E2820"
+    },
+    "accent": {
+      "tallow":     "#E8B050",
+      "ember":      "#D45A20",
+      "sienna":     "#A03A18",
+      "straw":      "#A07838",
+      "slate":      "#7A8EA8",
+      "mountain":   "#4A5868",
+      "mauve":      "#8A7888",
+      "moonlight":  "#9AAEC0",
+      "prairie":    "#6A7848",
+      "red":        "#C03828"
+    },
+    "ansi": {
+      "black":          "#0E0D0B",
+      "red":            "#C03828",
+      "green":          "#6A7848",
+      "yellow":         "#A07838",
+      "blue":           "#4A5868",
+      "magenta":        "#8A7888",
+      "cyan":           "#7A8EA8",
+      "white":          "#C8BCA8",
+      "bright_black":   "#2E2820",
+      "bright_red":     "#D84830",
+      "bright_green":   "#8A9860",
+      "bright_yellow":  "#C89848",
+      "bright_blue":    "#6A7888",
+      "bright_magenta": "#AA98A8",
+      "bright_cyan":    "#9AAEC0",
+      "bright_white":   "#E0D8C8"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.ember",
+    "functions":    "accent.tallow",
+    "strings":      "accent.straw",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.slate",
+    "tags":         "accent.slate",
+    "attributes":   "accent.mauve",
+    "literals":     "accent.straw",
+    "constants":    "accent.moonlight",
+    "constructors": "accent.slate",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.tallow"
+  }
+}

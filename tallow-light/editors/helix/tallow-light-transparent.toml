@@ -1,0 +1,90 @@
+# Tallow Light (Transparent) — Helix Editor Theme
+# Inherits the base theme, removes all backgrounds to show terminal wallpaper.
+
+inherits = "tallow-light"
+
+# Background: remove bg
+"ui.background"           = { fg = "fg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor: keep functional
+"ui.cursor.normal"         = { modifiers = ["reversed"] }
+"ui.cursor.insert"         = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.select"         = { fg = "bg_primary", bg = "straw" }
+"ui.cursor.primary"        = { fg = "bg_primary", bg = "tallow" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "tallow" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "straw" }
+
+# Selection: keep
+"ui.selection"         = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline: keep primary, clear secondary
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = {}
+"ui.cursorcolumn.primary"   = { bg = "selection" }
+"ui.cursorcolumn.secondary" = {}
+
+# Gutter: clear backgrounds
+"ui.gutter"          = {}
+"ui.gutter.selected" = {}
+"ui.linenr"          = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "muted_fg", modifiers = ["bold"] }
+
+# Statusline: keep opaque
+"ui.statusline"           = { fg = "dimmed_fg", bg = "bg_secondary" }
+"ui.statusline.inactive"  = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal"    = { fg = "bg_secondary", bg = "tallow", modifiers = ["bold"] }
+"ui.statusline.insert"    = { fg = "bg_secondary", bg = "tallow", modifiers = ["bold"] }
+"ui.statusline.select"    = { fg = "bg_secondary", bg = "straw", modifiers = ["bold"] }
+
+# Bufferline: keep opaque
+"ui.bufferline"            = { fg = "muted_fg", bg = "bg_secondary" }
+"ui.bufferline.active"     = { fg = "bg_secondary", bg = "tallow", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus: keep opaque
+"ui.popup"         = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.popup.info"    = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu"          = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "tallow", modifiers = ["bold"] }
+"ui.menu.scroll"   = { fg = "dimmed_fg", bg = "border" }
+"ui.help"          = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.window"        = { fg = "border" }
+
+# Virtual elements: remove backgrounds
+"ui.virtual.ruler"                = { fg = "border" }
+"ui.virtual.inlay-hint"           = { fg = "gutter_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"      = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Highlight: reduce weight
+"ui.highlight"           = { modifiers = ["bold"] }
+"ui.highlight.frameline" = { underline = { color = "straw", style = "line" } }
+
+# Snippet
+tabstop = { modifiers = ["italic", "underlined"] }
+
+[palette]
+
+bg_primary   = "#0E0D0B"
+bg_secondary = "#090807"
+bg_highlight = "#1A1710"
+border       = "#252018"
+selection    = "#252018"
+
+# Foregrounds
+fg_primary = "#C8BCA8"
+dimmed_fg  = "#7A7060"
+muted_fg   = "#4A4438"
+gutter_fg  = "#2E2820"
+
+# Accents
+tallow    = "#E8B050"
+ember     = "#D45A20"
+straw     = "#A07838"
+slate     = "#7A8EA8"
+mauve     = "#8A7888"
+moonlight = "#9AAEC0"
+coal_red  = "#C03828"
