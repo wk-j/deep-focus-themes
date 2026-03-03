@@ -1,0 +1,65 @@
+{
+  "name": "Silica Haze",
+  "description": "A dark coding theme drawn from sand-choked planetary atmosphere — warm umber backgrounds with a spectrum of cream-gold, copper, dusty teal, and pale ivory accents. Built for unhurried sessions in dry heat.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#1C1410",
+      "secondary":  "#140E0A",
+      "highlight":  "#2C2018",
+      "border":     "#3A2C20"
+    },
+    "fg": {
+      "primary":    "#E0D4C0",
+      "dimmed":     "#B0A088",
+      "muted":      "#7A6850",
+      "gutter":     "#4A3C2C"
+    },
+    "accent": {
+      "cream_gold":  "#D4B870",
+      "copper":      "#C8804A",
+      "dust_teal":   "#6AAAA0",
+      "pale_ivory":  "#EAE0CA",
+      "dune_sienna": "#A06838",
+      "haze_blue":   "#7090B0",
+      "spore_green": "#8AAA68",
+      "crescent":    "#F0E8D0",
+      "red":         "#C05040"
+    },
+    "ansi": {
+      "black":          "#140E0A",
+      "red":            "#C05040",
+      "green":          "#8AAA68",
+      "yellow":         "#D4B870",
+      "blue":           "#7090B0",
+      "magenta":        "#B08878",
+      "cyan":           "#6AAAA0",
+      "white":          "#E0D4C0",
+      "bright_black":   "#4A3C2C",
+      "bright_red":     "#D06858",
+      "bright_green":   "#A0C078",
+      "bright_yellow":  "#E0C880",
+      "bright_blue":    "#88A8C8",
+      "bright_magenta": "#C8A090",
+      "bright_cyan":    "#80C0B8",
+      "bright_white":   "#F0E8D8"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.pale_ivory",
+    "functions":    "accent.cream_gold",
+    "strings":      "accent.spore_green",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.dust_teal",
+    "tags":         "accent.cream_gold",
+    "attributes":   "accent.copper",
+    "literals":     "accent.copper",
+    "constants":    "accent.dune_sienna",
+    "constructors": "accent.crescent",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.cream_gold"
+  }
+}
