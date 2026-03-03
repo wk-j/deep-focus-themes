@@ -1,0 +1,282 @@
+# Cinder Grid — Helix Editor Theme
+# A dark coding theme drawn from a mosaic-tiled control room at night — ember-orange functions,
+# steel-blue types, amber keywords, and scattered city-light accents against charcoal navy.
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "sky_blue", modifiers = ["italic"] }
+
+# Types
+type                  = { fg = "tile_blue" }
+"type.builtin"        = { fg = "tile_blue" }
+"type.parameter"      = { fg = "tile_blue", modifiers = ["italic"] }
+"type.enum"           = { fg = "tile_blue" }
+"type.enum.variant"   = { fg = "tile_blue" }
+
+# Constructor
+constructor = { fg = "tile_blue" }
+
+# Constants
+constant                    = { fg = "gold" }
+"constant.builtin"          = { fg = "gold" }
+"constant.builtin.boolean"  = { fg = "gold" }
+"constant.character"        = { fg = "gold" }
+"constant.character.escape" = { fg = "gold" }
+"constant.numeric"          = { fg = "gold" }
+"constant.numeric.integer"  = { fg = "gold" }
+"constant.numeric.float"    = { fg = "gold" }
+
+# Strings
+string                       = { fg = "moss" }
+"string.regexp"              = { fg = "gold" }
+"string.special"             = { fg = "moss" }
+"string.special.path"        = { fg = "moss" }
+"string.special.url"         = { fg = "moss", underline = { style = "line" } }
+"string.special.symbol"      = { fg = "sky_blue" }
+
+# Comments
+comment                       = { fg = "muted_fg", modifiers = ["italic"] }
+"comment.line.documentation"  = { fg = "muted_fg", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted_fg", modifiers = ["italic"] }
+"comment.unused"              = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables
+variable                        = { fg = "fg_primary" }
+"variable.builtin"              = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.parameter"            = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.other"                = { fg = "fg_primary" }
+"variable.other.member"         = { fg = "dimmed_fg" }
+"variable.other.member.private" = { fg = "dimmed_fg", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "ember" }
+
+# Punctuation & Rainbow Brackets
+punctuation             = { fg = "dimmed_fg" }
+"punctuation.delimiter" = { fg = "dimmed_fg" }
+"punctuation.bracket"   = { fg = "dimmed_fg" }
+"punctuation.special"   = { fg = "ember" }
+
+# Rainbow brackets (6 levels)
+"rainbow.bracket"   = { fg = "dimmed_fg" }
+"rainbow.bracket.1" = { fg = "ember" }
+"rainbow.bracket.2" = { fg = "tile_blue" }
+"rainbow.bracket.3" = { fg = "amber" }
+"rainbow.bracket.4" = { fg = "moss" }
+"rainbow.bracket.5" = { fg = "sky_blue" }
+"rainbow.bracket.6" = { fg = "magenta" }
+
+# Keywords
+keyword                       = { fg = "amber", modifiers = ["bold"] }
+"keyword.control"             = { fg = "amber", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "amber", modifiers = ["bold"] }
+"keyword.control.repeat"      = { fg = "amber", modifiers = ["bold"] }
+"keyword.control.import"      = { fg = "amber", modifiers = ["bold"] }
+"keyword.control.return"      = { fg = "amber", modifiers = ["bold", "italic"] }
+"keyword.control.exception"   = { fg = "amber", modifiers = ["bold"] }
+"keyword.operator"            = { fg = "amber", modifiers = ["bold"] }
+"keyword.directive"           = { fg = "amber", modifiers = ["bold"] }
+"keyword.function"            = { fg = "amber", modifiers = ["bold"] }
+"keyword.storage.type"        = { fg = "amber", modifiers = ["bold"] }
+"keyword.storage.modifier"    = { fg = "amber", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed_fg" }
+
+# Functions
+function                  = { fg = "ember" }
+"function.builtin"        = { fg = "ember" }
+"function.method"         = { fg = "ember" }
+"function.method.private" = { fg = "ember", modifiers = ["italic"] }
+"function.macro"          = { fg = "ember" }
+"function.special"        = { fg = "ember" }
+
+# Tags
+tag           = { fg = "tile_blue" }
+"tag.builtin" = { fg = "tile_blue" }
+
+# Namespace
+namespace = { fg = "ember", modifiers = ["italic"] }
+
+# Special
+special = { fg = "sky_blue" }
+
+# Markup
+"markup.heading"           = { fg = "amber", modifiers = ["bold"] }
+"markup.heading.marker"    = { fg = "dimmed_fg" }
+"markup.heading.1"         = { fg = "amber", modifiers = ["bold"] }
+"markup.heading.2"         = { fg = "amber", modifiers = ["bold"] }
+"markup.heading.3"         = { fg = "tile_blue", modifiers = ["bold"] }
+"markup.heading.4"         = { fg = "tile_blue" }
+"markup.heading.5"         = { fg = "ember" }
+"markup.heading.6"         = { fg = "ember" }
+"markup.list"              = { fg = "ember" }
+"markup.list.unnumbered"   = { fg = "ember" }
+"markup.list.numbered"     = { fg = "gold" }
+"markup.list.checked"      = { fg = "moss" }
+"markup.list.unchecked"    = { fg = "dimmed_fg" }
+"markup.bold"              = { modifiers = ["bold"] }
+"markup.italic"            = { modifiers = ["italic"] }
+"markup.strikethrough"     = { modifiers = ["crossed_out"] }
+"markup.link"              = { fg = "ember" }
+"markup.link.url"          = { fg = "ember", underline = { style = "line" } }
+"markup.link.label"        = { fg = "tile_blue" }
+"markup.link.text"         = { fg = "moss" }
+"markup.quote"             = { fg = "muted_fg", modifiers = ["italic"] }
+"markup.raw"               = { fg = "moss" }
+"markup.raw.inline"        = { fg = "moss" }
+"markup.raw.block"         = { fg = "moss" }
+
+"markup.normal.completion"     = { fg = "fg_primary" }
+"markup.normal.hover"          = { fg = "fg_primary" }
+"markup.heading.completion"    = { fg = "amber", modifiers = ["bold"] }
+"markup.heading.hover"         = { fg = "amber", modifiers = ["bold"] }
+"markup.raw.inline.completion" = { fg = "moss" }
+"markup.raw.inline.hover"      = { fg = "moss" }
+
+# Diff
+"diff.plus"           = "moss"
+"diff.plus.gutter"    = "moss"
+"diff.minus"          = "coral"
+"diff.minus.gutter"   = "coral"
+"diff.delta"          = "gold"
+"diff.delta.moved"    = "sky_blue"
+"diff.delta.conflict" = "coral"
+"diff.delta.gutter"   = "gold"
+
+# ─── Interface / UI ───────────────────────────────────────────────────────────
+
+# Background
+"ui.background"           = { fg = "fg_primary", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor"                = { modifiers = ["reversed"] }
+"ui.cursor.normal"         = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert"         = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.select"         = { fg = "bg_primary", bg = "gold" }
+"ui.cursor.match"          = { fg = "gold", modifiers = ["bold"] }
+"ui.cursor.primary"        = { fg = "bg_primary", bg = "ember" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "ember" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "gold" }
+
+# Selection
+"ui.selection"         = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = { bg = "bg_primary" }
+"ui.cursorcolumn.primary"   = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter"          = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "muted_fg", bg = "bg_highlight" }
+"ui.linenr"          = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "muted_fg" }
+
+# Statusline
+"ui.statusline"           = { fg = "dimmed_fg", bg = "bg_secondary" }
+"ui.statusline.inactive"  = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal"    = { fg = "bg_secondary", bg = "ember", modifiers = ["bold"] }
+"ui.statusline.insert"    = { fg = "bg_secondary", bg = "ember", modifiers = ["bold"] }
+"ui.statusline.select"    = { fg = "bg_secondary", bg = "gold", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline"            = { fg = "muted_fg", bg = "bg_secondary" }
+"ui.bufferline.active"     = { fg = "bg_secondary", bg = "ember", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup"         = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.popup.info"    = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.window"        = { fg = "border" }
+"ui.help"          = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu"          = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "ember", modifiers = ["bold"] }
+"ui.menu.scroll"   = { fg = "dimmed_fg", bg = "border" }
+
+# Picker
+"ui.picker.header"               = { fg = "dimmed_fg", modifiers = ["bold"] }
+"ui.picker.header.column"        = { fg = "dimmed_fg" }
+"ui.picker.header.column.active" = { fg = "ember", modifiers = ["bold"] }
+
+# Text
+"ui.text"           = { fg = "fg_primary" }
+"ui.text.focus"     = { fg = "fg_primary", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive"  = { fg = "muted_fg" }
+"ui.text.info"      = { fg = "dimmed_fg" }
+"ui.text.directory" = { fg = "tile_blue" }
+
+# Virtual Elements
+"ui.virtual"                      = { fg = "border" }
+"ui.virtual.ruler"                 = { bg = "bg_highlight" }
+"ui.virtual.whitespace"            = { fg = "border" }
+"ui.virtual.indent-guide"          = { fg = "border" }
+"ui.virtual.inlay-hint"            = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter"  = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"       = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap"                  = { fg = "gutter_fg" }
+"ui.virtual.jump-label"            = { fg = "gold", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight"           = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "coral" }
+"ui.debug.active"     = { fg = "gold" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "amber"
+error   = "coral"
+info    = "tile_blue"
+hint    = "ember"
+
+# Diagnostics (editing area)
+diagnostic                 = { underline = { color = "amber", style = "curl" } }
+"diagnostic.hint"          = { underline = { color = "ember", style = "curl" } }
+"diagnostic.info"          = { underline = { color = "tile_blue", style = "curl" } }
+"diagnostic.warning"       = { underline = { color = "amber", style = "curl" } }
+"diagnostic.error"         = { underline = { color = "coral", style = "curl" } }
+"diagnostic.unnecessary"   = { modifiers = ["dim"] }
+"diagnostic.deprecated"    = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#0B0F1A"
+bg_secondary = "#070B14"
+bg_highlight = "#161D2E"
+border       = "#1E2840"
+selection    = "#1E2840"
+
+# Foregrounds
+fg_primary = "#D8DDE8"
+dimmed_fg  = "#8A95A8"
+muted_fg   = "#4E5A6E"
+gutter_fg  = "#2E3A4E"
+
+# Accents
+ember     = "#E8721A"
+cinder    = "#C85A0E"
+amber     = "#D4A827"
+tile_blue = "#4D8FCC"
+sky_blue  = "#7BB5D0"
+moss      = "#5FAD6E"
+coral     = "#D45C5C"
+magenta   = "#B87BBB"
+gold      = "#C8901A"
+white_hot = "#F0EAD6"
+
+# Multi-cursor
+secondary_cursor = "#7A3A10"

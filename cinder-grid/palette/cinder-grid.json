@@ -1,0 +1,66 @@
+{
+  "name": "Cinder Grid",
+  "description": "A dark coding theme drawn from a mosaic-tiled control room at night — ember-orange functions, steel-blue types, amber keywords, and scattered city-light accents. Built for long sessions in the glow.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0B0F1A",
+      "secondary":  "#070B14",
+      "highlight":  "#161D2E",
+      "border":     "#1E2840"
+    },
+    "fg": {
+      "primary":    "#D8DDE8",
+      "dimmed":     "#8A95A8",
+      "muted":      "#4E5A6E",
+      "gutter":     "#2E3A4E"
+    },
+    "accent": {
+      "ember":      "#E8721A",
+      "cinder":     "#C85A0E",
+      "amber":      "#D4A827",
+      "tile_blue":  "#4D8FCC",
+      "sky_blue":   "#7BB5D0",
+      "moss":       "#5FAD6E",
+      "coral":      "#D45C5C",
+      "magenta":    "#B87BBB",
+      "gold":       "#C8901A",
+      "white_hot":  "#F0EAD6"
+    },
+    "ansi": {
+      "black":          "#0B0F1A",
+      "red":            "#D45C5C",
+      "green":          "#5FAD6E",
+      "yellow":         "#D4A827",
+      "blue":           "#4D8FCC",
+      "magenta":        "#B87BBB",
+      "cyan":           "#7BB5D0",
+      "white":          "#D8DDE8",
+      "bright_black":   "#2E3A4E",
+      "bright_red":     "#E87070",
+      "bright_green":   "#7DC88C",
+      "bright_yellow":  "#E8C048",
+      "bright_blue":    "#6AACDC",
+      "bright_magenta": "#CC96CC",
+      "bright_cyan":    "#96CCDE",
+      "bright_white":   "#F0EAD6"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.amber",
+    "functions":    "accent.ember",
+    "strings":      "accent.moss",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.tile_blue",
+    "tags":         "accent.tile_blue",
+    "attributes":   "accent.sky_blue",
+    "literals":     "accent.gold",
+    "constants":    "accent.gold",
+    "constructors": "accent.tile_blue",
+    "errors":       "accent.coral",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.ember"
+  }
+}
