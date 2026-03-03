@@ -98,7 +98,7 @@ Resolve all semantic roles from `semantic_roles` first, then apply the mapping b
 | `textMuted` | `colors.fg.muted` | Dimmed/secondary text |
 | `background` | `"none"` | Use terminal's native background — enables transparency |
 | `backgroundPanel` | `"none"` | Use terminal's native background — enables transparency |
-| `backgroundElement` | `colors.bg.highlight` | Hover/selection background |
+| `backgroundElement` | `colors.bg.primary` | Code block background — must be a solid color (not `"none"`) to prevent code blocks blending into the transparent terminal background |
 | `border` | `colors.bg.border` | Inactive border |
 | `borderActive` | `semantic_roles.cursor` | Focused panel border |
 | `borderSubtle` | `colors.bg.border` | Subtle/decorative border |
@@ -186,7 +186,7 @@ Resolve all semantic roles from `semantic_roles` first, then apply the mapping b
     "textMuted":          { "dark": "<def_name>", "light": "<def_name>" },
     "background":        { "dark": "none",        "light": "none" },
     "backgroundPanel":   { "dark": "none",        "light": "none" },
-    "backgroundElement":  { "dark": "<def_name>", "light": "<def_name>" },
+    "backgroundElement": { "dark": "bg_primary",  "light": "bg_primary" },
     "border":             { "dark": "<def_name>", "light": "<def_name>" },
     "borderActive":       { "dark": "<def_name>", "light": "<def_name>" },
     "borderSubtle":       { "dark": "<def_name>", "light": "<def_name>" },

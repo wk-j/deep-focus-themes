@@ -54,7 +54,7 @@
     "textMuted":         { "dark": "fg_muted",    "light": "fg_muted" },
     "background":        { "dark": "none",        "light": "none" },
     "backgroundPanel":   { "dark": "none",        "light": "none" },
-    "backgroundElement": { "dark": "bg_highlight","light": "bg_highlight" },
+    "backgroundElement": { "dark": "bg_primary",  "light": "bg_primary" },
     "border":            { "dark": "border",      "light": "border" },
     "borderActive":      { "dark": "cyan",        "light": "cyan" },
     "borderSubtle":      { "dark": "border",      "light": "border" },
