@@ -1,0 +1,7 @@
+id = "brass-and-black-theme"
+name = "Brass and Black"
+version = "0.0.1"
+schema_version = 1
+authors = ["wk"]
+description = "Deep charcoal base with acid-brass accents. A cinematic dark theme built for high-focus sessions — bold yellow functions, electric blue types, zero fatigue."
+repository = "https://github.com/wk-j/brass-and-black"
