@@ -155,48 +155,64 @@ See [<theme-name>-concept.md](<theme-name>-concept.md) for the full design ratio
 
 ### 4. Write docs/<theme-name>-concept.md
 
-Write to `<theme-name>/docs/<theme-name>-concept.md` (~100-112 lines). Follow this exact structure:
+Write to `<theme-name>/docs/<theme-name>-concept.md` (~130-150 lines). The concept document must read as a strong, original creative piece — not a template fill-in. Each section must be written with specificity and conviction rooted in the theme's unique origin (the reference image, real-world source, or creative direction). Generic filler phrases ("polished high-tech aesthetic", "vivid, focused, and alive") are prohibited — every sentence must justify its existence with concrete visual or emotional detail tied to this specific theme.
+
+Follow this structure:
 
 ```markdown
 # Theme Name — Color Scheme Concept
 
+## Origin
+
+[2-3 sentences establishing the real-world or artistic source of the theme. Be specific and visual: name the place, scene, time of day, material, or cultural reference that anchors this palette. This is not a marketing blurb — it is a precise description of the visual world the theme comes from.]
+
+Example depth targets:
+- "The image is a browser chrome at night — the active tab blazes in acid yellow-green (`#C8B800`), the kind of color a fluorescent tube makes when it's about to fail."
+- "A dune at 4am shot on film: the sand holds warmth from the day (`#C4A86A`), the sky overhead is the specific cold blue of pre-dawn before any orange enters (`#7BB5D0`)."
+- NOT: "A dark theme inspired by the desert." (too vague)
+
+---
+
 ## Vision
 
-[Theme name] is a high-performance coding color scheme built for [audience]. The philosophy is simple: [base quality] meets [accent quality].
+[Theme name] is a coding color scheme drawn from [specific source]. The central tension is [specific visual or emotional conflict in the reference — warm vs. cold, synthetic vs. organic, ancient vs. electric, etc.].
 
-It achieves this through [two/three] complementary ideas:
+It resolves this tension through [two/three] design decisions:
 
-- **[Base name]** — [description of background philosophy and undertone].
-- **[Spectrum name]** — [description of accent strategy with hex codes inline].
-- **[Keyword strategy]** — [description of keyword approach].
+- **[Decision name]** — [Specific explanation referencing actual hex colors and the visual world they come from. e.g. "The background (`#181818`) is the exact darkness between two lit buildings at night — not pure black, which reads as a void, but dark enough that accent colors float."]
+- **[Decision name]** — [Same specificity.]
+- **[Decision name]** — [Same specificity.]
 
-The result is a workspace that feels [evocative description].
+The result is a workspace that [concrete sensory or cognitive description — how the developer's eye moves, what they feel, what the environment reminds them of].
 
 ---
 
 ## Design Principles
 
-### 1. [Spectrum Philosophy Name]
+### 1. [Name that describes this theme's unique color strategy — not a generic phrase]
 
-[Paragraph explaining how colors differentiate syntax roles].
+[Paragraph grounded in the specific accent colors chosen. Name the hues, explain why each was chosen over alternatives, and connect each back to the reference source. e.g. "Brass was chosen over gold because gold reads as reward-state; brass reads as material — it is the color of things that have been handled, that have weight."]
 
-### 2. [Hierarchy Strategy Name]
+### 2. [Name that describes this theme's syntax hierarchy approach]
 
-[Intro paragraph about keyword strategy]. This creates a clear visual hierarchy:
+[Explain how the most important tokens are ranked and why. Reference the reference source to justify the hierarchy. e.g. "Keywords are parchment-white because stone faces in desert photographs hold the most neutral light — they are the structural elements that everything else is measured against."] This creates a clear visual hierarchy:
 
 | Role | Color | Hex | Why |
 |---|---|---|---|
-[One row per major syntax token with rationale]
+[One row per major syntax token. The "Why" column must reference the source material or a specific visual logic, not just "for contrast".]
 
-### 3. Minimal Chrome, Maximum Depth
+### 3. Background as Stage, Not Void
 
-- **No harsh borders.** Panel separation comes from background color shifts ([bg.primary hex] for editor, [bg.secondary hex] for sidebar/panels).
-- **Active tab indicator.** A single [accent color] marks the active file.
-- **Restrained error states.** Errors use [error color name] (`[hex]`) — clearly an error, but tuned to avoid anxiety.
+[Explain the specific background philosophy for this theme — what the darkness means, what undertone it carries, and why `bg.secondary` is darker than `bg.primary`. Connect to the reference source.] Specifics:
+
+- **Editor surface** (`[bg.primary hex]`) — [one sentence describing what this darkness evokes from the source].
+- **Panel/sidebar** (`[bg.secondary hex]`) — [one sentence on why it's recessed and what it represents].
+- **Highlight** (`[bg.highlight hex]`) — [one sentence on how selection/hover lift works in this visual world].
+- **Errors** use [error color name] (`[hex]`) — [explain why this specific red/orange was chosen and why it doesn't cause anxiety].
 
 ### 4. The Cursor as Anchor
 
-The caret and selection both use [cursor color] (`[hex]`). In a scheme this dark, the cursor must be unmissable. It serves as the constant anchor point.
+The caret uses [cursor color name] (`[hex]`). [Explain specifically why this color was chosen as the cursor — tie it to something unmissable in the reference source. e.g. "The amber cursor is the exact color of afternoon light catching the edge of a standing stone — the single hottest point in an otherwise cool frame. In the editor, it serves the same function: a fixed warm point your eye returns to."]
 
 ---
 
@@ -224,25 +240,20 @@ The caret and selection both use [cursor color] (`[hex]`). In a scheme this dark
 
 ## Typography Pairing
 
-The "[Theme Name]" identity is reinforced by pairing the palette with modern monospace fonts that support programming ligatures:
+The "[Theme Name]" palette pairs with:
 
-- **Primary recommendation:** JetBrains Mono — clean geometry, optimized for code readability at small sizes.
-- **Alternative:** Fira Code — excellent ligature set (arrows, comparisons, lambda).
+- **Primary:** JetBrains Mono — [one sentence on why this font specifically suits this theme's visual character, not just "clean geometry"].
+- **Alternative:** Fira Code — [one sentence specific to this theme].
 
-Ligatures like `=>`, `!==`, and `>=` rendered as single glyphs contribute to the polished, high-tech aesthetic the scheme targets.
+Ligatures like `=>`, `!==`, and `>=` [explain how ligatures interact with the mood of this specific theme — do they reinforce the mechanical? the flowing? the ancient?].
 
 ---
 
 ## How It Feels in Practice
 
-Imagine opening a [file type] file at [late hour]:
+Imagine opening a [specific file type that fits the theme] at [specific time of day or night that fits the source]:
 
-- The background is [evocative description of bg].
-- Your eye lands on [keyword/function description].
-- [Walk through each major syntax color in one flowing paragraph].
-- [Describe neutral elements].
-- Comments are there if you look — [description].
-- Your cursor [verb] in [color]. You always know where you are.
+[Write this as a single flowing paragraph, 6-10 sentences. Walk through the editor experience as if describing a physical space: the background first, then the eye's movement through keywords, functions, strings, types, numbers, comments, and finally the cursor. Use the theme's source material as sensory reference throughout. Avoid bullet points in this section — it must read as prose. End on the cursor.]
 
 That's [Theme Name].
 ```
