@@ -96,8 +96,8 @@ Resolve all semantic roles from `semantic_roles` first, then apply the mapping b
 | `info` | `semantic_roles.types` | Info state |
 | `text` | `colors.fg.primary` | Default foreground |
 | `textMuted` | `colors.fg.muted` | Dimmed/secondary text |
-| `background` | `colors.bg.primary` | Main editor background |
-| `backgroundPanel` | `colors.bg.secondary` | Sidebar/panel background |
+| `background` | `"none"` | Use terminal's native background — enables transparency |
+| `backgroundPanel` | `"none"` | Use terminal's native background — enables transparency |
 | `backgroundElement` | `colors.bg.highlight` | Hover/selection background |
 | `border` | `colors.bg.border` | Inactive border |
 | `borderActive` | `semantic_roles.cursor` | Focused panel border |
@@ -184,8 +184,8 @@ Resolve all semantic roles from `semantic_roles` first, then apply the mapping b
     "info":               { "dark": "<def_name>", "light": "<def_name>" },
     "text":               { "dark": "<def_name>", "light": "<def_name>" },
     "textMuted":          { "dark": "<def_name>", "light": "<def_name>" },
-    "background":         { "dark": "<def_name>", "light": "<def_name>" },
-    "backgroundPanel":    { "dark": "<def_name>", "light": "<def_name>" },
+    "background":        { "dark": "none",        "light": "none" },
+    "backgroundPanel":   { "dark": "none",        "light": "none" },
     "backgroundElement":  { "dark": "<def_name>", "light": "<def_name>" },
     "border":             { "dark": "<def_name>", "light": "<def_name>" },
     "borderActive":       { "dark": "<def_name>", "light": "<def_name>" },
