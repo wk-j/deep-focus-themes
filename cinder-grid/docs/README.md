@@ -27,5 +27,6 @@ A dark coding color scheme using a **mosaic-tile control room at night** as its 
 - **Depth over borders.** Panels separated by shade, not lines. `#070B14` recedes behind `#0B0F1A`.
 - **Ember cursor.** `#E8721A` caret — the same color as functions, unmissable against the dark navy ground.
 - **Pair with:** JetBrains Mono or Fira Code (ligature support).
+- **OpenCode support.** Theme file at `editors/opencode/cinder-grid.json` — copy to `~/.config/opencode/themes/` and set `"theme": "cinder-grid"` in `tui.json`.
 
 See [cinder-grid-concept.md](cinder-grid-concept.md) for the full design rationale.

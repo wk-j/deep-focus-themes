@@ -11,7 +11,7 @@ Dark coding color schemes for long sessions — low fatigue, high clarity.
 | [Twilight Overclock](twilight-overclock/docs/README.md) | yes | yes | yes | - | - | - |
 | [Neon City](neon-city/docs/README.md) | yes | yes | yes | yes | - | - |
 | [Crystal City](crystal-city/docs/README.md) | yes | yes | - | yes | - | - |
-| [Cinder Grid](cinder-grid/docs/README.md) | - | yes | - | - | - | - |
+| [Cinder Grid](cinder-grid/docs/README.md) | - | yes | yes | - | - | - |
 | [Brass and Black](brass-and-black/docs/README.md) | yes | yes | - | - | - | - |
 | [Desert Monolith](desert-monolith/docs/README.md) | - | yes | - | - | - | - |
 | [Stargazer](stargazer/docs/README.md) | - | yes | - | - | yes | - |
