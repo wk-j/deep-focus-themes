@@ -1,0 +1,32 @@
+# Tallow Light — Lazygit Theme
+# Paste the gui.theme block into ~/Library/Application Support/lazygit/config.yml
+# or use: LG_CONFIG_FILE="$HOME/Library/Application Support/lazygit/config.yml,<path>/tallow-light/terminals/lazygit/tallow-light.yml" lazygit
+
+gui:
+  theme:
+    activeBorderColor:
+      - '#E8B050'
+      - bold
+    inactiveBorderColor:
+      - '#4A4438'
+    searchingActiveBorderColor:
+      - '#7A8EA8'
+      - bold
+    optionsTextColor:
+      - '#8A7888'
+    selectedLineBgColor:
+      - '#1A1710'
+    inactiveViewSelectedLineBgColor:
+      - bold
+    cherryPickedCommitFgColor:
+      - '#E8B050'
+    cherryPickedCommitBgColor:
+      - '#A07838'
+    markedBaseCommitFgColor:
+      - '#E8B050'
+    markedBaseCommitBgColor:
+      - '#A07838'
+    unstagedChangesColor:
+      - '#C03828'
+    defaultFgColor:
+      - '#C8BCA8'

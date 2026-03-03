@@ -1,6 +1,6 @@
 ---
 name: deploy-themes
-description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi)
+description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi, Lazygit)
 ---
 
 ## Deployment Targets
@@ -41,6 +41,13 @@ description: Deploy editor and terminal themes from this repository to their loc
   - `LICENSE-tmtheme` — tmTheme license
 - **Note:** Not all themes have Yazi support. Only deploy if the source directory exists.
 
+### Lazygit
+
+- **Target:** `~/Library/Application Support/lazygit/` (macOS) or `~/.config/lazygit/` (Linux)
+- **Method:** Merge into the user's `config.yml` using lazygit's multi-file config feature — do **not** overwrite `config.yml` directly.
+- **Source:** `<theme-name>/terminals/lazygit/<theme-name>.yml`
+- **Note:** Not all themes have lazygit support. Only deploy if the source file exists.
+
 ## Deployment Procedure
 
 ### 1. Deploy to Helix
@@ -78,14 +85,31 @@ For each theme that has `terminals/yazi/<theme-name>.yazi/`:
 cp -r <theme-name>/terminals/yazi/<theme-name>.yazi ~/.config/yazi/flavors/
 ```
 
+### 5. Deploy to Lazygit
+
+Replace the `gui.theme` block in the user's existing `config.yml` directly.
+
+**Config file location:**
+- macOS: `~/Library/Application Support/lazygit/config.yml`
+- Linux: `~/.config/lazygit/config.yml`
+
+**Procedure:**
+1. Read the current `config.yml` to locate the existing `gui.theme` block.
+2. Replace only the `theme:` keys with the values from `<theme-name>/terminals/lazygit/<theme-name>.yml`.
+3. Leave all other settings (`sidePanelWidth`, `pagers`, etc.) untouched.
+4. No env vars or shell profile changes needed — lazygit picks up the change immediately on next launch.
+
+**To switch themes**, repeat the procedure with a different theme's `.yml` file.
+
 ## Current Theme Inventory
 
-| Theme | Helix | Zed | Rio | Yazi |
-|---|---|---|---|---|
-| neon-city | yes | yes | yes | no |
-| crystal-city | yes | yes | yes | no |
-| twilight-overclock | yes | yes | no | no |
-| stargazer | yes | no | no | yes |
+| Theme | Helix | Zed | Rio | Yazi | Lazygit |
+|---|---|---|---|---|---|
+| neon-city | yes | yes | yes | no | no |
+| crystal-city | yes | yes | yes | no | no |
+| twilight-overclock | yes | yes | no | no | no |
+| stargazer | yes | no | no | yes | no |
+| tallow-light | no | no | no | no | yes |
 
 ## Verification
 
@@ -103,6 +127,11 @@ diff <theme>/terminals/rio/themes/<theme>.toml ~/.config/rio/themes/<theme>.toml
 
 # Yazi
 ls ~/.config/yazi/flavors/<theme>.yazi/
+
+# Lazygit
+cat ~/.config/lazygit/themes/<theme>.yml
+# or check the env var is set:
+echo $LG_CONFIG_FILE
 ```
 
 ## Rollback
@@ -122,4 +151,7 @@ rm ~/.config/rio/themes/<theme-name>.toml
 
 # Yazi
 rm -rf ~/.config/yazi/flavors/<theme-name>.yazi
+
+# Lazygit — remove copied file and unset/update LG_CONFIG_FILE in shell profile
+rm ~/.config/lazygit/themes/<theme-name>.yml
 ```
