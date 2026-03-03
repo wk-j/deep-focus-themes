@@ -1,0 +1,261 @@
+# Frozen Sprawl — Helix Editor Theme
+# Deep slate-blue base · Glacial ice spectrum · Frost white keyword anchors · Amber cursor
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes — Spire Slate
+attribute = { fg = "spire_slate", modifiers = ["italic"] }
+
+# Types — Steel Blue
+type = { fg = "steel_blue" }
+"type.builtin" = { fg = "steel_blue" }
+"type.parameter" = { fg = "steel_blue", modifiers = ["italic"] }
+"type.enum" = { fg = "steel_blue" }
+"type.enum.variant" = { fg = "haze_lavender" }
+
+# Constructor — Haze Lavender (type-adjacent)
+constructor = { fg = "haze_lavender" }
+
+# Constants — Ice Teal
+constant = { fg = "ice_teal" }
+"constant.builtin" = { fg = "ice_teal" }
+"constant.builtin.boolean" = { fg = "ice_teal" }
+"constant.character" = { fg = "ice_teal" }
+"constant.character.escape" = { fg = "glacial_cyan" }
+"constant.numeric" = { fg = "amber_core" }
+"constant.numeric.integer" = { fg = "amber_core" }
+"constant.numeric.float" = { fg = "amber_core" }
+
+# Strings — Melt Green
+string = { fg = "melt_green" }
+"string.regexp" = { fg = "spire_slate" }
+"string.special" = { fg = "melt_green" }
+"string.special.path" = { fg = "melt_green" }
+"string.special.url" = { fg = "glacial_cyan", underline = { style = "line" } }
+"string.special.symbol" = { fg = "ice_teal" }
+
+# Comments — Frozen Depth
+comment = { fg = "muted", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Ice Mist
+variable = { fg = "fg_primary" }
+"variable.builtin" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.parameter" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.other" = { fg = "fg_primary" }
+"variable.other.member" = { fg = "steel_blue" }
+"variable.other.member.private" = { fg = "steel_blue", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "glacial_cyan" }
+
+# Punctuation
+punctuation = { fg = "dimmed" }
+"punctuation.delimiter" = { fg = "dimmed" }
+"punctuation.bracket" = { fg = "dimmed" }
+"punctuation.special" = { fg = "glacial_cyan" }
+
+# Keywords — Frost White (bold)
+keyword = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.control" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "frost_white", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.operator" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.directive" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.function" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "frost_white", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "frost_white", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed" }
+
+# Functions — Glacial Cyan (the hero)
+function = { fg = "glacial_cyan" }
+"function.builtin" = { fg = "glacial_cyan" }
+"function.method" = { fg = "glacial_cyan" }
+"function.method.private" = { fg = "glacial_cyan", modifiers = ["italic"] }
+"function.macro" = { fg = "glacial_cyan" }
+"function.special" = { fg = "glacial_cyan" }
+
+# Tags — Glacial Cyan
+tag = { fg = "glacial_cyan" }
+"tag.builtin" = { fg = "glacial_cyan" }
+
+# Namespace
+namespace = { fg = "muted", modifiers = ["italic"] }
+
+# Special
+special = { fg = "spire_slate" }
+
+# Markup
+"markup.heading" = { fg = "haze_lavender", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "dimmed" }
+"markup.heading.1" = { fg = "haze_lavender", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "haze_lavender", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "frost_white", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "frost_white" }
+"markup.heading.5" = { fg = "glacial_cyan" }
+"markup.heading.6" = { fg = "steel_blue" }
+"markup.list" = { fg = "glacial_cyan" }
+"markup.list.unnumbered" = { fg = "glacial_cyan" }
+"markup.list.numbered" = { fg = "amber_core" }
+"markup.list.checked" = { fg = "melt_green" }
+"markup.list.unchecked" = { fg = "dimmed" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "steel_blue" }
+"markup.link.url" = { fg = "steel_blue", underline = { style = "line" } }
+"markup.link.label" = { fg = "glacial_cyan" }
+"markup.link.text" = { fg = "melt_green" }
+"markup.quote" = { fg = "muted", modifiers = ["italic"] }
+"markup.raw" = { fg = "melt_green" }
+"markup.raw.inline" = { fg = "melt_green" }
+"markup.raw.block" = { fg = "melt_green" }
+
+# Diff
+"diff.plus" = "melt_green"
+"diff.plus.gutter" = "melt_green"
+"diff.minus" = "red"
+"diff.minus.gutter" = "red"
+"diff.delta" = "amber_core"
+"diff.delta.gutter" = "amber_core"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "fg_primary", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "amber_core" }
+"ui.cursor.match" = { fg = "amber_core", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "amber_core" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "amber_core" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "glacial_cyan" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "dimmed", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "dimmed" }
+
+# Statusline
+"ui.statusline" = { fg = "dimmed", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "amber_core", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "melt_green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "glacial_cyan", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "muted", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "glacial_cyan", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "glacial_cyan", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dimmed", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "dimmed", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "dimmed" }
+"ui.picker.header.column.active" = { fg = "glacial_cyan", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "fg_primary" }
+"ui.text.focus" = { fg = "fg_primary", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted" }
+"ui.text.info" = { fg = "dimmed" }
+"ui.text.directory" = { fg = "glacial_cyan" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "amber_core", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.debug.active" = { fg = "amber_core" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "amber_core"
+error = "red"
+info = "steel_blue"
+hint = "ice_teal"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "amber_core", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "ice_teal", style = "curl" } }
+"diagnostic.info" = { underline = { color = "steel_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "amber_core", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#0E1520"
+bg_secondary = "#080E18"
+bg_highlight = "#1A2535"
+border       = "#263040"
+selection    = "#162030"
+
+# Foregrounds
+fg_primary = "#D8E8F4"
+dimmed     = "#8AAABF"
+muted      = "#4E6880"
+gutter_fg  = "#2A3C50"
+
+# Accents
+frost_white   = "#E8F4FF"
+glacial_cyan  = "#78C8E0"
+steel_blue    = "#5890B8"
+ice_teal      = "#60B8A8"
+spire_slate   = "#8AAAC8"
+haze_lavender = "#9898C8"
+amber_core    = "#E0A840"
+melt_green    = "#70B890"
+red           = "#C85050"
+
+# Secondary cursor (for multi-cursor)
+secondary_cursor = "#182840"

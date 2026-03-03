@@ -1,0 +1,65 @@
+{
+  "name": "Frozen Sprawl",
+  "description": "A dark coding theme drawn from an ice-consumed metropolitan skyline — deep slate-blue backgrounds with a spectrum of glacial cyan, frost white, steel blue, and meltwater teal accents. Built for cold-focused, high-concentration sessions.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0E1520",
+      "secondary":  "#080E18",
+      "highlight":  "#1A2535",
+      "border":     "#263040"
+    },
+    "fg": {
+      "primary":    "#D8E8F4",
+      "dimmed":     "#8AAABF",
+      "muted":      "#4E6880",
+      "gutter":     "#2A3C50"
+    },
+    "accent": {
+      "frost_white":   "#E8F4FF",
+      "glacial_cyan":  "#78C8E0",
+      "steel_blue":    "#5890B8",
+      "ice_teal":      "#60B8A8",
+      "spire_slate":   "#8AAAC8",
+      "haze_lavender": "#9898C8",
+      "amber_core":    "#E0A840",
+      "melt_green":    "#70B890",
+      "red":           "#C85050"
+    },
+    "ansi": {
+      "black":          "#080E18",
+      "red":            "#C85050",
+      "green":          "#70B890",
+      "yellow":         "#E0A840",
+      "blue":           "#5890B8",
+      "magenta":        "#9898C8",
+      "cyan":           "#78C8E0",
+      "white":          "#D8E8F4",
+      "bright_black":   "#2A3C50",
+      "bright_red":     "#D86868",
+      "bright_green":   "#88C8A8",
+      "bright_yellow":  "#ECC060",
+      "bright_blue":    "#70A8D0",
+      "bright_magenta": "#B0B0D8",
+      "bright_cyan":    "#90D8F0",
+      "bright_white":   "#F0F8FF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.frost_white",
+    "functions":    "accent.glacial_cyan",
+    "strings":      "accent.melt_green",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.steel_blue",
+    "tags":         "accent.glacial_cyan",
+    "attributes":   "accent.spire_slate",
+    "literals":     "accent.amber_core",
+    "constants":    "accent.ice_teal",
+    "constructors": "accent.haze_lavender",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.amber_core"
+  }
+}
