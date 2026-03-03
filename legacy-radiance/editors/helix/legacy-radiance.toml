@@ -1,0 +1,262 @@
+# Legacy Radiance — Helix Editor Theme
+# Void-black base · Three-frequency phosphor emission · Cobalt keywords · Phosphor green functions
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes — Chartreuse
+attribute = { fg = "chartreuse", modifiers = ["italic"] }
+
+# Types — Ionized Cyan
+type = { fg = "ion" }
+"type.builtin" = { fg = "ion" }
+"type.parameter" = { fg = "ion", modifiers = ["italic"] }
+"type.enum" = { fg = "ion" }
+"type.enum.variant" = { fg = "ion" }
+
+# Constructor — Arc Blue (type-adjacent, cooler)
+constructor = { fg = "arc" }
+
+# Constants — Phosphor White
+constant = { fg = "phosphor_white" }
+"constant.builtin" = { fg = "phosphor_white" }
+"constant.builtin.boolean" = { fg = "phosphor_white" }
+"constant.character" = { fg = "phosphor_white" }
+"constant.character.escape" = { fg = "ion" }
+"constant.numeric" = { fg = "pale_green" }
+"constant.numeric.integer" = { fg = "pale_green" }
+"constant.numeric.float" = { fg = "pale_green" }
+
+# Strings — Plasma
+string = { fg = "plasma" }
+"string.regexp" = { fg = "ion" }
+"string.special" = { fg = "plasma" }
+"string.special.path" = { fg = "plasma" }
+"string.special.url" = { fg = "arc", underline = { style = "line" } }
+"string.special.symbol" = { fg = "chartreuse" }
+
+# Comments — Dead Phosphor
+comment = { fg = "muted", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Screen Glow
+variable = { fg = "fg_primary" }
+"variable.builtin" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.parameter" = { fg = "fg_primary", modifiers = ["italic"] }
+"variable.other" = { fg = "fg_primary" }
+"variable.other.member" = { fg = "dimmed" }
+"variable.other.member.private" = { fg = "dimmed", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "chartreuse" }
+
+# Punctuation
+punctuation = { fg = "dimmed" }
+"punctuation.delimiter" = { fg = "dimmed" }
+"punctuation.bracket" = { fg = "dimmed" }
+"punctuation.special" = { fg = "phosphor" }
+
+# Keywords — Cobalt (the structural command plane)
+keyword = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.control" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "cobalt", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.operator" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.directive" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.function" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "cobalt", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "cobalt", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed" }
+
+# Functions — Phosphor Green (the hero)
+function = { fg = "phosphor" }
+"function.builtin" = { fg = "phosphor" }
+"function.method" = { fg = "phosphor" }
+"function.method.private" = { fg = "phosphor", modifiers = ["italic"] }
+"function.macro" = { fg = "chartreuse" }
+"function.special" = { fg = "phosphor" }
+
+# Tags — Arc Blue
+tag = { fg = "arc" }
+"tag.builtin" = { fg = "arc" }
+
+# Namespace
+namespace = { fg = "phosphor", modifiers = ["italic"] }
+
+# Special
+special = { fg = "phosphor_white" }
+
+# Markup
+"markup.heading" = { fg = "phosphor_white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "dimmed" }
+"markup.heading.1" = { fg = "phosphor_white", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "phosphor_white", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "cobalt", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "cobalt" }
+"markup.heading.5" = { fg = "phosphor" }
+"markup.heading.6" = { fg = "phosphor" }
+"markup.list" = { fg = "phosphor" }
+"markup.list.unnumbered" = { fg = "phosphor" }
+"markup.list.numbered" = { fg = "pale_green" }
+"markup.list.checked" = { fg = "plasma" }
+"markup.list.unchecked" = { fg = "dimmed" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "phosphor" }
+"markup.link.url" = { fg = "arc", underline = { style = "line" } }
+"markup.link.label" = { fg = "ion" }
+"markup.link.text" = { fg = "plasma" }
+"markup.quote" = { fg = "muted", modifiers = ["italic"] }
+"markup.raw" = { fg = "plasma" }
+"markup.raw.inline" = { fg = "plasma" }
+"markup.raw.block" = { fg = "plasma" }
+
+# Diff
+"diff.plus" = "plasma"
+"diff.plus.gutter" = "plasma"
+"diff.minus" = "red"
+"diff.minus.gutter" = "red"
+"diff.delta" = "arc"
+"diff.delta.gutter" = "arc"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "fg_primary", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "chartreuse" }
+"ui.cursor.match" = { fg = "ion", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "ion" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "ion" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "fg_primary" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "chartreuse" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "dimmed", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "dimmed" }
+
+# Statusline
+"ui.statusline" = { fg = "dimmed", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "phosphor", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "ion", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "chartreuse", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "dimmed", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "phosphor", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu" = { fg = "fg_primary", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "phosphor", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dimmed", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "dimmed", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "dimmed" }
+"ui.picker.header.column.active" = { fg = "ion", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "fg_primary" }
+"ui.text.focus" = { fg = "fg_primary", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted" }
+"ui.text.info" = { fg = "dimmed" }
+"ui.text.directory" = { fg = "cobalt" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "chartreuse", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.debug.active" = { fg = "chartreuse" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "ember"
+error = "red"
+info = "arc"
+hint = "phosphor"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "ember", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "phosphor", style = "curl" } }
+"diagnostic.info" = { underline = { color = "arc", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "ember", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#080808"
+bg_secondary = "#040404"
+bg_highlight = "#0E1A10"
+border       = "#162018"
+selection    = "#0A2818"
+
+# Foregrounds
+fg_primary = "#C8E0D0"
+dimmed     = "#6A9078"
+muted      = "#304838"
+gutter_fg  = "#1C2E22"
+
+# Accents
+phosphor       = "#00C840"
+cobalt         = "#2A7EE8"
+ion            = "#00D4C8"
+arc            = "#40A8F0"
+chartreuse     = "#7AE830"
+plasma         = "#00F0A0"
+pale_green     = "#80C898"
+phosphor_white = "#D8F0E0"
+red            = "#E83840"
+ember          = "#C06020"
+
+# Secondary cursor (multi-cursor)
+secondary_cursor = "#006830"

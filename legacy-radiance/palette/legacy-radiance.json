@@ -1,0 +1,66 @@
+{
+  "name": "Legacy Radiance",
+  "description": "A true-black base with three-frequency phosphor emission — phosphor green functions, cobalt blue keywords, ionized cyan types. Built for the long session that feels like archaeology.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#080808",
+      "secondary":  "#040404",
+      "highlight":  "#0E1A10",
+      "border":     "#162018"
+    },
+    "fg": {
+      "primary":    "#C8E0D0",
+      "dimmed":     "#6A9078",
+      "muted":      "#304838",
+      "gutter":     "#1C2E22"
+    },
+    "accent": {
+      "phosphor":   "#00C840",
+      "cobalt":     "#2A7EE8",
+      "ion":        "#00D4C8",
+      "arc":        "#40A8F0",
+      "chartreuse": "#7AE830",
+      "plasma":     "#00F0A0",
+      "red":        "#E83840",
+      "ember":      "#C06020",
+      "pale_green": "#80C898",
+      "white":      "#D8F0E0"
+    },
+    "ansi": {
+      "black":          "#080808",
+      "red":            "#E83840",
+      "green":          "#00C840",
+      "yellow":         "#7AE830",
+      "blue":           "#2A7EE8",
+      "magenta":        "#40A8F0",
+      "cyan":           "#00D4C8",
+      "white":          "#6A9078",
+      "bright_black":   "#1C2E22",
+      "bright_red":     "#FF5860",
+      "bright_green":   "#30F060",
+      "bright_yellow":  "#A0F050",
+      "bright_blue":    "#5898FF",
+      "bright_magenta": "#70C8FF",
+      "bright_cyan":    "#30F8E8",
+      "bright_white":   "#D8F0E0"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.cobalt",
+    "functions":    "accent.phosphor",
+    "strings":      "accent.plasma",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.ion",
+    "tags":         "accent.arc",
+    "attributes":   "accent.chartreuse",
+    "literals":     "accent.pale_green",
+    "constants":    "accent.white",
+    "constructors": "accent.arc",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.ion"
+  }
+}
