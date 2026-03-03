@@ -25,6 +25,8 @@ Always read the palette file before generating any JSON. All colors must be deri
 
 ## Opencode theme format reference
 
+See built-in theme examples for reference: https://github.com/anomalyco/opencode/tree/dev/packages/opencode/src/cli/cmd/tui/context/theme
+
 ### File structure
 
 ```json
