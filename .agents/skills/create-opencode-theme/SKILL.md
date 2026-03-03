@@ -96,9 +96,9 @@ Resolve all semantic roles from `semantic_roles` first, then apply the mapping b
 | `info` | `semantic_roles.types` | Info state |
 | `text` | `colors.fg.primary` | Default foreground |
 | `textMuted` | `colors.fg.muted` | Dimmed/secondary text |
-| `background` | `"none"` | Use terminal's native background — enables transparency |
-| `backgroundPanel` | `"none"` | Use terminal's native background — enables transparency |
-| `backgroundElement` | `colors.bg.primary` | Code block background — must be a solid color (not `"none"`) to prevent code blocks blending into the transparent terminal background |
+| `background` | `colors.bg.primary` | Main chat/editor background — solid color prevents code blocks blending into terminal wallpaper |
+| `backgroundPanel` | `colors.bg.secondary` | Sidebar/panel background — slightly darker than `background` |
+| `backgroundElement` | `colors.bg.highlight` | Code block and hover background — distinct shade from `background` for visual separation |
 | `border` | `colors.bg.border` | Inactive border |
 | `borderActive` | `semantic_roles.cursor` | Focused panel border |
 | `borderSubtle` | `colors.bg.border` | Subtle/decorative border |
