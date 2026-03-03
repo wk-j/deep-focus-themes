@@ -1,6 +1,6 @@
 ---
 name: deploy-themes
-description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi, Lazygit)
+description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi, Lazygit, OpenCode)
 ---
 
 ## Deployment Targets
@@ -48,6 +48,14 @@ description: Deploy editor and terminal themes from this repository to their loc
 - **Source:** `<theme-name>/terminals/lazygit/<theme-name>.yml`
 - **Note:** Not all themes have lazygit support. Only deploy if the source file exists.
 
+### OpenCode
+
+- **Target:** `~/.config/opencode/themes/`
+- **Method:** Copy file
+- **Source:** `<theme-name>/editors/opencode/<theme-name>.json`
+- **Activate:** Set `"theme": "<theme-name>"` in `~/.config/opencode/tui.json` — replace the existing `"theme"` value in place.
+- **Note:** Not all themes have opencode support. Only deploy if the source file exists.
+
 ## Deployment Procedure
 
 ### 1. Deploy to Helix
@@ -85,6 +93,26 @@ For each theme that has `terminals/yazi/<theme-name>.yazi/`:
 cp -r <theme-name>/terminals/yazi/<theme-name>.yazi ~/.config/yazi/flavors/
 ```
 
+### 6. Deploy to OpenCode
+
+For each theme that has `editors/opencode/<theme-name>.json`:
+
+```bash
+mkdir -p ~/.config/opencode/themes
+cp <theme-name>/editors/opencode/<theme-name>.json ~/.config/opencode/themes/
+```
+
+Then activate by editing `~/.config/opencode/tui.json` — replace the `"theme"` value:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "<theme-name>"
+}
+```
+
+**To switch themes**, update the `"theme"` value to a different theme name.
+
 ### 5. Deploy to Lazygit
 
 Replace the `gui.theme` block in the user's existing `config.yml` directly.
@@ -103,13 +131,13 @@ Replace the `gui.theme` block in the user's existing `config.yml` directly.
 
 ## Current Theme Inventory
 
-| Theme | Helix | Zed | Rio | Yazi | Lazygit |
-|---|---|---|---|---|---|
-| neon-city | yes | yes | yes | no | no |
-| crystal-city | yes | yes | yes | no | no |
-| twilight-overclock | yes | yes | no | no | no |
-| stargazer | yes | no | no | yes | no |
-| tallow-light | no | no | no | no | yes |
+| Theme | Helix | Zed | Rio | Yazi | Lazygit | OpenCode |
+|---|---|---|---|---|---|---|
+| neon-city | yes | yes | yes | no | no | no |
+| crystal-city | yes | yes | yes | no | no | no |
+| twilight-overclock | yes | yes | no | no | no | no |
+| stargazer | yes | no | no | yes | no | no |
+| tallow-light | no | no | no | no | yes | yes |
 
 ## Verification
 
@@ -132,6 +160,10 @@ ls ~/.config/yazi/flavors/<theme>.yazi/
 cat ~/.config/lazygit/themes/<theme>.yml
 # or check the env var is set:
 echo $LG_CONFIG_FILE
+
+# OpenCode
+ls ~/.config/opencode/themes/<theme>.json
+cat ~/.config/opencode/tui.json
 ```
 
 ## Rollback
@@ -154,4 +186,7 @@ rm -rf ~/.config/yazi/flavors/<theme-name>.yazi
 
 # Lazygit — remove copied file and unset/update LG_CONFIG_FILE in shell profile
 rm ~/.config/lazygit/themes/<theme-name>.yml
+
+# OpenCode — remove copied file and revert tui.json theme value
+rm ~/.config/opencode/themes/<theme-name>.json
 ```

@@ -28,5 +28,6 @@ A dark coding color scheme drawn from a **plains farmstead at dusk** — amber-g
 - **Tallow cursor.** `#E8B050` caret — the same amber as the lit windows, impossible to lose in the dark.
 - **Pair with:** JetBrains Mono or Fira Code (ligature support).
 - **Lazygit support.** Theme file at `terminals/lazygit/tallow-light.yml` — replace the `gui.theme` block in your lazygit `config.yml`.
+- **OpenCode support.** Theme file at `editors/opencode/tallow-light.json` — copy to `~/.config/opencode/themes/` and set `"theme": "tallow-light"` in `tui.json`.
 
 See [tallow-light-concept.md](tallow-light-concept.md) for the full design rationale.

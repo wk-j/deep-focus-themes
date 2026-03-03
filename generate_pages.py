@@ -636,7 +636,7 @@ GALLERY_PAGE_TEMPLATE = """\
   </main>
 
   <footer>
-    <p>Built for <a href="https://helix-editor.com">Helix</a>, <a href="https://zed.dev">Zed</a>, Rio, Yazi, and Lazygit &mdash; <a href="https://github.com/wk-j/deep-focus-themes">View on GitHub</a></p>
+    <p>Built for <a href="https://helix-editor.com">Helix</a>, <a href="https://zed.dev">Zed</a>, <a href="https://opencode.ai">OpenCode</a>, Rio, Yazi, and Lazygit &mdash; <a href="https://github.com/wk-j/deep-focus-themes">View on GitHub</a></p>
   </footer>
 </body>
 </html>
@@ -753,6 +753,8 @@ def detect_support(theme_dir: Path) -> list:
         tags.append("Helix")
     if (theme_dir / "editors" / "zed").exists():
         tags.append("Zed")
+    if (theme_dir / "editors" / "opencode").exists():
+        tags.append("OpenCode")
     if (theme_dir / "terminals" / "rio").exists():
         tags.append("Rio")
     if (theme_dir / "terminals" / "yazi").exists():
