@@ -22,12 +22,39 @@ The user may provide any combination of:
 
 1. Analyze the image to identify the dominant colors, color temperature, mood, and atmosphere.
 2. Extract key hex colors from the image as starting points for accents.
-3. If no theme name is given, propose an evocative kebab-case name that captures the image's mood (e.g. a sunset cityscape might become `ember-skyline`, a frozen lake might become `glacier-dusk`). Present the proposed name to the user for confirmation before generating files.
+3. If no theme name is given, generate a name following the naming rules below. Present the proposed name to the user for confirmation before generating files.
 4. Adapt extracted colors for code readability — raw image colors may need saturation or lightness adjustments to work on dark backgrounds without halation or low contrast.
 
 ### When only a creative direction is provided
 
 Design colors from scratch based on the described mood, inspiration, or color family.
+
+## Naming rules
+
+The theme name is a first-class creative artifact. It must be:
+
+- **Specific, not generic.** It names a precise thing from the real world, not a broad category. `obsidian` is generic. `lava-shelf` is specific — it names a particular geological moment.
+- **Evocative, not descriptive.** It should make someone feel something before they see the palette. `dark-blue` describes. `drowned-signal` evokes.
+- **Unexpected.** Avoid the overused vocabulary of dark themes: `night`, `shadow`, `dark`, `void`, `abyss`, `midnight`, `phantom`, `ghost`. These words are exhausted. Find the angle no one else took.
+- **Two words, kebab-case.** A noun and a modifier, or two nouns in tension. The combination should feel slightly surprising but immediately right.
+- **Rooted in the source.** The name must come from the same visual or emotional world as the palette — not imposed from outside. If the reference is a film still, the name might echo the scene. If it's a material, the name might name the material's state or context.
+
+### Name generation process
+
+Generate **5 candidate names** before choosing. For each candidate, write one sentence explaining what specific element of the source it references. Then select the strongest — the one that is most unexpected while being most accurate. Discard names that:
+- Use any of these words: `night`, `shadow`, `dark`, `void`, `abyss`, `midnight`, `phantom`, `ghost`, `neon`, `cyber`, `pixel`, `digital`, `vapor`, `retro`, `synthwave`
+- Could belong to a different theme's palette without feeling wrong
+- Sound like a product name or a band name rather than a place or material
+
+### Examples of strong vs. weak names
+
+| Weak | Strong | Why the strong name wins |
+|---|---|---|
+| `ember-skyline` | `slag-horizon` | Slag is a specific material with color and weight; skyline is generic |
+| `glacier-dusk` | `meltwater-hour` | Names the exact transitional moment, not just a location + time |
+| `neon-city` | `fluorescent-fail` | Names the specific phenomenon (a tube about to die) not the setting |
+| `desert-night` | `fired-clay` | Names the material that holds the heat, not the environment |
+| `brass-and-black` | `oxidized-stage` | The oxidation names the exact color state of aged brass; stage names its theatrical context |
 
 ## Step-by-step procedure
 
