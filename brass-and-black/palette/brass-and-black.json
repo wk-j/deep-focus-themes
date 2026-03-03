@@ -1,0 +1,67 @@
+{
+  "name": "Brass and Black",
+  "description": "A cinematic dark theme built on deep charcoal with acid-brass accents — bold yellow functions, crimson errors, electric blue types. Built for high-focus sessions.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#181818",
+      "secondary":  "#111111",
+      "highlight":  "#242424",
+      "border":     "#2E2E2E"
+    },
+    "fg": {
+      "primary":    "#E8E0CC",
+      "dimmed":     "#A89C80",
+      "muted":      "#665C48",
+      "gutter":     "#3D3828"
+    },
+    "accent": {
+      "brass":      "#C8B800",
+      "gold":       "#E8D000",
+      "amber":      "#D4841A",
+      "red":        "#E8363A",
+      "crimson":    "#C01820",
+      "blue":       "#4E9ED4",
+      "sky":        "#7ABCE8",
+      "teal":       "#3AADA8",
+      "sage":       "#8CB87A",
+      "lavender":   "#9A88CC",
+      "white":      "#F0EAD8"
+    },
+    "ansi": {
+      "black":          "#111111",
+      "red":            "#E8363A",
+      "green":          "#8CB87A",
+      "yellow":         "#C8B800",
+      "blue":           "#4E9ED4",
+      "magenta":        "#9A88CC",
+      "cyan":           "#3AADA8",
+      "white":          "#A89C80",
+      "bright_black":   "#3D3828",
+      "bright_red":     "#FF5A5E",
+      "bright_green":   "#AADA94",
+      "bright_yellow":  "#E8D000",
+      "bright_blue":    "#7ABCE8",
+      "bright_magenta": "#BBA8EE",
+      "bright_cyan":    "#5ECEC8",
+      "bright_white":   "#F0EAD8"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.white",
+    "functions":    "accent.brass",
+    "strings":      "accent.sage",
+    "variables":    "fg.primary",
+    "comments":     "fg.muted",
+    "types":        "accent.blue",
+    "tags":         "accent.amber",
+    "attributes":   "accent.sky",
+    "literals":     "accent.teal",
+    "constants":    "accent.gold",
+    "constructors": "accent.lavender",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.gold"
+  }
+}
