@@ -28,6 +28,14 @@ Obsidian base with a Crystalline Spectrum. Blue-black backgrounds with Crystal T
 |---|---|---|---|---|
 | `#0A0E1A` | `#FFFFFF` | `#56D4C8` | `#89DDCA` | `#7EC8E3` |
 
+### [Desert Monolith](desert-monolith/docs/README.md)
+
+Deep desert night base with a Warm-to-Cool Spectrum. Sandy-brown backgrounds with Sky Blue functions, Pale Rock keywords, and Desert Sand strings. Ancient, focused, and unhurried.
+
+| Background | Keywords | Functions | Strings | Types |
+|---|---|---|---|---|
+| `#1A1510` | `#B8C4C8` | `#7BB5D0` | `#C4A86A` | `#8A9EAD` |
+
 ### [Stargazer](stargazer/docs/README.md)
 
 Deep Space base with a Galactic Spectrum. Void-black backgrounds with Nebula Cyan functions, Galactic Gold keywords, and Aurora Green strings. Contemplative, vast, and luminous.
@@ -51,6 +59,7 @@ Stage-black base with a Cinematic Brass Spectrum. Near-total-darkness background
 | Twilight Overclock | yes | yes | - | - |
 | Neon City | yes | yes | yes | - |
 | Crystal City | yes | yes | yes | - |
+| Desert Monolith | - | yes | - | - |
 | Stargazer | - | yes | - | yes |
 | Brass and Black | - | yes | - | - |
 
