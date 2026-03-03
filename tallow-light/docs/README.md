@@ -27,5 +27,6 @@ A dark coding color scheme drawn from a **plains farmstead at dusk** — amber-g
 - **Earth backgrounds.** `#0E0D0B` has a warm charcoal undertone from the dry grass and dark soil — not blue-black, but earth-black.
 - **Tallow cursor.** `#E8B050` caret — the same amber as the lit windows, impossible to lose in the dark.
 - **Pair with:** JetBrains Mono or Fira Code (ligature support).
+- **Lazygit support.** Theme file at `terminals/lazygit/tallow-light.yml` — replace the `gui.theme` block in your lazygit `config.yml`.
 
 See [tallow-light-concept.md](tallow-light-concept.md) for the full design rationale.

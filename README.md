@@ -6,20 +6,21 @@ Dark coding color schemes for long sessions — low fatigue, high clarity.
 
 ## Themes
 
-| Theme | Zed | Helix | Rio | Yazi |
-|---|---|---|---|---|
-| [Twilight Overclock](twilight-overclock/docs/README.md) | yes | yes | - | - |
-| [Neon City](neon-city/docs/README.md) | yes | yes | yes | - |
-| [Crystal City](crystal-city/docs/README.md) | yes | yes | yes | - |
-| [Cinder Grid](cinder-grid/docs/README.md) | - | yes | - | - |
-| [Brass and Black](brass-and-black/docs/README.md) | yes | yes | - | - |
-| [Desert Monolith](desert-monolith/docs/README.md) | - | yes | - | - |
-| [Stargazer](stargazer/docs/README.md) | - | yes | - | yes |
-| [Suspended Marl](suspended-marl/docs/README.md) | - | yes | - | - |
-| [Legacy Radiance](legacy-radiance/docs/README.md) | - | yes | - | - |
-| [Frozen Sprawl](frozen-sprawl/docs/README.md) | - | yes | - | - |
-| [Lantern Static](lantern-static/docs/README.md) | - | yes | - | - |
-| [Silica Haze](silica-haze/docs/README.md) | - | yes | - | - |
+| Theme | Zed | Helix | Rio | Yazi | Lazygit |
+|---|---|---|---|---|---|
+| [Twilight Overclock](twilight-overclock/docs/README.md) | yes | yes | - | - | - |
+| [Neon City](neon-city/docs/README.md) | yes | yes | yes | - | - |
+| [Crystal City](crystal-city/docs/README.md) | yes | yes | yes | - | - |
+| [Cinder Grid](cinder-grid/docs/README.md) | - | yes | - | - | - |
+| [Brass and Black](brass-and-black/docs/README.md) | yes | yes | - | - | - |
+| [Desert Monolith](desert-monolith/docs/README.md) | - | yes | - | - | - |
+| [Stargazer](stargazer/docs/README.md) | - | yes | - | yes | - |
+| [Suspended Marl](suspended-marl/docs/README.md) | - | yes | - | - | - |
+| [Legacy Radiance](legacy-radiance/docs/README.md) | - | yes | - | - | - |
+| [Frozen Sprawl](frozen-sprawl/docs/README.md) | - | yes | - | - | - |
+| [Lantern Static](lantern-static/docs/README.md) | - | yes | - | - | - |
+| [Silica Haze](silica-haze/docs/README.md) | - | yes | - | - | - |
+| [Tallow Light](tallow-light/docs/README.md) | - | yes | - | - | yes |
 
 Each Helix theme includes a standard and transparent variant.
 
