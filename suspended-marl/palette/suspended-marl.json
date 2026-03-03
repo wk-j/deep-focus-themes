@@ -1,0 +1,65 @@
+{
+  "name": "Suspended Marl",
+  "description": "A dark coding theme drawn from cold coastal mist and impossible geology — charcoal backgrounds with a spectrum of fog-blue, rust-ochre, and pale-cyan accents. Built for long sessions in still air.",
+
+  "colors": {
+    "bg": {
+      "primary":    "#181B1F",
+      "secondary":  "#111417",
+      "highlight":  "#252B30",
+      "border":     "#2F363C"
+    },
+    "fg": {
+      "primary":    "#C8D8DC",
+      "dimmed":     "#8FA8B0",
+      "muted":      "#607880",
+      "gutter":     "#3E5058"
+    },
+    "accent": {
+      "fog_cyan":   "#7DC4D4",
+      "cliff_rust":  "#C47A5A",
+      "grass_olive": "#8AAA60",
+      "stone_mauve": "#9A8CB0",
+      "sky_pale":   "#A8CDD8",
+      "amber_dry":  "#C4A050",
+      "water_teal": "#4A9090",
+      "figure_dim": "#4A5060",
+      "red":        "#C45860"
+    },
+    "ansi": {
+      "black":          "#111417",
+      "red":            "#C45860",
+      "green":          "#8AAA60",
+      "yellow":         "#C4A050",
+      "blue":           "#4A9090",
+      "magenta":        "#9A8CB0",
+      "cyan":           "#7DC4D4",
+      "white":          "#C8D8DC",
+      "bright_black":   "#3E5058",
+      "bright_red":     "#D4706A",
+      "bright_green":   "#A0C070",
+      "bright_yellow":  "#D4B060",
+      "bright_blue":    "#5AAAB0",
+      "bright_magenta": "#B0A0C8",
+      "bright_cyan":    "#9DD8E4",
+      "bright_white":   "#E0ECEF"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "fg.primary",
+    "functions":    "accent.fog_cyan",
+    "strings":      "accent.grass_olive",
+    "variables":    "fg.primary",
+    "comments":     "accent.figure_dim",
+    "types":        "accent.stone_mauve",
+    "tags":         "accent.fog_cyan",
+    "attributes":   "accent.amber_dry",
+    "literals":     "accent.cliff_rust",
+    "constants":    "accent.amber_dry",
+    "constructors": "accent.sky_pale",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.cliff_rust"
+  }
+}

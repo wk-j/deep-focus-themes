@@ -9,8 +9,8 @@ Generate the **four** foundational files that define a new theme:
 
 1. `<theme-name>/palette/<theme-name>.json` — canonical color palette
 2. `<theme-name>/docs/README.md` — theme overview
-3. `<theme-name>/docs/<theme-name>-concept.md` — full design rationale (English)
-4. `<theme-name>/docs/<theme-name>-concept-th.md` — full design rationale (Thai translation)
+3. `<theme-name>/docs/<theme-name>-concept.md` — full design rationale (English, literary tone)
+4. `<theme-name>/docs/<theme-name>-concept-th.md` — plain-language rewrite (Thai, accessible tone)
 
 ## Inputs
 
@@ -288,17 +288,18 @@ That's [Theme Name].
 
 ### 5. Write docs/<theme-name>-concept-th.md
 
-Write to `<theme-name>/docs/<theme-name>-concept-th.md`. This is a **full Thai translation** of the concept document — not a summary, not a partial translation. Every section, paragraph, table, and sentence from `<theme-name>-concept.md` must appear in Thai.
+Write to `<theme-name>/docs/<theme-name>-concept-th.md`. This is **not a translation** of the English concept document. It is an independent rewrite of the same content in Thai, using plain, direct language that is easy to read and understand. The goal is clarity and accessibility — not literary fidelity to the English version.
 
-Translation rules:
-- Translate all prose naturally into Thai. Do not transliterate English sentences word-by-word — write in fluent, readable Thai as a native speaker would.
+Rewrite rules:
+- **Write in simple, neutral Thai.** Avoid poetic or literary constructions that feel awkward when translated from English. Write as if explaining the theme to a Thai developer who wants to understand the design decisions, not experience the prose style.
+- **Preserve all factual content** — every design decision, color rationale, palette table, and typographic note must appear. Do not omit information, only simplify its expression.
 - **Color names and hex codes** remain in English/uppercase exactly as written (`#00C840`, `Phosphor Green`, `Cobalt`). Do not translate color names.
-- **Theme name** (kebab-case) remains unchanged (`legacy-radiance`, `brass-and-black`). Do not translate it.
-- **Technical terms** that have no natural Thai equivalent (e.g. `CRT`, `phosphor`, `COBOL`, `inlay hint`, `gutter`) may be kept in English or transliterated, with a brief Thai clarification in parentheses on first use if helpful.
-- **Section headings** are translated into Thai. Use the same heading level (`##`, `###`) as the English original.
-- **Tables** are fully translated — all column headers and cell content — except color names and hex codes.
+- **Theme name** (kebab-case) remains unchanged. Do not translate it.
+- **Technical terms** with no natural Thai equivalent (e.g. `gutter`, `inlay hint`, `ligature`) may be kept in English with a brief Thai clarification in parentheses on first use.
+- **Section headings** are written in Thai. Use the same heading level (`##`, `###`) as the English original.
+- **Tables** use Thai column headers and Thai cell content, except for color names and hex codes.
 - **Markdown structure** (headings, tables, bullet lists, code spans, horizontal rules) must be preserved exactly.
-- The file ends with the same closing line as the English version, translated: e.g. `นั่นคือ Legacy Radiance.`
+- The file ends with the theme name as a closing line: e.g. `นั่นคือ legacy-radiance.`
 
 The Thai concept file uses the same filename convention with a `-th` suffix:
 ```

@@ -52,6 +52,14 @@ Stage-black base with a Cinematic Brass Spectrum. Near-total-darkness background
 |---|---|---|---|---|
 | `#181818` | `#F0EAD8` | `#C8B800` | `#8CB87A` | `#4E9ED4` |
 
+### [Suspended Marl](suspended-marl/docs/README.md)
+
+Cold coastal charcoal base with a Fog-Blue to Rust-Ochre Spectrum. Blue-grey backgrounds with Fog Cyan functions, near-white keywords, and Cliff Grass strings. Still, liminal, and unhurried.
+
+| Background | Keywords | Functions | Strings | Types |
+|---|---|---|---|---|
+| `#181B1F` | `#C8D8DC` | `#7DC4D4` | `#8AAA60` | `#9A8CB0` |
+
 ## Supported Editors & Terminals
 
 | Theme | Zed | Helix | Rio | Yazi |
@@ -62,6 +70,7 @@ Stage-black base with a Cinematic Brass Spectrum. Near-total-darkness background
 | Desert Monolith | - | yes | - | - |
 | Stargazer | - | yes | - | yes |
 | Brass and Black | - | yes | - | - |
+| Suspended Marl | - | yes | - | - |
 
 Each theme includes a standard and transparent variant for Helix.
 
