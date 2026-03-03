@@ -9,7 +9,7 @@ Dark coding color schemes for long sessions — low fatigue, high clarity.
 | Theme | Zed | Helix | OpenCode | Rio | Yazi | Lazygit |
 |---|---|---|---|---|---|---|
 | [Twilight Overclock](twilight-overclock/docs/README.md) | yes | yes | - | - | - | - |
-| [Neon City](neon-city/docs/README.md) | yes | yes | - | yes | - | - |
+| [Neon City](neon-city/docs/README.md) | yes | yes | yes | yes | - | - |
 | [Crystal City](crystal-city/docs/README.md) | yes | yes | - | yes | - | - |
 | [Cinder Grid](cinder-grid/docs/README.md) | - | yes | - | - | - | - |
 | [Brass and Black](brass-and-black/docs/README.md) | yes | yes | - | - | - | - |

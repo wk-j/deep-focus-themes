@@ -27,5 +27,6 @@ A dark coding color scheme using a **Midnight** base with an **Electric Neon Spe
 - **Depth over borders.** Panels separated by shade, not lines.
 - **Cyan cursor.** Electric cyan — always visible, always unmissable.
 - **Pair with:** JetBrains Mono or Fira Code (ligature support).
+- **OpenCode support.** Theme file at `editors/opencode/neon-city.json` — copy to `~/.config/opencode/themes/` and set `"theme": "neon-city"` in `tui.json`.
 
 See [neon-city-concept.md](neon-city-concept.md) for the full design rationale.

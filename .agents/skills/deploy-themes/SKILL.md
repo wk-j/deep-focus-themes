@@ -133,7 +133,7 @@ Replace the `gui.theme` block in the user's existing `config.yml` directly.
 
 | Theme | Helix | Zed | Rio | Yazi | Lazygit | OpenCode |
 |---|---|---|---|---|---|---|
-| neon-city | yes | yes | yes | no | no | no |
+| neon-city | yes | yes | yes | no | no | yes |
 | crystal-city | yes | yes | yes | no | no | no |
 | twilight-overclock | yes | yes | no | no | no | no |
 | stargazer | yes | no | no | yes | no | no |
