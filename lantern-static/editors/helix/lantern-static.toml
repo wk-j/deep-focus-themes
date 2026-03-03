@@ -1,0 +1,262 @@
+# Lantern Static — Helix Editor Theme
+# Tokyo backstreet base · Amber-crimson warm pole · Plasma-blue cold pole · White keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "sign_yellow", modifiers = ["italic"] }
+
+# Types — Plasma Blue
+type = { fg = "plasma_blue" }
+"type.builtin" = { fg = "plasma_blue" }
+"type.parameter" = { fg = "plasma_blue", modifiers = ["italic"] }
+"type.enum" = { fg = "plasma_blue" }
+"type.enum.variant" = { fg = "plasma_blue" }
+
+# Constructor — Alley Mist (type-adjacent)
+constructor = { fg = "alley_mist" }
+
+# Constants — Sign Yellow
+constant = { fg = "sign_yellow" }
+"constant.builtin" = { fg = "sign_yellow" }
+"constant.builtin.boolean" = { fg = "sign_yellow" }
+"constant.character" = { fg = "sign_yellow" }
+"constant.character.escape" = { fg = "plasma_blue" }
+"constant.numeric" = { fg = "rust_glow" }
+"constant.numeric.integer" = { fg = "rust_glow" }
+"constant.numeric.float" = { fg = "rust_glow" }
+
+# Strings — Neon Crimson
+string = { fg = "neon_crimson" }
+"string.regexp" = { fg = "plasma_blue" }
+"string.special" = { fg = "neon_crimson" }
+"string.special.path" = { fg = "neon_crimson" }
+"string.special.url" = { fg = "neon_crimson", underline = { style = "line" } }
+"string.special.symbol" = { fg = "sign_yellow" }
+
+# Comments — Indigo Haze
+comment = { fg = "indigo_haze", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "indigo_haze", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "indigo_haze", modifiers = ["italic"] }
+"comment.unused" = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Dusty White
+variable = { fg = "dusty_white" }
+"variable.builtin" = { fg = "dusty_white", modifiers = ["italic"] }
+"variable.parameter" = { fg = "dusty_white", modifiers = ["italic"] }
+"variable.other" = { fg = "dusty_white" }
+"variable.other.member" = { fg = "fg_dimmed" }
+"variable.other.member.private" = { fg = "fg_dimmed", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "lantern_amber" }
+
+# Punctuation
+punctuation = { fg = "fg_dimmed" }
+"punctuation.delimiter" = { fg = "fg_dimmed" }
+"punctuation.bracket" = { fg = "fg_dimmed" }
+"punctuation.special" = { fg = "lantern_amber" }
+
+# Keywords — Bold Smoke White
+keyword = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.control" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "smoke_white", modifiers = ["bold", "italic"] }
+"keyword.control.exception" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.operator" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.directive" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.function" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.storage.type" = { fg = "smoke_white", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "smoke_white", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "fg_dimmed" }
+
+# Functions — Lantern Amber (the hero)
+function = { fg = "lantern_amber" }
+"function.builtin" = { fg = "lantern_amber" }
+"function.method" = { fg = "lantern_amber" }
+"function.method.private" = { fg = "lantern_amber", modifiers = ["italic"] }
+"function.macro" = { fg = "lantern_amber" }
+"function.special" = { fg = "lantern_amber" }
+
+# Tags — Plasma Blue (like types)
+tag = { fg = "plasma_blue" }
+"tag.builtin" = { fg = "plasma_blue" }
+
+# Namespace
+namespace = { fg = "lantern_amber", modifiers = ["italic"] }
+
+# Special
+special = { fg = "sign_yellow" }
+
+# Markup
+"markup.heading" = { fg = "smoke_white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "fg_dimmed" }
+"markup.heading.1" = { fg = "smoke_white", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "smoke_white", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "plasma_blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "plasma_blue" }
+"markup.heading.5" = { fg = "lantern_amber" }
+"markup.heading.6" = { fg = "lantern_amber" }
+"markup.list" = { fg = "lantern_amber" }
+"markup.list.unnumbered" = { fg = "lantern_amber" }
+"markup.list.numbered" = { fg = "rust_glow" }
+"markup.list.checked" = { fg = "alley_green" }
+"markup.list.unchecked" = { fg = "fg_dimmed" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "lantern_amber" }
+"markup.link.url" = { fg = "lantern_amber", underline = { style = "line" } }
+"markup.link.label" = { fg = "plasma_blue" }
+"markup.link.text" = { fg = "neon_crimson" }
+"markup.quote" = { fg = "indigo_haze", modifiers = ["italic"] }
+"markup.raw" = { fg = "neon_crimson" }
+"markup.raw.inline" = { fg = "neon_crimson" }
+"markup.raw.block" = { fg = "neon_crimson" }
+
+# Diff
+"diff.plus" = "alley_green"
+"diff.plus.gutter" = "alley_green"
+"diff.minus" = "alarm_red"
+"diff.minus.gutter" = "alarm_red"
+"diff.delta" = "rust_glow"
+"diff.delta.gutter" = "rust_glow"
+
+# ─── Interface / UI ──────────────────────────────────────────────────────────
+
+"ui.background" = { fg = "dusty_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.normal" = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert" = { fg = "bg_primary", bg = "dusty_white" }
+"ui.cursor.select" = { fg = "bg_primary", bg = "rust_glow" }
+"ui.cursor.match" = { fg = "plasma_blue", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg_primary", bg = "plasma_blue" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "plasma_blue" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "dusty_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "rust_glow" }
+
+# Selection
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_primary" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter" = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "indigo_haze", bg = "bg_highlight" }
+"ui.linenr" = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "indigo_haze" }
+
+# Statusline
+"ui.statusline" = { fg = "fg_dimmed", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal" = { fg = "bg_secondary", bg = "lantern_amber", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg_secondary", bg = "plasma_blue", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg_secondary", bg = "rust_glow", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline" = { fg = "indigo_haze", bg = "bg_secondary" }
+"ui.bufferline.active" = { fg = "bg_secondary", bg = "lantern_amber", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup" = { fg = "dusty_white", bg = "bg_secondary" }
+"ui.popup.info" = { fg = "dusty_white", bg = "bg_secondary" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "dusty_white", bg = "bg_secondary" }
+"ui.menu" = { fg = "dusty_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "plasma_blue", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "fg_dimmed", bg = "border" }
+
+# Picker
+"ui.picker.header" = { fg = "fg_dimmed", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "fg_dimmed" }
+"ui.picker.header.column.active" = { fg = "plasma_blue", modifiers = ["bold"] }
+
+# Text
+"ui.text" = { fg = "dusty_white" }
+"ui.text.focus" = { fg = "dusty_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "indigo_haze" }
+"ui.text.info" = { fg = "fg_dimmed" }
+"ui.text.directory" = { fg = "plasma_blue" }
+
+# Virtual elements
+"ui.virtual" = { fg = "border" }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gutter_fg" }
+"ui.virtual.jump-label" = { fg = "rust_glow", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "alarm_red" }
+"ui.debug.active" = { fg = "rust_glow" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "rust_glow"
+error = "alarm_red"
+info = "plasma_blue"
+hint = "lantern_amber"
+
+# Diagnostics (editing area)
+diagnostic = { underline = { color = "rust_glow", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "lantern_amber", style = "curl" } }
+"diagnostic.info" = { underline = { color = "plasma_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "rust_glow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "alarm_red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ─── Palette ─────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary = "#0E0D15"
+bg_secondary = "#090810"
+bg_highlight = "#1A1826"
+border = "#252338"
+selection = "#2E2A48"
+
+# Foregrounds
+dusty_white = "#D8D0E8"
+fg_dimmed = "#7A7090"
+fg_muted = "#4E4660"
+gutter_fg = "#312B40"
+
+# Accents
+smoke_white = "#F2EEF8"
+lantern_amber = "#E8922A"
+neon_crimson = "#E8314A"
+plasma_blue = "#52C8F0"
+sign_yellow = "#F5C842"
+rust_glow = "#C46B3A"
+alley_mist = "#8FAABB"
+indigo_haze = "#8B72BE"
+alley_green = "#5EC465"
+alarm_red = "#E83040"
+
+# Secondary cursor (multi-cursor)
+secondary_cursor = "#6B5A8A"

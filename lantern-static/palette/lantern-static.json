@@ -1,0 +1,66 @@
+{
+  "name": "Lantern Static",
+  "description": "Deep blue-black base drawn from a Tokyo backstreet at night — amber functions, crimson strings, plasma-blue types, dusty violet mid-tones, warm-cold tension throughout",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0E0D15",
+      "secondary":  "#090810",
+      "highlight":  "#1A1826",
+      "border":     "#252338"
+    },
+    "fg": {
+      "primary":    "#D8D0E8",
+      "dimmed":     "#7A7090",
+      "muted":      "#4E4660",
+      "gutter":     "#312B40"
+    },
+    "accent": {
+      "amber":      "#E8922A",
+      "crimson":    "#E8314A",
+      "plasma":     "#52C8F0",
+      "lantern":    "#F5C842",
+      "rust":       "#C46B3A",
+      "mist":       "#8FAABB",
+      "violet":     "#8B72BE",
+      "green":      "#5EC465",
+      "white":      "#F2EEF8",
+      "red":        "#E83040"
+    },
+    "ansi": {
+      "black":          "#0E0D15",
+      "red":            "#E83040",
+      "green":          "#5EC465",
+      "yellow":         "#F5C842",
+      "blue":           "#52C8F0",
+      "magenta":        "#8B72BE",
+      "cyan":           "#5EC8B8",
+      "white":          "#D8D0E8",
+      "bright_black":   "#4E4660",
+      "bright_red":     "#F05060",
+      "bright_green":   "#80D885",
+      "bright_yellow":  "#F8D870",
+      "bright_blue":    "#80DCFF",
+      "bright_magenta": "#AA90D8",
+      "bright_cyan":    "#80DDD0",
+      "bright_white":   "#F2EEF8"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.white",
+    "functions":    "accent.amber",
+    "strings":      "accent.crimson",
+    "variables":    "fg.primary",
+    "comments":     "accent.violet",
+    "types":        "accent.plasma",
+    "tags":         "accent.plasma",
+    "attributes":   "accent.lantern",
+    "literals":     "accent.rust",
+    "constants":    "accent.lantern",
+    "constructors": "accent.mist",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.plasma"
+  }
+}
