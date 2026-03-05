@@ -1,0 +1,66 @@
+{
+  "name": "Thermal Shelf",
+  "description": "Deep stratospheric base with an altitude spectrum — teal functions, golden strings, cloud-white types, warm amber numbers, ivory constants, bold keyword anchors",
+
+  "colors": {
+    "bg": {
+      "primary":    "#0F1B24",
+      "secondary":  "#091318",
+      "highlight":  "#1A2D3A",
+      "border":     "#263E4D"
+    },
+    "fg": {
+      "primary":    "#D8E4E8",
+      "dimmed":     "#8A9EAA",
+      "muted":      "#5A7080",
+      "gutter":     "#3B5060"
+    },
+    "accent": {
+      "teal":       "#4EC9B0",
+      "gold":       "#D4A856",
+      "cloud":      "#A8D8EA",
+      "amber":      "#E8943A",
+      "ivory":      "#E8DCC8",
+      "coral":      "#E06B56",
+      "cyan":       "#56C8D8",
+      "slate":      "#6B8FA0",
+      "cream":      "#F0E6D0",
+      "red":        "#E05252"
+    },
+    "ansi": {
+      "black":          "#091318",
+      "red":            "#E05252",
+      "green":          "#4EC9B0",
+      "yellow":         "#D4A856",
+      "blue":           "#56C8D8",
+      "magenta":        "#E06B56",
+      "cyan":           "#4EC9B0",
+      "white":          "#D8E4E8",
+      "bright_black":   "#5A7080",
+      "bright_red":     "#E87878",
+      "bright_green":   "#72D8C6",
+      "bright_yellow":  "#E0BC72",
+      "bright_blue":    "#78D4E2",
+      "bright_magenta": "#E89080",
+      "bright_cyan":    "#72D8C6",
+      "bright_white":   "#F0E6D0"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.cream",
+    "functions":    "accent.teal",
+    "strings":      "accent.gold",
+    "variables":    "fg.primary",
+    "comments":     "accent.slate",
+    "types":        "accent.cloud",
+    "tags":         "accent.cloud",
+    "attributes":   "accent.ivory",
+    "literals":     "accent.amber",
+    "constants":    "accent.ivory",
+    "constructors": "accent.cloud",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.amber"
+  }
+}

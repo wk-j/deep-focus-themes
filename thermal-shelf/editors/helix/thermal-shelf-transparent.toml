@@ -1,0 +1,100 @@
+# Thermal Shelf (Transparent) — Helix Editor Theme
+# Inherits the base theme, removes all backgrounds to show terminal wallpaper.
+
+inherits = "thermal-shelf"
+
+# ─── Interface / UI ───────────────────────────────────────────────────────────
+
+# Background — remove bg
+"ui.background"           = { fg = "frost_white" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor.normal"         = { modifiers = ["reversed"] }
+"ui.cursor.insert"         = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.select"         = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.primary"        = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "warm_amber" }
+
+# Selection
+"ui.selection"         = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline — keep primary, clear secondary
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = {}
+"ui.cursorcolumn.primary"   = { bg = "selection" }
+"ui.cursorcolumn.secondary" = {}
+
+# Gutter — clear backgrounds
+"ui.gutter"          = {}
+"ui.gutter.selected" = {}
+"ui.linenr"          = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "muted_fg", modifiers = ["bold"] }
+
+# Statusline — keep opaque
+"ui.statusline"          = { fg = "dimmed_frost", bg = "bg_secondary" }
+"ui.statusline.inactive" = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal"   = { fg = "bg_secondary", bg = "thermal_teal", modifiers = ["bold"] }
+"ui.statusline.insert"   = { fg = "bg_secondary", bg = "warm_amber", modifiers = ["bold"] }
+"ui.statusline.select"   = { fg = "bg_secondary", bg = "cloud_gold", modifiers = ["bold"] }
+
+# Bufferline — keep opaque
+"ui.bufferline"            = { fg = "muted_fg", bg = "bg_secondary" }
+"ui.bufferline.active"     = { fg = "bg_secondary", bg = "thermal_teal", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus — keep opaque
+"ui.popup"         = { fg = "frost_white", bg = "bg_secondary" }
+"ui.popup.info"    = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu"          = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "warm_amber", modifiers = ["bold"] }
+"ui.menu.scroll"   = { fg = "dimmed_frost", bg = "border" }
+"ui.help"          = { fg = "frost_white", bg = "bg_secondary" }
+"ui.window"        = { fg = "border" }
+
+# Virtual elements — remove backgrounds
+"ui.virtual.ruler"                = { fg = "border" }
+"ui.virtual.inlay-hint"           = { fg = "gutter_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"      = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Highlight — reduce weight
+"ui.highlight"           = { modifiers = ["bold"] }
+"ui.highlight.frameline" = { underline = { color = "warm_amber", style = "line" } }
+
+# Snippet
+tabstop = { modifiers = ["italic", "underlined"] }
+
+# ─── Palette ──────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds (opaque for UI elements)
+bg_primary   = "#0F1B24"
+bg_secondary = "#091318"
+bg_highlight = "#1A2D3A"
+border       = "#263E4D"
+selection    = "#1E3648"
+
+# Foregrounds
+frost_white  = "#D8E4E8"
+dimmed_frost = "#8A9EAA"
+muted_fg     = "#5A7080"
+gutter_fg    = "#3B5060"
+
+# Accents
+cream_white    = "#F0E6D0"
+thermal_teal   = "#4EC9B0"
+cloud_gold     = "#D4A856"
+cirrus_blue    = "#A8D8EA"
+warm_amber     = "#E8943A"
+ivory          = "#E8DCC8"
+coral_red      = "#E05252"
+altitude_cyan  = "#56C8D8"
+altitude_slate = "#6B8FA0"
+
+# Multi-cursor
+secondary_cursor = "#A07830"

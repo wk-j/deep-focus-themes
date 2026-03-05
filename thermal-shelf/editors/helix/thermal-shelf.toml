@@ -1,0 +1,281 @@
+# Thermal Shelf — Helix Editor Theme
+# Deep stratospheric base · Altitude spectrum · Cream keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "ivory", modifiers = ["italic"] }
+
+# Types — Cirrus Blue
+type                = { fg = "cirrus_blue" }
+"type.builtin"      = { fg = "cirrus_blue" }
+"type.parameter"    = { fg = "cirrus_blue", modifiers = ["italic"] }
+"type.enum"         = { fg = "cirrus_blue" }
+"type.enum.variant" = { fg = "cirrus_blue" }
+
+# Constructor — Cirrus Blue (type-adjacent)
+constructor = { fg = "cirrus_blue" }
+
+# Constants — Ivory
+constant                    = { fg = "ivory" }
+"constant.builtin"          = { fg = "ivory" }
+"constant.builtin.boolean"  = { fg = "ivory" }
+"constant.character"        = { fg = "ivory" }
+"constant.character.escape" = { fg = "altitude_cyan" }
+"constant.numeric"          = { fg = "warm_amber" }
+"constant.numeric.integer"  = { fg = "warm_amber" }
+"constant.numeric.float"    = { fg = "warm_amber" }
+
+# Strings — Cloud Gold
+string                  = { fg = "cloud_gold" }
+"string.regexp"         = { fg = "altitude_cyan" }
+"string.special"        = { fg = "cloud_gold" }
+"string.special.path"   = { fg = "cloud_gold" }
+"string.special.url"    = { fg = "cloud_gold", underline = { style = "line" } }
+"string.special.symbol" = { fg = "ivory" }
+
+# Comments — Altitude Slate
+comment                       = { fg = "altitude_slate", modifiers = ["italic"] }
+"comment.line.documentation"  = { fg = "altitude_slate", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "altitude_slate", modifiers = ["italic"] }
+"comment.unused"              = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Frost White
+variable                        = { fg = "frost_white" }
+"variable.builtin"              = { fg = "frost_white", modifiers = ["italic"] }
+"variable.parameter"            = { fg = "frost_white", modifiers = ["italic"] }
+"variable.other"                = { fg = "frost_white" }
+"variable.other.member"         = { fg = "dimmed_frost" }
+"variable.other.member.private" = { fg = "dimmed_frost", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "thermal_teal" }
+
+# Punctuation
+punctuation             = { fg = "dimmed_frost" }
+"punctuation.delimiter" = { fg = "dimmed_frost" }
+"punctuation.bracket"   = { fg = "dimmed_frost" }
+"punctuation.special"   = { fg = "thermal_teal" }
+
+# Rainbow brackets (6 levels, rotate with nesting depth)
+"rainbow.bracket"   = { fg = "dimmed_frost" }
+"rainbow.bracket.1" = { fg = "thermal_teal" }
+"rainbow.bracket.2" = { fg = "cloud_gold" }
+"rainbow.bracket.3" = { fg = "cirrus_blue" }
+"rainbow.bracket.4" = { fg = "warm_amber" }
+"rainbow.bracket.5" = { fg = "ivory" }
+"rainbow.bracket.6" = { fg = "altitude_cyan" }
+
+# Keywords — Bold Cream White
+keyword                       = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.control"             = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.control.repeat"      = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.control.import"      = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.control.return"      = { fg = "cream_white", modifiers = ["bold", "italic"] }
+"keyword.control.exception"   = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.operator"            = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.directive"           = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.function"            = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.storage.type"        = { fg = "cream_white", modifiers = ["bold"] }
+"keyword.storage.modifier"    = { fg = "cream_white", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed_frost" }
+
+# Functions — Thermal Teal (the hero)
+function                  = { fg = "thermal_teal" }
+"function.builtin"        = { fg = "thermal_teal" }
+"function.method"         = { fg = "thermal_teal" }
+"function.method.private" = { fg = "thermal_teal", modifiers = ["italic"] }
+"function.macro"          = { fg = "thermal_teal" }
+"function.special"        = { fg = "thermal_teal" }
+
+# Tags — Cirrus Blue (like types)
+tag           = { fg = "cirrus_blue" }
+"tag.builtin" = { fg = "cirrus_blue" }
+
+# Namespace
+namespace = { fg = "thermal_teal", modifiers = ["italic"] }
+
+# Special
+special = { fg = "ivory" }
+
+# Markup
+"markup.heading"              = { fg = "cream_white", modifiers = ["bold"] }
+"markup.heading.marker"       = { fg = "dimmed_frost" }
+"markup.heading.1"            = { fg = "cream_white", modifiers = ["bold"] }
+"markup.heading.2"            = { fg = "cream_white", modifiers = ["bold"] }
+"markup.heading.3"            = { fg = "cirrus_blue", modifiers = ["bold"] }
+"markup.heading.4"            = { fg = "cirrus_blue" }
+"markup.heading.5"            = { fg = "thermal_teal" }
+"markup.heading.6"            = { fg = "thermal_teal" }
+"markup.list"                 = { fg = "thermal_teal" }
+"markup.list.unnumbered"      = { fg = "thermal_teal" }
+"markup.list.numbered"        = { fg = "warm_amber" }
+"markup.list.checked"         = { fg = "cloud_gold" }
+"markup.list.unchecked"       = { fg = "dimmed_frost" }
+"markup.bold"                 = { modifiers = ["bold"] }
+"markup.italic"               = { modifiers = ["italic"] }
+"markup.strikethrough"        = { modifiers = ["crossed_out"] }
+"markup.link"                 = { fg = "thermal_teal" }
+"markup.link.url"             = { fg = "thermal_teal", underline = { style = "line" } }
+"markup.link.label"           = { fg = "cirrus_blue" }
+"markup.link.text"            = { fg = "cloud_gold" }
+"markup.quote"                = { fg = "altitude_slate", modifiers = ["italic"] }
+"markup.raw"                  = { fg = "cloud_gold" }
+"markup.raw.inline"           = { fg = "cloud_gold" }
+"markup.raw.block"            = { fg = "cloud_gold" }
+
+# Markup — completion/hover popups
+"markup.normal.completion"     = { fg = "frost_white" }
+"markup.normal.hover"          = { fg = "frost_white" }
+"markup.heading.completion"    = { fg = "cream_white", modifiers = ["bold"] }
+"markup.heading.hover"         = { fg = "cream_white", modifiers = ["bold"] }
+"markup.raw.inline.completion" = { fg = "cloud_gold" }
+"markup.raw.inline.hover"     = { fg = "cloud_gold" }
+
+# Diff
+"diff.plus"           = "thermal_teal"
+"diff.plus.gutter"    = "thermal_teal"
+"diff.minus"          = "coral_red"
+"diff.minus.gutter"   = "coral_red"
+"diff.delta"          = "warm_amber"
+"diff.delta.moved"    = "ivory"
+"diff.delta.conflict" = "coral_red"
+"diff.delta.gutter"   = "warm_amber"
+
+# ─── Interface / UI ───────────────────────────────────────────────────────────
+
+# Background
+"ui.background"           = { fg = "frost_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor"                = { modifiers = ["reversed"] }
+"ui.cursor.normal"         = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert"         = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.select"         = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.match"          = { fg = "altitude_cyan", modifiers = ["bold"] }
+"ui.cursor.primary"        = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "warm_amber" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "frost_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "warm_amber" }
+
+# Selection
+"ui.selection"         = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = { bg = "bg_primary" }
+"ui.cursorcolumn.primary"   = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter"          = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "muted_fg", bg = "bg_highlight" }
+"ui.linenr"          = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "muted_fg" }
+
+# Statusline
+"ui.statusline"           = { fg = "dimmed_frost", bg = "bg_secondary" }
+"ui.statusline.inactive"  = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal"    = { fg = "bg_secondary", bg = "thermal_teal", modifiers = ["bold"] }
+"ui.statusline.insert"    = { fg = "bg_secondary", bg = "warm_amber", modifiers = ["bold"] }
+"ui.statusline.select"    = { fg = "bg_secondary", bg = "cloud_gold", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline"            = { fg = "muted_fg", bg = "bg_secondary" }
+"ui.bufferline.active"     = { fg = "bg_secondary", bg = "thermal_teal", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup"         = { fg = "frost_white", bg = "bg_secondary" }
+"ui.popup.info"    = { fg = "frost_white", bg = "bg_secondary" }
+"ui.window"        = { fg = "border" }
+"ui.help"          = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu"          = { fg = "frost_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "warm_amber", modifiers = ["bold"] }
+"ui.menu.scroll"   = { fg = "dimmed_frost", bg = "border" }
+
+# Picker
+"ui.picker.header"               = { fg = "dimmed_frost", modifiers = ["bold"] }
+"ui.picker.header.column"        = { fg = "dimmed_frost" }
+"ui.picker.header.column.active" = { fg = "warm_amber", modifiers = ["bold"] }
+
+# Text
+"ui.text"           = { fg = "frost_white" }
+"ui.text.focus"     = { fg = "frost_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive"  = { fg = "muted_fg" }
+"ui.text.info"      = { fg = "dimmed_frost" }
+"ui.text.directory" = { fg = "cirrus_blue" }
+
+# Virtual Elements
+"ui.virtual"                      = { fg = "border" }
+"ui.virtual.ruler"                = { bg = "bg_highlight" }
+"ui.virtual.whitespace"           = { fg = "border" }
+"ui.virtual.indent-guide"         = { fg = "border" }
+"ui.virtual.inlay-hint"           = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"      = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap"                 = { fg = "gutter_fg" }
+"ui.virtual.jump-label"           = { fg = "warm_amber", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight"           = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "coral_red" }
+"ui.debug.active"     = { fg = "warm_amber" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "warm_amber"
+error   = "coral_red"
+info    = "altitude_cyan"
+hint    = "thermal_teal"
+
+# Diagnostics (editing area)
+diagnostic               = { underline = { color = "warm_amber", style = "curl" } }
+"diagnostic.hint"        = { underline = { color = "thermal_teal", style = "curl" } }
+"diagnostic.info"        = { underline = { color = "altitude_cyan", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "warm_amber", style = "curl" } }
+"diagnostic.error"       = { underline = { color = "coral_red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
+
+# ─── Palette ──────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#0F1B24"
+bg_secondary = "#091318"
+bg_highlight = "#1A2D3A"
+border       = "#263E4D"
+selection    = "#1E3648"
+
+# Foregrounds
+frost_white  = "#D8E4E8"
+dimmed_frost = "#8A9EAA"
+muted_fg     = "#5A7080"
+gutter_fg    = "#3B5060"
+
+# Accents
+cream_white    = "#F0E6D0"
+thermal_teal   = "#4EC9B0"
+cloud_gold     = "#D4A856"
+cirrus_blue    = "#A8D8EA"
+warm_amber     = "#E8943A"
+ivory          = "#E8DCC8"
+coral_red      = "#E05252"
+altitude_cyan  = "#56C8D8"
+altitude_slate = "#6B8FA0"
+
+# Multi-cursor
+secondary_cursor = "#A07830"
