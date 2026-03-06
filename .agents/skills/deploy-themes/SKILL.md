@@ -1,6 +1,6 @@
 ---
 name: deploy-themes
-description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi, Lazygit, OpenCode)
+description: Deploy editor and terminal themes from this repository to their local installation paths (Helix, Zed, Rio, Yazi, Lazygit, OpenCode, Lexer)
 ---
 
 ## Deployment Targets
@@ -55,6 +55,14 @@ description: Deploy editor and terminal themes from this repository to their loc
 - **Source:** `<theme-name>/editors/opencode/<theme-name>.json`
 - **Activate:** Set `"theme": "<theme-name>"` in `~/.config/opencode/tui.json` — replace the existing `"theme"` value in place.
 - **Note:** Not all themes have opencode support. Only deploy if the source file exists.
+
+### Lexer
+
+- **Target:** `~/.config/lexer/themes/`
+- **Method:** Copy file
+- **Source:** `<theme-name>/editors/lexer/<theme-name>.toml`
+- **Activate:** Select with `Space t` in the app, or launch with `lexer --theme <theme-name>`.
+- **Note:** Not all themes have Lexer support. Only deploy if the source file exists. Theme is hot-reloaded on save.
 
 ## Deployment Procedure
 
@@ -113,6 +121,17 @@ Then activate by editing `~/.config/opencode/tui.json` — replace the `"theme"`
 
 **To switch themes**, update the `"theme"` value to a different theme name.
 
+### 7. Deploy to Lexer
+
+For each theme that has `editors/lexer/<theme-name>.toml`:
+
+```bash
+mkdir -p ~/.config/lexer/themes
+cp <theme-name>/editors/lexer/<theme-name>.toml ~/.config/lexer/themes/
+```
+
+Then select the theme with `Space t` in Lexer, or launch with `lexer --theme <theme-name>`.
+
 ### 5. Deploy to Lazygit
 
 Replace the `gui.theme` block in the user's existing `config.yml` directly.
@@ -131,14 +150,14 @@ Replace the `gui.theme` block in the user's existing `config.yml` directly.
 
 ## Current Theme Inventory
 
-| Theme | Helix | Zed | Rio | Yazi | Lazygit | OpenCode |
-|---|---|---|---|---|---|---|
-| neon-city | yes | yes | yes | no | no | yes |
-| crystal-city | yes | yes | yes | no | no | no |
-| twilight-overclock | yes | yes | yes | no | no | no |
-| cinder-grid | no | yes | yes | no | no | no |
-| stargazer | yes | no | no | yes | no | no |
-| tallow-light | no | no | no | no | yes | yes |
+| Theme | Helix | Zed | Rio | Yazi | Lazygit | OpenCode | Lexer |
+|---|---|---|---|---|---|---|---|
+| neon-city | yes | yes | yes | no | no | yes | no |
+| crystal-city | yes | yes | yes | no | no | no | no |
+| twilight-overclock | yes | yes | yes | no | no | no | no |
+| cinder-grid | no | yes | yes | no | no | no | yes |
+| stargazer | yes | no | no | yes | no | no | no |
+| tallow-light | no | no | no | no | yes | yes | no |
 
 ## Verification
 
@@ -165,6 +184,9 @@ echo $LG_CONFIG_FILE
 # OpenCode
 ls ~/.config/opencode/themes/<theme>.json
 cat ~/.config/opencode/tui.json
+
+# Lexer
+diff <theme>/editors/lexer/<theme>.toml ~/.config/lexer/themes/<theme>.toml
 ```
 
 ## Rollback
@@ -190,4 +212,7 @@ rm ~/.config/lazygit/themes/<theme-name>.yml
 
 # OpenCode — remove copied file and revert tui.json theme value
 rm ~/.config/opencode/themes/<theme-name>.json
+
+# Lexer
+rm ~/.config/lexer/themes/<theme-name>.toml
 ```

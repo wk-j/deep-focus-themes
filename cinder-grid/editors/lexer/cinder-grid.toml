@@ -1,0 +1,85 @@
+# Cinder Grid — Lexer Theme
+# A dark coding theme drawn from a mosaic-tiled control room at night — ember-orange functions, steel-blue types, amber keywords, and scattered city-light accents.
+
+[meta]
+name = "Cinder Grid"
+author = "wk"
+base = "dark"
+version = "1.0.0"
+
+[colors]
+# App chrome
+bg_base        = "transparent"
+bg_base_opaque = "#0b0f1a"
+bg_panel       = "rgba(11, 15, 26, 0.55)"
+bg_panel_border = "rgba(30, 40, 64, 0.10)"
+text_primary   = "#d8dde8"
+text_secondary = "#8a95a8"
+text_muted     = "#4e5a6e"
+accent         = "#e8721a"
+link           = "#e8721a"
+link_hover     = "#f0923e"
+
+# Gradient mesh backdrop
+gradient_a = "rgba(232, 114, 26, 0.08)"
+gradient_b = "rgba(77, 143, 204, 0.06)"
+gradient_c = "rgba(95, 173, 110, 0.05)"
+
+# Code blocks
+code_bg     = "rgba(7, 11, 20, 0.45)"
+code_border = "rgba(30, 40, 64, 0.08)"
+glow_color  = "rgba(232, 114, 26, 0.25)"
+glow_radius = "20px"
+
+# Content elements
+blockquote_border = "#e8721a"
+blockquote_bg     = "rgba(232, 114, 26, 0.08)"
+hr_color          = "rgba(30, 40, 64, 0.6)"
+table_header_bg   = "rgba(78, 90, 110, 0.12)"
+table_border      = "rgba(78, 90, 110, 0.15)"
+table_row_alt     = "rgba(78, 90, 110, 0.04)"
+
+# Cursor spotlight
+spotlight_color = "rgba(255, 255, 255, 0.02)"
+
+# Heading gradient
+heading_gradient = "linear-gradient(135deg, var(--accent), var(--text-primary))"
+
+# Block select
+select_bar        = "var(--accent)"
+select_bg         = "rgba(232, 114, 26, 0.08)"
+select_cursor_bar = "var(--text-primary)"
+select_cursor_bg  = "rgba(232, 114, 26, 0.15)"
+select_bar_width  = "3px"
+select_bar_offset = "-16px"
+
+[syntax]
+keyword     = "#d4a827"
+string      = "#5fad6e"
+comment     = "#4e5a6e"
+function    = "#e8721a"
+type        = "#4d8fcc"
+number      = "#c8901a"
+operator    = "#8a95a8"
+variable    = "#d8dde8"
+punctuation = "#8a95a8"
+constant    = "#c8901a"
+tag         = "#4d8fcc"
+attribute   = "#7bb5d0"
+property    = "#4d8fcc"
+constructor = "#4d8fcc"
+embedded    = "#d8dde8"
+
+[typography]
+font_family_mono = "'JetBrains Mono', 'Fira Code', 'SF Mono', monospace"
+code_font_size = 14
+
+[effects]
+frosted_glass        = true
+gradient_backdrop    = true
+noise_texture        = true
+heading_gradient_text = true
+scroll_animations    = true
+frosted_blur         = "20px"
+frosted_saturate     = "160%"
+noise_opacity        = 0.035
