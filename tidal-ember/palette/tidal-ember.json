@@ -1,0 +1,66 @@
+{
+  "name": "Tidal Ember",
+  "description": "Warm coastal base with a sunset-sand spectrum — amber functions, golden strings, periwinkle types, burnt-ochre numbers, driftwood constants, bold cream keyword anchors",
+
+  "colors": {
+    "bg": {
+      "primary":    "#1A1410",
+      "secondary":  "#110E0A",
+      "highlight":  "#2A2218",
+      "border":     "#3A3028"
+    },
+    "fg": {
+      "primary":    "#D8CCBA",
+      "dimmed":     "#8A7E70",
+      "muted":      "#5A5048",
+      "gutter":     "#3E3630"
+    },
+    "accent": {
+      "amber":      "#D89840",
+      "gold":       "#C4A050",
+      "periwinkle": "#8AA0C0",
+      "ochre":      "#C87830",
+      "driftwood":  "#B8A888",
+      "cream":      "#E8D8C0",
+      "steel":      "#6A7888",
+      "coral":      "#C85A48",
+      "seafoam":    "#68A898",
+      "red":        "#C04838"
+    },
+    "ansi": {
+      "black":          "#110E0A",
+      "red":            "#C04838",
+      "green":          "#68A898",
+      "yellow":         "#C4A050",
+      "blue":           "#8AA0C0",
+      "magenta":        "#C85A48",
+      "cyan":           "#68A898",
+      "white":          "#D8CCBA",
+      "bright_black":   "#5A5048",
+      "bright_red":     "#D86858",
+      "bright_green":   "#88C0B0",
+      "bright_yellow":  "#D8B868",
+      "bright_blue":    "#A0B4D0",
+      "bright_magenta": "#D87868",
+      "bright_cyan":    "#88C0B0",
+      "bright_white":   "#E8D8C0"
+    }
+  },
+
+  "semantic_roles": {
+    "keywords":     "accent.cream",
+    "functions":    "accent.amber",
+    "strings":      "accent.gold",
+    "variables":    "fg.primary",
+    "comments":     "accent.steel",
+    "types":        "accent.periwinkle",
+    "tags":         "accent.periwinkle",
+    "attributes":   "accent.driftwood",
+    "literals":     "accent.ochre",
+    "constants":    "accent.driftwood",
+    "constructors": "accent.periwinkle",
+    "errors":       "accent.red",
+    "operators":    "fg.dimmed",
+    "cursor":       "accent.amber"
+  }
+}

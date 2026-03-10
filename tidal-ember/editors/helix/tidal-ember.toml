@@ -1,0 +1,281 @@
+# Tidal Ember — Helix Editor Theme
+# Warm coastal base · Sunset-sand spectrum · Cream keyword anchors
+
+# ─── Syntax Highlighting ─────────────────────────────────────────────────────
+
+# Attributes
+attribute = { fg = "driftwood", modifiers = ["italic"] }
+
+# Types — Periwinkle
+type                = { fg = "periwinkle" }
+"type.builtin"      = { fg = "periwinkle" }
+"type.parameter"    = { fg = "periwinkle", modifiers = ["italic"] }
+"type.enum"         = { fg = "periwinkle" }
+"type.enum.variant" = { fg = "periwinkle" }
+
+# Constructor — Periwinkle (type-adjacent)
+constructor = { fg = "periwinkle" }
+
+# Constants — Driftwood
+constant                    = { fg = "driftwood" }
+"constant.builtin"          = { fg = "driftwood" }
+"constant.builtin.boolean"  = { fg = "driftwood" }
+"constant.character"        = { fg = "driftwood" }
+"constant.character.escape" = { fg = "seafoam" }
+"constant.numeric"          = { fg = "burnt_ochre" }
+"constant.numeric.integer"  = { fg = "burnt_ochre" }
+"constant.numeric.float"    = { fg = "burnt_ochre" }
+
+# Strings — Sunset Gold
+string                  = { fg = "sunset_gold" }
+"string.regexp"         = { fg = "seafoam" }
+"string.special"        = { fg = "sunset_gold" }
+"string.special.path"   = { fg = "sunset_gold" }
+"string.special.url"    = { fg = "sunset_gold", underline = { style = "line" } }
+"string.special.symbol" = { fg = "driftwood" }
+
+# Comments — Steel Grey
+comment                       = { fg = "steel_grey", modifiers = ["italic"] }
+"comment.line.documentation"  = { fg = "steel_grey", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "steel_grey", modifiers = ["italic"] }
+"comment.unused"              = { fg = "gutter_fg", modifiers = ["italic"] }
+
+# Variables — Shore White
+variable                        = { fg = "shore_white" }
+"variable.builtin"              = { fg = "shore_white", modifiers = ["italic"] }
+"variable.parameter"            = { fg = "shore_white", modifiers = ["italic"] }
+"variable.other"                = { fg = "shore_white" }
+"variable.other.member"         = { fg = "dimmed_sand" }
+"variable.other.member.private" = { fg = "dimmed_sand", modifiers = ["italic"] }
+
+# Labels
+label = { fg = "tidal_amber" }
+
+# Punctuation
+punctuation             = { fg = "dimmed_sand" }
+"punctuation.delimiter" = { fg = "dimmed_sand" }
+"punctuation.bracket"   = { fg = "dimmed_sand" }
+"punctuation.special"   = { fg = "tidal_amber" }
+
+# Rainbow brackets (6 levels, rotate with nesting depth)
+"rainbow.bracket"   = { fg = "dimmed_sand" }
+"rainbow.bracket.1" = { fg = "tidal_amber" }
+"rainbow.bracket.2" = { fg = "periwinkle" }
+"rainbow.bracket.3" = { fg = "sunset_gold" }
+"rainbow.bracket.4" = { fg = "seafoam" }
+"rainbow.bracket.5" = { fg = "burnt_ochre" }
+"rainbow.bracket.6" = { fg = "driftwood" }
+
+# Keywords — Bold Cream
+keyword                       = { fg = "cream", modifiers = ["bold"] }
+"keyword.control"             = { fg = "cream", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "cream", modifiers = ["bold"] }
+"keyword.control.repeat"      = { fg = "cream", modifiers = ["bold"] }
+"keyword.control.import"      = { fg = "cream", modifiers = ["bold"] }
+"keyword.control.return"      = { fg = "cream", modifiers = ["bold", "italic"] }
+"keyword.control.exception"   = { fg = "cream", modifiers = ["bold"] }
+"keyword.operator"            = { fg = "cream", modifiers = ["bold"] }
+"keyword.directive"           = { fg = "cream", modifiers = ["bold"] }
+"keyword.function"            = { fg = "cream", modifiers = ["bold"] }
+"keyword.storage.type"        = { fg = "cream", modifiers = ["bold"] }
+"keyword.storage.modifier"    = { fg = "cream", modifiers = ["bold"] }
+
+# Operators
+operator = { fg = "dimmed_sand" }
+
+# Functions — Tidal Amber (the hero)
+function                  = { fg = "tidal_amber" }
+"function.builtin"        = { fg = "tidal_amber" }
+"function.method"         = { fg = "tidal_amber" }
+"function.method.private" = { fg = "tidal_amber", modifiers = ["italic"] }
+"function.macro"          = { fg = "tidal_amber" }
+"function.special"        = { fg = "tidal_amber" }
+
+# Tags — Periwinkle (like types)
+tag           = { fg = "periwinkle" }
+"tag.builtin" = { fg = "periwinkle" }
+
+# Namespace
+namespace = { fg = "tidal_amber", modifiers = ["italic"] }
+
+# Special
+special = { fg = "driftwood" }
+
+# Markup
+"markup.heading"              = { fg = "cream", modifiers = ["bold"] }
+"markup.heading.marker"       = { fg = "dimmed_sand" }
+"markup.heading.1"            = { fg = "cream", modifiers = ["bold"] }
+"markup.heading.2"            = { fg = "cream", modifiers = ["bold"] }
+"markup.heading.3"            = { fg = "periwinkle", modifiers = ["bold"] }
+"markup.heading.4"            = { fg = "periwinkle" }
+"markup.heading.5"            = { fg = "tidal_amber" }
+"markup.heading.6"            = { fg = "tidal_amber" }
+"markup.list"                 = { fg = "tidal_amber" }
+"markup.list.unnumbered"      = { fg = "tidal_amber" }
+"markup.list.numbered"        = { fg = "burnt_ochre" }
+"markup.list.checked"         = { fg = "sunset_gold" }
+"markup.list.unchecked"       = { fg = "dimmed_sand" }
+"markup.bold"                 = { modifiers = ["bold"] }
+"markup.italic"               = { modifiers = ["italic"] }
+"markup.strikethrough"        = { modifiers = ["crossed_out"] }
+"markup.link"                 = { fg = "tidal_amber" }
+"markup.link.url"             = { fg = "tidal_amber", underline = { style = "line" } }
+"markup.link.label"           = { fg = "periwinkle" }
+"markup.link.text"            = { fg = "sunset_gold" }
+"markup.quote"                = { fg = "steel_grey", modifiers = ["italic"] }
+"markup.raw"                  = { fg = "sunset_gold" }
+"markup.raw.inline"           = { fg = "sunset_gold" }
+"markup.raw.block"            = { fg = "sunset_gold" }
+
+# Markup — completion/hover popups
+"markup.normal.completion"     = { fg = "shore_white" }
+"markup.normal.hover"          = { fg = "shore_white" }
+"markup.heading.completion"    = { fg = "cream", modifiers = ["bold"] }
+"markup.heading.hover"         = { fg = "cream", modifiers = ["bold"] }
+"markup.raw.inline.completion" = { fg = "sunset_gold" }
+"markup.raw.inline.hover"     = { fg = "sunset_gold" }
+
+# Diff
+"diff.plus"           = "seafoam"
+"diff.plus.gutter"    = "seafoam"
+"diff.minus"          = "ember_red"
+"diff.minus.gutter"   = "ember_red"
+"diff.delta"          = "burnt_ochre"
+"diff.delta.moved"    = "driftwood"
+"diff.delta.conflict" = "ember_red"
+"diff.delta.gutter"   = "burnt_ochre"
+
+# ─── Interface / UI ───────────────────────────────────────────────────────────
+
+# Background
+"ui.background"           = { fg = "shore_white", bg = "bg_primary" }
+"ui.background.separator" = { fg = "border" }
+
+# Cursor
+"ui.cursor"                = { modifiers = ["reversed"] }
+"ui.cursor.normal"         = { fg = "bg_primary", bg = "secondary_cursor" }
+"ui.cursor.insert"         = { fg = "bg_primary", bg = "shore_white" }
+"ui.cursor.select"         = { fg = "bg_primary", bg = "burnt_ochre" }
+"ui.cursor.match"          = { fg = "seafoam", modifiers = ["bold"] }
+"ui.cursor.primary"        = { fg = "bg_primary", bg = "tidal_amber" }
+"ui.cursor.primary.normal" = { fg = "bg_primary", bg = "tidal_amber" }
+"ui.cursor.primary.insert" = { fg = "bg_primary", bg = "shore_white" }
+"ui.cursor.primary.select" = { fg = "bg_primary", bg = "burnt_ochre" }
+
+# Selection
+"ui.selection"         = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# Cursorline / Cursorcolumn
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = { bg = "bg_primary" }
+"ui.cursorcolumn.primary"   = { bg = "bg_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_primary" }
+
+# Gutter & Line Numbers
+"ui.gutter"          = { fg = "gutter_fg" }
+"ui.gutter.selected" = { fg = "muted_fg", bg = "bg_highlight" }
+"ui.linenr"          = { fg = "gutter_fg" }
+"ui.linenr.selected" = { fg = "muted_fg" }
+
+# Statusline
+"ui.statusline"           = { fg = "dimmed_sand", bg = "bg_secondary" }
+"ui.statusline.inactive"  = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.statusline.normal"    = { fg = "bg_secondary", bg = "tidal_amber", modifiers = ["bold"] }
+"ui.statusline.insert"    = { fg = "bg_secondary", bg = "cream", modifiers = ["bold"] }
+"ui.statusline.select"    = { fg = "bg_secondary", bg = "burnt_ochre", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+
+# Bufferline
+"ui.bufferline"            = { fg = "muted_fg", bg = "bg_secondary" }
+"ui.bufferline.active"     = { fg = "bg_secondary", bg = "tidal_amber", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_secondary" }
+
+# Popup & Menus
+"ui.popup"         = { fg = "shore_white", bg = "bg_secondary" }
+"ui.popup.info"    = { fg = "shore_white", bg = "bg_secondary" }
+"ui.window"        = { fg = "border" }
+"ui.help"          = { fg = "shore_white", bg = "bg_secondary" }
+"ui.menu"          = { fg = "shore_white", bg = "bg_secondary" }
+"ui.menu.selected" = { fg = "bg_secondary", bg = "tidal_amber", modifiers = ["bold"] }
+"ui.menu.scroll"   = { fg = "dimmed_sand", bg = "border" }
+
+# Picker
+"ui.picker.header"               = { fg = "dimmed_sand", modifiers = ["bold"] }
+"ui.picker.header.column"        = { fg = "dimmed_sand" }
+"ui.picker.header.column.active" = { fg = "tidal_amber", modifiers = ["bold"] }
+
+# Text
+"ui.text"           = { fg = "shore_white" }
+"ui.text.focus"     = { fg = "shore_white", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.text.inactive"  = { fg = "muted_fg" }
+"ui.text.info"      = { fg = "dimmed_sand" }
+"ui.text.directory" = { fg = "periwinkle" }
+
+# Virtual Elements
+"ui.virtual"                      = { fg = "border" }
+"ui.virtual.ruler"                = { bg = "bg_highlight" }
+"ui.virtual.whitespace"           = { fg = "border" }
+"ui.virtual.indent-guide"         = { fg = "border" }
+"ui.virtual.inlay-hint"           = { fg = "gutter_fg", bg = "bg_secondary" }
+"ui.virtual.inlay-hint.parameter" = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"      = { fg = "gutter_fg", modifiers = ["italic"] }
+"ui.virtual.wrap"                 = { fg = "gutter_fg" }
+"ui.virtual.jump-label"           = { fg = "burnt_ochre", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight"           = { bg = "bg_highlight" }
+"ui.highlight.frameline" = { bg = "bg_highlight" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "ember_red" }
+"ui.debug.active"     = { fg = "burnt_ochre" }
+
+# Snippet
+tabstop = { modifiers = ["italic"], bg = "bg_highlight" }
+
+# Diagnostics (gutter)
+warning = "burnt_ochre"
+error   = "ember_red"
+info    = "seafoam"
+hint    = "tidal_amber"
+
+# Diagnostics (editing area)
+diagnostic               = { underline = { color = "burnt_ochre", style = "curl" } }
+"diagnostic.hint"        = { underline = { color = "tidal_amber", style = "curl" } }
+"diagnostic.info"        = { underline = { color = "seafoam", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "burnt_ochre", style = "curl" } }
+"diagnostic.error"       = { underline = { color = "ember_red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
+
+# ─── Palette ──────────────────────────────────────────────────────────────────
+
+[palette]
+
+# Backgrounds
+bg_primary   = "#1A1410"
+bg_secondary = "#110E0A"
+bg_highlight = "#2A2218"
+border       = "#3A3028"
+selection    = "#322818"
+
+# Foregrounds
+shore_white  = "#D8CCBA"
+dimmed_sand  = "#8A7E70"
+muted_fg     = "#5A5048"
+gutter_fg    = "#3E3630"
+
+# Accents
+cream        = "#E8D8C0"
+tidal_amber  = "#D89840"
+sunset_gold  = "#C4A050"
+periwinkle   = "#8AA0C0"
+burnt_ochre  = "#C87830"
+driftwood    = "#B8A888"
+ember_red    = "#C04838"
+seafoam      = "#68A898"
+steel_grey   = "#6A7888"
+
+# Multi-cursor
+secondary_cursor = "#A07830"
